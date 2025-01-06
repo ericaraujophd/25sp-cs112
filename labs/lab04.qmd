@@ -61,7 +61,7 @@ If you look in **Vec.h**, you'll see that we are (for now) using a `typedef` to 
 
 You'll also see that the `private:` section of class Vec is currently empty. As a minimalist dynamic array, our Vec will need to "remember" two things:
 
-1.  How many Items it is currently storing; and
+1.  How many Items it is currently storing; and,
 2.  The `Items` it is currently storing.
 
 To let a Vec "remember" the first of these, add an instance variable named `mySize` of type **unsigned**:
