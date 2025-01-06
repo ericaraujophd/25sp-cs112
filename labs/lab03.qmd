@@ -1,6 +1,6 @@
 ---
 title: "Lab 03: Classes"
-format: 
+format:
   html:
     css: /labs/lab-styles.css
 ---
@@ -51,153 +51,17 @@ The instance variables for a Student will be:
 ```
 
 ::: tg-wrap
-<table class="tg">
-
-<thead>
-
-<tr>
-
-<th class="tg-1wig">
-
-[Instance Variable Name]{style="color:unset;background-color:unset"}
-
-</th>
-
-<th class="tg-1wig">
-
-[Type]{style="color:unset;background-color:unset"}
-
-</th>
-
-<th class="tg-1wig">
-
-[Default value]{style="color:unset;background-color:unset"}
-
-</th>
-
-<th class="tg-1wig">
-
-[Notes]{style="color:unset;background-color:unset"}
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td class="tg-0lax">
-
-[myName]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[string]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[“”]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[Immutable (NOTE: this]{style="color:unset;background-color:unset"} [is not]{style="font-weight:bolder"} [a const in our class, but we will]{style="color:unset;background-color:unset"} [not]{style="font-weight:bolder"} [be making setter functions for these immutable values.)]{style="color:unset;background-color:unset"}
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="tg-0lax">
-
-[myId]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[unsigned int]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[0]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[Immutable (NOTE: this]{style="color:unset;background-color:unset"} [is not]{style="font-weight:bolder"} [a const in our class, but we will]{style="color:unset;background-color:unset"} [not]{style="font-weight:bolder"} [be making setter functions for these immutable values.)]{style="color:unset;background-color:unset"}
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="tg-0lax">
-
-[myGpa]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[float]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[0.0]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="tg-0lax">
-
-[myMajor]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[string]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-[“Undecided”]{style="color:unset;background-color:unset"}
-
-</td>
-
-<td class="tg-0lax">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
++------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \[Instance Variable Name\]{style="color:unset;background-color:unset"} | \[Type\]{style="color:unset;background-color:unset"}         | \[Default value\]{style="color:unset;background-color:unset"} | \[Notes\]{style="color:unset;background-color:unset"}                                                                                                                                                                                                                                                                                      |
++========================================================================+==============================================================+===============================================================+============================================================================================================================================================================================================================================================================================================================================+
+| \[myName\]{style="color:unset;background-color:unset"}                 | \[string\]{style="color:unset;background-color:unset"}       | \[“”\]{style="color:unset;background-color:unset"}            | \[Immutable (NOTE: this\]{style="color:unset;background-color:unset"} \[is not\]{style="font-weight:bolder"} \[a const in our class, but we will\]{style="color:unset;background-color:unset"} \[not\]{style="font-weight:bolder"} \[be making setter functions for these immutable values.)\]{style="color:unset;background-color:unset"} |
++------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \[myId\]{style="color:unset;background-color:unset"}                   | \[unsigned int\]{style="color:unset;background-color:unset"} | \[0\]{style="color:unset;background-color:unset"}             | \[Immutable (NOTE: this\]{style="color:unset;background-color:unset"} \[is not\]{style="font-weight:bolder"} \[a const in our class, but we will\]{style="color:unset;background-color:unset"} \[not\]{style="font-weight:bolder"} \[be making setter functions for these immutable values.)\]{style="color:unset;background-color:unset"} |
++------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \[myGpa\]{style="color:unset;background-color:unset"}                  | \[float\]{style="color:unset;background-color:unset"}        | \[0.0\]{style="color:unset;background-color:unset"}           |                                                                                                                                                                                                                                                                                                                                            |
++------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| \[myMajor\]{style="color:unset;background-color:unset"}                | \[string\]{style="color:unset;background-color:unset"}       | \[“Undecided”\]{style="color:unset;background-color:unset"}   |                                                                                                                                                                                                                                                                                                                                            |
++------------------------------------------------------------------------+--------------------------------------------------------------+---------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 :::
 
 In **Student.h**, you should see the definition of the `Student` class. In that class, create the **private:** section, and in there define the 4 instance variables, shown in the table above. You'll have to `#include <string>` and do the using `namespace` business...

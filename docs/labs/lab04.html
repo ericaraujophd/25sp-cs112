@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.5.41">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 4: Vec – A First Dynamic Data Structure – CS112 - Data Structures</title>
+<title>CS112 - Data Structures – Lab 4: Vec – A First Dynamic Data Structure</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,10 +107,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="../labs/lab-styles.css">
-<meta property="og:title" content="Lab 4: Vec – A First Dynamic Data Structure – CS112 - Data Structures">
+<meta property="og:title" content="CS112 - Data Structures - Lab 4: Vec – A First Dynamic Data Structure">
 <meta property="og:description" content="CS112 will teach students to use C++ for creating data structures.">
 <meta property="og:site_name" content="CS112 - Data Structures">
-<meta name="twitter:title" content="Lab 4: Vec – A First Dynamic Data Structure – CS112 - Data Structures">
+<meta name="twitter:title" content="CS112 - Data Structures - Lab 4: Vec – A First Dynamic Data Structure">
 <meta name="twitter:description" content="CS112 will teach students to use C++ for creating data structures.">
 <meta name="twitter:image" content="https://ericaraujo.com/24fa-cs112/images/twitter-card.png">
 <meta name="twitter:creator" content="@ericfaraujo">
@@ -282,7 +282,7 @@ Compile. debug and fix any errors.
 <p>If you look in <strong>Vec.h</strong>, you’ll see that we are (for now) using a <code>typedef</code> to define the identifier <code>Item</code> as a synonym for the type <strong>double</strong>.</p>
 <p>You’ll also see that the <code>private:</code> section of class Vec is currently empty. As a minimalist dynamic array, our Vec will need to “remember” two things:</p>
 <ol type="1">
-<li>How many Items it is currently storing; and</li>
+<li>How many Items it is currently storing; and,</li>
 <li>The <code>Items</code> it is currently storing.</li>
 </ol>
 <p>To let a Vec “remember” the first of these, add an instance variable named <code>mySize</code> of type <strong>unsigned</strong>:</p>

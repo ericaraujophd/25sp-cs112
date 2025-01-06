@@ -1,6 +1,6 @@
 ---
 title: "Lab 4: Vec -- A First Dynamic Data Structure"
-format: 
+format:
   html:
     css: /labs/lab-styles.css
 ---
