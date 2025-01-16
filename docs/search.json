@@ -266,6 +266,27 @@
     "text": "Dad joke of the week\n\n\n\nQ: Why did the man fall down the deep hole?\nA: ’Cause he couldn’t see that well."
   },
   {
+    "objectID": "slides/lab00-slides.html#welcome-to-css112-labs",
+    "href": "slides/lab00-slides.html#welcome-to-css112-labs",
+    "title": "CS112 - Data Structures",
+    "section": "Welcome to CSS112 Labs!",
+    "text": "Welcome to CSS112 Labs!\nHave a seat, make sure you are booted to Linux, and log in with your Calvin username and passphrase. (ex: abc2 / passphrase)\nFind a pair to work with during this lab session."
+  },
+  {
+    "objectID": "slides/lab00-slides.html#about-prof.-araújo",
+    "href": "slides/lab00-slides.html#about-prof.-araújo",
+    "title": "CS112 - Data Structures",
+    "section": "About prof. Araújo",
+    "text": "About prof. Araújo\n\n\n\n\n\n\n\n\nProf. Eric Araújo was born in Brazil, where he was a Professor for 13+ years before joining Calvin University last summer. His research interest lie in Cognitive Modeling. He got his PhD from the VU Amsterdam (The Netherlands), where he met his wife, Amy. Prof. Araújo loves board games, C.S. Lewis and his beloved soccer team, Cruzeiro."
+  },
+  {
+    "objectID": "slides/lab00-slides.html#about-prof.-norman",
+    "href": "slides/lab00-slides.html#about-prof.-norman",
+    "title": "CS112 - Data Structures",
+    "section": "About prof. Norman",
+    "text": "About prof. Norman\n\n\n\n\n\n\n\n\nProf. Victor Norman has been teaching CS112 for about 5 years. His research interests lie in Pedagogical best practices and integrating faith and computer science. For fun, he writes code! He also enjoys playing his euphonium in the Calvin Symphonic Band and Burton Street Brass quintent."
+  },
+  {
     "objectID": "slides/lab00-slides.html#dad-joke-of-the-week",
     "href": "slides/lab00-slides.html#dad-joke-of-the-week",
     "title": "CS112 - Data Structures",
@@ -2223,34 +2244,34 @@
   {
     "objectID": "week00.html",
     "href": "week00.html",
-    "title": "Week 00: Intro do C++",
+    "title": "Week 00: Intro to C++",
     "section": "",
     "text": "At the end of this unit, students will be able to…\n\ndescribe the process of compilation of a program.\nperform basic I/O using cout and cin, with &lt;&lt; and &gt;&gt;.\ncreate variables of various data types and initialize them.\narticulate the importance of initializing variables.\nwrite values in decimal, hexadecimal, and binary, and convert between them.\ncreate constant values using the const keyword.\ndeclare array variables and initialize them.\nidentify the size of the different data types.\ncreate and use pointers.\nuse the dereferencing and address-of operators on pointer variables.",
     "crumbs": [
       "Content",
-      "Week 00: Intro do C++"
+      "Week 00: Intro to C++"
     ]
   },
   {
     "objectID": "week00.html#slos-for-week-00",
     "href": "week00.html#slos-for-week-00",
-    "title": "Week 00: Intro do C++",
+    "title": "Week 00: Intro to C++",
     "section": "",
     "text": "At the end of this unit, students will be able to…\n\ndescribe the process of compilation of a program.\nperform basic I/O using cout and cin, with &lt;&lt; and &gt;&gt;.\ncreate variables of various data types and initialize them.\narticulate the importance of initializing variables.\nwrite values in decimal, hexadecimal, and binary, and convert between them.\ncreate constant values using the const keyword.\ndeclare array variables and initialize them.\nidentify the size of the different data types.\ncreate and use pointers.\nuse the dereferencing and address-of operators on pointer variables.",
     "crumbs": [
       "Content",
-      "Week 00: Intro do C++"
+      "Week 00: Intro to C++"
     ]
   },
   {
     "objectID": "week00.html#slides-videos-and-application-exercises",
     "href": "week00.html#slides-videos-and-application-exercises",
-    "title": "Week 00: Intro do C++",
+    "title": "Week 00: Intro to C++",
     "section": "Slides, videos, and application exercises",
-    "text": "Slides, videos, and application exercises\n\nWeek 00: Slides\n\nSlides\n\n\nBinary Exposed\n\n\n\n\nChapters 1, 2, and Sections 5.1, 5.2\n\n\n\n\n\n\nLab 00: Getting Started\n\nInstructions\n\n\nStarter\n\n\nDad Joke + Reflection\n\n\n\n\nProject 00: Exploring Types\n\nInstructions\n\n\n\nStarter",
+    "text": "Slides, videos, and application exercises\n\nWeek 00: Slides\n\nSlides\n\n\nBinary Exposed\n\n\n\n\nChapters 1, 2, and Sections 5.1, 5.2\n\n\n\n\n\n\nLab 00: Getting Started\n\nInstructions\n\n\nStarter\n\n\nDad Joke + Reflection Slides\n\n\n\n\nProject 00: Exploring Types\n\nInstructions\n\n\n\nStarter",
     "crumbs": [
       "Content",
-      "Week 00: Intro do C++"
+      "Week 00: Intro to C++"
     ]
   },
   {
@@ -2285,47 +2306,5 @@
       "Content",
       "Week 03: Classes, Operator Overloading, etc."
     ]
-  },
-  {
-    "objectID": "slides/lab00-slides.html#welcome-to-css112-labs",
-    "href": "slides/lab00-slides.html#welcome-to-css112-labs",
-    "title": "CS112 - Data Structures",
-    "section": "Welcome to CSS112 Labs!",
-    "text": "Welcome to CSS112 Labs!\nHave a seat, make sure you are booted to Linux, and log in with your Calvin username and passphrase. (ex: abc2 / passphrase)\nFind a pair to work with during this lab session."
-  },
-  {
-    "objectID": "slides/lab00-slides.html#welcome-to-css112-labs-background-imageimagesslidespexels-markusspiske-225769.jpg-background-opacity",
-    "href": "slides/lab00-slides.html#welcome-to-css112-labs-background-imageimagesslidespexels-markusspiske-225769.jpg-background-opacity",
-    "title": "CS112 - Data Structures",
-    "section": "Welcome to CSS112 Labs! {background-image=“/images/slides/pexels-markusspiske-225769.jpg” background-opacity }",
-    "text": "Welcome to CSS112 Labs! {background-image=“/images/slides/pexels-markusspiske-225769.jpg” background-opacity }"
-  },
-  {
-    "objectID": "slides/lab00-slides.html#about-me",
-    "href": "slides/lab00-slides.html#about-me",
-    "title": "CS112 - Data Structures",
-    "section": "About me",
-    "text": "About me\n\n\n\n\n\n\n\n\n\nBSc. from UFV (Brazil), MSc. from UFMG (Brazil), PhD from VU Amsterdam (The Netherlands)\nI was a Professor in Brazil for 13+ years before joining Calvin University\nOffice: NH293\nOffice hours: Tuesdays 2-3pm & Thursdays 10.30-11.30am"
-  },
-  {
-    "objectID": "slides/lab00-slides.html#about-prof.-araújo",
-    "href": "slides/lab00-slides.html#about-prof.-araújo",
-    "title": "CS112 - Data Structures",
-    "section": "About prof. Araújo",
-    "text": "About prof. Araújo\n\n\n\n\n\n\n\n\nProf. Eric Araújo was born in Brazil, where he was a Professor for 13+ years before joining Calvin University last summer. His research interest lie in Cognitive Modeling. He got his PhD from the VU Amsterdam (The Netherlands), where he met his wife, Amy. Prof. Araújo love board games, C.S. Lewis and his beloved soccer team, Cruzeiro."
-  },
-  {
-    "objectID": "slides/lab00-slides.html#about-prof.-araújo-1",
-    "href": "slides/lab00-slides.html#about-prof.-araújo-1",
-    "title": "CS112 - Data Structures",
-    "section": "About prof. Araújo",
-    "text": "About prof. Araújo\n\n\n\n\n\n\n\n\n\nBSc. from UFV (Brazil), MSc. from UFMG (Brazil), PhD from VU Amsterdam (The Netherlands)\nI was a Professor in Brazil for 13+ years before joining Calvin University\nOffice: NH293\nOffice hours: Tuesdays 2-3pm & Thursdays 10.30-11.30am"
-  },
-  {
-    "objectID": "slides/lab00-slides.html#about-prof.-norman",
-    "href": "slides/lab00-slides.html#about-prof.-norman",
-    "title": "CS112 - Data Structures",
-    "section": "About prof. Norman",
-    "text": "About prof. Norman\n\n\n\n\n\n\n\n\nProf. Victor Norman has been teaching CS112 for about 5 years. His research interests lie in Pedagogical best practices and integrating faith and computer science. For fun, he writes code! He also enjoys playing his euphonium in the Calvin Symphonic Band and Burton Street Brass quintent."
   }
 ]

@@ -1,5 +1,5 @@
 ---
-title: "Week 00: Intro do C++"
+title: "Week 00: Intro to C++"
 # draft: true
 # draft-mode: visible
 ---
@@ -64,7 +64,8 @@ At the end of this unit, students will be able to...
 :::
 
 ::: slides
-[Dad Joke + Reflection](){target="_blank"}
+Dad Joke + Reflection
+[Slides](/slides/lab00-slides.qmd)
 :::
 ::::::
 
