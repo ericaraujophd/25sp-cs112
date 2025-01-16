@@ -117,8 +117,14 @@ This lab is worth 12 pts:
 The project is due at midnight on Monday. You will receive a 10% per day penalty for lateness.
 :::
 
-Examples of how students lost points in the past: - -1: Need a comment explaining why the output isn't -1 (Step 6). Output is incorrect for Step 6 because a post-decrement was used. - -1: unsigned int needs to be const unsigned int (Step 2). - -1: Code for Step 2 doesn't compile; your string needs to be quoted. - -1: Hexadecimal output is wrong for Step 4. - -1: Step 2 doesn't compile. Chars need to be single-quoted.
+Examples of how students lost points in the past: 
 
-::: callout-important
+- -1: Need a comment explaining why the output isn't -1 (Step 6). Output is incorrect for Step 6 because a post-decrement was used. 
+- -1: unsigned int needs to be const unsigned int (Step 2). 
+- -1: Code for Step 2 doesn't compile; your string needs to be quoted. 
+- -1: Hexadecimal output is wrong for Step 4. 
+- -1: Step 2 doesn't compile. Chars need to be single-quoted.
+
+<!-- ::: callout-important
 Add the name of participants of the project in the README.md file from the repo.
-:::
+::: -->
