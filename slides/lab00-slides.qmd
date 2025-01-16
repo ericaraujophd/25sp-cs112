@@ -1,7 +1,11 @@
 ---
-title: "Lab 00 --- Intro do C++"
-subtitle: "<br><br> CS112 - Data Structures"
+title: "CS112 - Data Structures"
+subtitle: "<br><br> 25SP LABS"
 author: "Eric Araújo"
+title-slide-attributes:
+  data-background-image: /images/slides/pexels-jeshoots-238118.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
 # output:
 #   xaringan::moon_reader:
 #     css: ["../xaringan-themer.css", "../slides.css"]
@@ -13,13 +17,14 @@ author: "Eric Araújo"
 #       countIncrementalSlides: false
 format: 
     revealjs:
-        theme: dark
+        theme: simple
         menu: false
         slide-level: 2
         navigation-mode: linear
         transition: slide
         scrollable: true
         history: false
+        logo: /images/calvin-logo.png
         # simplemenu:
         #     scale: 0.6
         #     barhtml:
@@ -27,6 +32,44 @@ format:
 # revealjs-plugins:
 #     - simplemenu
 ---
+
+## Welcome to CSS112 Labs!
+
+Have a seat, make sure you are booted to **Linux**, and log in with your
+Calvin username and passphrase. (ex: abc2 / passphrase)
+
+Find a pair to work with during this lab session.
+
+## About prof. Araújo
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](/images/slides/68B8675F-1A08-466C-A749-D8B7E6B37E95.JPG){fig-alt="." fig-align="left" width="100%"}
+:::
+
+::: {.column width="60%"}
+Prof. Eric Araújo was born in Brazil, where he was a Professor for 13+ years before joining Calvin University last summer. His research interest lie in Cognitive Modeling. He got his PhD from the VU Amsterdam (The Netherlands), where he met his wife, Amy. Prof. Araújo loves board games, C.S. Lewis and his beloved soccer team, Cruzeiro.
+:::
+
+::::
+
+
+## About prof. Norman
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](/images/slides/me.jpg){fig-alt="." fig-align="left" width="100%"}
+:::
+
+::: {.column width="60%"}
+Prof. Victor Norman has been teaching CS112 for about 5 years. His research interests lie in Pedagogical best practices and integrating faith and computer science. For fun, he writes code! He also enjoys playing his euphonium in the Calvin Symphonic Band and Burton Street Brass quintent.
+:::
+
+::::
+
+
 
 ## Dad joke of the week
 
@@ -54,7 +97,7 @@ God’s creation reflects His intentional design—everything has a purpose and 
 
 As we work on today’s lab, let us remember that the discipline and creativity we apply to our work reflect the order and purpose God calls us to embody. Let’s strive to build systems that not only function well but also mirror the excellence and intentionality of our Creator.
 
-**Prayer:**\
+**Prayer:**
 Lord, thank You for the gift of logic and creativity. Help us to approach our work with diligence and clarity, bringing order to our ideas just as You bring order to all creation. May our efforts in this lab glorify You and serve as a reflection of Your wisdom. Amen.
 
 ## Lab 9

@@ -8,11 +8,11 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Eric Araújo">
-  <title>CS112 - Data Structures – Lab 00 — Intro do C++</title>
+  <title>CS112 - Data Structures</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -322,24 +322,24 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Lab 00 — Intro do C++ – CS112 - Data Structures">
-<meta property="og:description" content=" CS112 - Data Structures">
+<meta property="og:title" content="CS112 - Data Structures">
+<meta property="og:description" content=" 25SP LABS">
 <meta property="og:site_name" content="CS112 - Data Structures">
-<meta name="twitter:title" content="Lab 00 — Intro do C++ – CS112 - Data Structures">
-<meta name="twitter:description" content=" CS112 - Data Structures">
+<meta name="twitter:title" content="CS112 - Data Structures">
+<meta name="twitter:description" content=" 25SP LABS">
 <meta name="twitter:image" content="https://ericaraujo.com/24fa-cs112/images/twitter-card.png">
 <meta name="twitter:creator" content="@ericfaraujo">
 <meta name="twitter:image-height" content="500">
 <meta name="twitter:image-width" content="500">
 <meta name="twitter:card" content="summary_large_image">
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Lab 00 — Intro do C++</h1>
-  <p class="subtitle"><br><br> CS112 - Data Structures</p>
+<section id="title-slide" data-background-image="../images/slides/pexels-jeshoots-238118.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
+  <h1 class="title">CS112 - Data Structures</h1>
+  <p class="subtitle"><br><br> 25SP LABS</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -349,6 +349,37 @@ Eric Araújo
 </div>
 </div>
 
+</section>
+<section id="welcome-to-css112-labs" class="slide level2">
+<h2>Welcome to CSS112 Labs!</h2>
+<p>Have a seat, make sure you are booted to <strong>Linux</strong>, and log in with your Calvin username and passphrase. (ex: abc2 / passphrase)</p>
+<p>Find a pair to work with during this lab session.</p>
+</section>
+<section id="about-prof.-araújo" class="slide level2">
+<h2>About prof. Araújo</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="../images/slides/68B8675F-1A08-466C-A749-D8B7E6B37E95.JPG" class="quarto-figure quarto-figure-left" style="width:100.0%" alt="."></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<p>Prof.&nbsp;Eric Araújo was born in Brazil, where he was a Professor for 13+ years before joining Calvin University last summer. His research interest lie in Cognitive Modeling. He got his PhD from the VU Amsterdam (The Netherlands), where he met his wife, Amy. Prof.&nbsp;Araújo love board games, C.S. Lewis and his beloved soccer team, Cruzeiro.</p>
+</div></div>
+</section>
+<section id="about-prof.-norman" class="slide level2">
+<h2>About prof. Norman</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="../images/slides/me.jpg" class="quarto-figure quarto-figure-left" style="width:100.0%" alt="."></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
+<p>Prof.&nbsp;Victor Norman has been teaching CS112 for about 5 years. His research interests lie in Pedagogical best practices and integrating faith and computer science. For fun, he writes code! He also enjoys playing his euphonium in the Calvin Symphonic Band and Burton Street Brass quintent.</p>
+</div></div>
 </section>
 <section id="dad-joke-of-the-week" class="slide level2">
 <h2>Dad joke of the week</h2>
@@ -371,8 +402,7 @@ Eric Araújo
 <p>As we dive into the intricacies of data structures, this verse reminds us of the importance of organization and structure, not just in our code but also in life. Data structures like arrays, trees, and graphs teach us that even the most complex systems can be understood and managed when approached with order and clarity.</p>
 <p>God’s creation reflects His intentional design—everything has a purpose and place, from the smallest atom to the vastness of the universe. Similarly, in our programming, we use data structures to bring order to chaos, enabling efficiency and clarity in solving problems.</p>
 <p>As we work on today’s lab, let us remember that the discipline and creativity we apply to our work reflect the order and purpose God calls us to embody. Let’s strive to build systems that not only function well but also mirror the excellence and intentionality of our Creator.</p>
-<p><strong>Prayer:</strong><br>
-Lord, thank You for the gift of logic and creativity. Help us to approach our work with diligence and clarity, bringing order to our ideas just as You bring order to all creation. May our efforts in this lab glorify You and serve as a reflection of Your wisdom. Amen.</p>
+<p><strong>Prayer:</strong> Lord, thank You for the gift of logic and creativity. Help us to approach our work with diligence and clarity, bringing order to our ideas just as You bring order to all creation. May our efforts in this lab glorify You and serve as a reflection of Your wisdom. Amen.</p>
 </section>
 <section id="lab-9" class="slide level2">
 <h2>Lab 9</h2>
@@ -388,6 +418,7 @@ Lord, thank You for the gift of logic and creativity. Help us to approach our wo
 
 
 <div class="quarto-auto-generated-content">
+<p><img src="../images/calvin-logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>

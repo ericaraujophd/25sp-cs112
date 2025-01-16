@@ -268,21 +268,21 @@
   {
     "objectID": "slides/lab00-slides.html#dad-joke-of-the-week",
     "href": "slides/lab00-slides.html#dad-joke-of-the-week",
-    "title": "Lab 00 — Intro do C++",
+    "title": "CS112 - Data Structures",
     "section": "Dad joke of the week",
     "text": "Dad joke of the week\n\n\n\n\n\n\n\n\n\n\nPete and Repete are on a boat. Pete falls off. Who’s left on the boat?"
   },
   {
     "objectID": "slides/lab00-slides.html#bible-reflection-for-a-data-structures-lab-session",
     "href": "slides/lab00-slides.html#bible-reflection-for-a-data-structures-lab-session",
-    "title": "Lab 00 — Intro do C++",
+    "title": "CS112 - Data Structures",
     "section": "Bible Reflection for a Data Structures Lab Session",
-    "text": "Bible Reflection for a Data Structures Lab Session\nVerse: “Let all things be done decently and in order.” — 1 Corinthians 14:40\nAs we dive into the intricacies of data structures, this verse reminds us of the importance of organization and structure, not just in our code but also in life. Data structures like arrays, trees, and graphs teach us that even the most complex systems can be understood and managed when approached with order and clarity.\nGod’s creation reflects His intentional design—everything has a purpose and place, from the smallest atom to the vastness of the universe. Similarly, in our programming, we use data structures to bring order to chaos, enabling efficiency and clarity in solving problems.\nAs we work on today’s lab, let us remember that the discipline and creativity we apply to our work reflect the order and purpose God calls us to embody. Let’s strive to build systems that not only function well but also mirror the excellence and intentionality of our Creator.\nPrayer:\nLord, thank You for the gift of logic and creativity. Help us to approach our work with diligence and clarity, bringing order to our ideas just as You bring order to all creation. May our efforts in this lab glorify You and serve as a reflection of Your wisdom. Amen."
+    "text": "Bible Reflection for a Data Structures Lab Session\nVerse: “Let all things be done decently and in order.” — 1 Corinthians 14:40\nAs we dive into the intricacies of data structures, this verse reminds us of the importance of organization and structure, not just in our code but also in life. Data structures like arrays, trees, and graphs teach us that even the most complex systems can be understood and managed when approached with order and clarity.\nGod’s creation reflects His intentional design—everything has a purpose and place, from the smallest atom to the vastness of the universe. Similarly, in our programming, we use data structures to bring order to chaos, enabling efficiency and clarity in solving problems.\nAs we work on today’s lab, let us remember that the discipline and creativity we apply to our work reflect the order and purpose God calls us to embody. Let’s strive to build systems that not only function well but also mirror the excellence and intentionality of our Creator.\nPrayer: Lord, thank You for the gift of logic and creativity. Help us to approach our work with diligence and clarity, bringing order to our ideas just as You bring order to all creation. May our efforts in this lab glorify You and serve as a reflection of Your wisdom. Amen."
   },
   {
     "objectID": "slides/lab00-slides.html#lab-9",
     "href": "slides/lab00-slides.html#lab-9",
-    "title": "Lab 00 — Intro do C++",
+    "title": "CS112 - Data Structures",
     "section": "Lab 9",
     "text": "Lab 9\n\ncreating recursive functions using ChatGPT\ndiscussing efficiency by calculating the number of times a function is called"
   },
@@ -2285,5 +2285,47 @@
       "Content",
       "Week 03: Classes, Operator Overloading, etc."
     ]
+  },
+  {
+    "objectID": "slides/lab00-slides.html#welcome-to-css112-labs",
+    "href": "slides/lab00-slides.html#welcome-to-css112-labs",
+    "title": "CS112 - Data Structures",
+    "section": "Welcome to CSS112 Labs!",
+    "text": "Welcome to CSS112 Labs!\nHave a seat, make sure you are booted to Linux, and log in with your Calvin username and passphrase. (ex: abc2 / passphrase)\nFind a pair to work with during this lab session."
+  },
+  {
+    "objectID": "slides/lab00-slides.html#welcome-to-css112-labs-background-imageimagesslidespexels-markusspiske-225769.jpg-background-opacity",
+    "href": "slides/lab00-slides.html#welcome-to-css112-labs-background-imageimagesslidespexels-markusspiske-225769.jpg-background-opacity",
+    "title": "CS112 - Data Structures",
+    "section": "Welcome to CSS112 Labs! {background-image=“/images/slides/pexels-markusspiske-225769.jpg” background-opacity }",
+    "text": "Welcome to CSS112 Labs! {background-image=“/images/slides/pexels-markusspiske-225769.jpg” background-opacity }"
+  },
+  {
+    "objectID": "slides/lab00-slides.html#about-me",
+    "href": "slides/lab00-slides.html#about-me",
+    "title": "CS112 - Data Structures",
+    "section": "About me",
+    "text": "About me\n\n\n\n\n\n\n\n\n\nBSc. from UFV (Brazil), MSc. from UFMG (Brazil), PhD from VU Amsterdam (The Netherlands)\nI was a Professor in Brazil for 13+ years before joining Calvin University\nOffice: NH293\nOffice hours: Tuesdays 2-3pm & Thursdays 10.30-11.30am"
+  },
+  {
+    "objectID": "slides/lab00-slides.html#about-prof.-araújo",
+    "href": "slides/lab00-slides.html#about-prof.-araújo",
+    "title": "CS112 - Data Structures",
+    "section": "About prof. Araújo",
+    "text": "About prof. Araújo\n\n\n\n\n\n\n\n\nProf. Eric Araújo was born in Brazil, where he was a Professor for 13+ years before joining Calvin University last summer. His research interest lie in Cognitive Modeling. He got his PhD from the VU Amsterdam (The Netherlands), where he met his wife, Amy. Prof. Araújo love board games, C.S. Lewis and his beloved soccer team, Cruzeiro."
+  },
+  {
+    "objectID": "slides/lab00-slides.html#about-prof.-araújo-1",
+    "href": "slides/lab00-slides.html#about-prof.-araújo-1",
+    "title": "CS112 - Data Structures",
+    "section": "About prof. Araújo",
+    "text": "About prof. Araújo\n\n\n\n\n\n\n\n\n\nBSc. from UFV (Brazil), MSc. from UFMG (Brazil), PhD from VU Amsterdam (The Netherlands)\nI was a Professor in Brazil for 13+ years before joining Calvin University\nOffice: NH293\nOffice hours: Tuesdays 2-3pm & Thursdays 10.30-11.30am"
+  },
+  {
+    "objectID": "slides/lab00-slides.html#about-prof.-norman",
+    "href": "slides/lab00-slides.html#about-prof.-norman",
+    "title": "CS112 - Data Structures",
+    "section": "About prof. Norman",
+    "text": "About prof. Norman\n\n\n\n\n\n\n\n\nProf. Victor Norman has been teaching CS112 for about 5 years. His research interests lie in Pedagogical best practices and integrating faith and computer science. For fun, he writes code! He also enjoys playing his euphonium in the Calvin Symphonic Band and Burton Street Brass quintent."
   }
 ]
