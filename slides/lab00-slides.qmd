@@ -131,7 +131,7 @@ These techniques are used in Software Engineering industry as best practices for
 
 :::{.column width="50%"}
 
-Calvin University is committed to offering **free tutoring** for most 100 and 200 level courses. Tutoring is a **weekly one-hour** commitment for the duration of the semester. Tutors at Calvin have been recommended by faculty members, have successfully completed the course, and have completed extensive training on student learning practices provided by the Center for Student Success.
+Calvin University is committed to offering **free tutoring** for most 100 and 200 level courses. Tutoring is a **weekly one-hour** commitment for the duration of the semester. Tutors at Calvin have been recommended by faculty members, have successfully completed the course, and have completed extensive training on student learning practices provided by the Center for Student Success. These are held **from 7-9pm on Monday & Thursday in Science Building Lab 337**, beginning on **January 27**, 2025, and offer you 4 hours of help each week.
 :::
 ::::
 
@@ -174,24 +174,27 @@ This is especially important for resources such as ChatGPT! Part of using code g
 :::
 ::::
 
-## Bible Reflection for a Data Structures Lab Session
+## CRA Annual Survey for students
 
-**Verse:** *"Let all things be done decently and in order."* — 1 Corinthians 14:40
+![Five hundred $25.00(USD) Amazon gift cards! 25 minutes to complete.](/images/slides/qualtrics.png){fig-align="center"}
 
-As we dive into the intricacies of data structures, this verse reminds us of the importance of organization and structure, not just in our code but also in life. Data structures like arrays, trees, and graphs teach us that even the most complex systems can be understood and managed when approached with order and clarity.
+Deadline: 01/28
 
-God’s creation reflects His intentional design—everything has a purpose and place, from the smallest atom to the vastness of the universe. Similarly, in our programming, we use data structures to bring order to chaos, enabling efficiency and clarity in solving problems.
+## Five Commitments for the Semester {style="font-size: 80%;"}
 
-As we work on today’s lab, let us remember that the discipline and creativity we apply to our work reflect the order and purpose God calls us to embody. Let’s strive to build systems that not only function well but also mirror the excellence and intentionality of our Creator.
+1. **Teach** I will do my best to teach you what you need to succeed in this course. Sincere feedback is always welcome.
+2. **Build relationships** I hope to get to know you better as we progress in the course, and to support you in your faith and intellectual journey.
+3. **Availability** I'll be available to have some coffee while answering your questions.
+4. **Encouragement** I will encourage you to persist when stuck in your assignments, and I won't give prompt answers so you have the opportunity to overcome your challenges.
+5. **Learn** I will aim to learn from all of you. I count on you for this one. Please share.
 
-**Prayer:**
-Lord, thank You for the gift of logic and creativity. Help us to approach our work with diligence and clarity, bringing order to our ideas just as You bring order to all creation. May our efforts in this lab glorify You and serve as a reflection of Your wisdom. Amen.
 
-## Lab 9
+## {style="font-size: 90%;"}
 
--   creating recursive functions using ChatGPT
--   discussing efficiency by calculating the number of times a function is called
+"Imagine yourself as a **living house**. God comes in to rebuild that house. At first, perhaps, you can understand what He is doing. He is getting the drains right and stopping the leaks in the roof and so on; you knew that those jobs needed doing and so you are not surprised. But presently He starts knocking the house about in a way that hurts abominably and does not seem to make any sense. **What on earth is He up to?** The explanation is that He is building quite a different house from the one you thought of - throwing out a new wing here, putting on an extra floor there, running up towers, making courtyards. You thought you were being made into a decent little cottage: but **He is building a palace**. He intends to come and live in it Himself."
 
-------------------------------------------------------------------------
+C.S. Lewis | Mere Christianity 
 
-------------------------------------------------------------------------
+## Lab 00
+
+![](/images/slides/ericaraujo.png)
