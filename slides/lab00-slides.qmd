@@ -17,7 +17,7 @@ title-slide-attributes:
 #       countIncrementalSlides: false
 format: 
     revealjs:
-        theme: simple
+        theme: default
         menu: false
         slide-level: 2
         navigation-mode: linear
@@ -41,7 +41,7 @@ Calvin username and passphrase. (ex: abc2 / passphrase)
 
 Find a pair to work with during this lab session.
 
-## About prof. Araújo
+## About Prof. Araújo
 
 :::: {.columns}
 
@@ -107,7 +107,7 @@ These techniques are used in Software Engineering industry as best practices for
 
 ## What else do you need to know...
 
-**Grades:** Your CS112 lab grade is the SAME as your CS112 lecture grade. Prof. Norman and prof. Araújo will give the grade to you at the end of the semester. Everything should be submitted via Github. Labs are due **Thursday** night by 11:59pm. Projects are due **Monday** night by 11.59pm
+**Grades:** Your CS112 lab grade is the SAME as your CS112 lecture grade. Prof. Norman and Prof. Araújo will give the grade to you at the end of the semester. Everything should be submitted via Github. Labs are due **Thursday** night by 11:59pm. Projects are due **Monday** night by 11.59pm
 
 ## What else do you need to know...
 
