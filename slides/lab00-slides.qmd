@@ -5,7 +5,7 @@ author: "Eric Araújo"
 title-slide-attributes:
   data-background-image: /images/slides/pexels-jeshoots-238118.jpg
   data-background-size: contain
-  data-background-opacity: "0.5"
+  data-background-opacity: "0.3"
 # output:
 #   xaringan::moon_reader:
 #     css: ["../xaringan-themer.css", "../slides.css"]
@@ -25,6 +25,7 @@ format:
         scrollable: true
         history: false
         logo: /images/calvin-logo.png
+        css: slides-style.css
         # simplemenu:
         #     scale: 0.6
         #     barhtml:
@@ -69,23 +70,109 @@ Prof. Victor Norman has been teaching CS112 for about 5 years. His research inte
 
 ::::
 
+## Timeline of the labs
+
+![](/images/slides/lab-timeline.png)
 
 
-## Dad joke of the week
+## {background-color="black" background-image="/images/slides/Albert-Einstein.png" background-size="110%"}
 
-:::::: columns
-::: {.column width="50%"}
-![](/labs/imgs/lab09-repete.png){fig-alt="." fig-align="left" width="100%"}
+:::: {.columns}
+
+::: {.column width="40%"}
+
 :::
 
-::: {.column width="5%"}
-<!-- empty column to create gap -->
+::: {.column width="40%" .incremental}
+- Whoever invented knockknock jokes...
+- Deserves a no-bell prize.
+:::
+::::
+
+## Pair Programming {.smaller}
+
+You are required to use [Pair Programming]{.underline} techniques.
+
+These techniques are used in Software Engineering industry as best practices for creating higher-quality code with less errors than single-person programming. Plan on working with the same partners for ~3 weeks before we will change partners.
+
+**Basic concept:**
+
+:::{.incremental}
+- Person 1 sits at the keyboard and does the typing
+- Person 2 tells the person at the keyboard what to type
+- Switch after 10-15 minutes.
+- Talking tells me this is working. ;) Crickets chirping tells me it isn’t working.
+- One person will submit your code for both to Github.
 :::
 
-::: {.column width="35%"}
-Pete and Repete are on a boat. Pete falls off. Who's left on the boat?
+## What else do you need to know...
+
+**Grades:** Your CS112 lab grade is the SAME as your CS112 lecture grade. Prof. Norman and prof. Araújo will give the grade to you at the end of the semester. Everything should be submitted via Github. Labs are due **Thursday** night by 11:59pm. Projects are due **Monday** night by 11.59pm
+
+## What else do you need to know...
+
+**Study Sessions!** Monday and Thursday 7:00pm-9:00pm in SB337 Lab! Upper-class CS/DS students can help with any questions you have on labs, homeworks, etc.
+
+## What else do you need to know...
+
+**Labs** SB354, SB372 and SB337 can be used anytime for lab work and homework if there isn’t a class there! These labs dual boot between Linux and Windows; you will utilize Linux for this class. You may also complete the whole class using your own laptop – see Moodle for setup instructions.
+
+## What else do you need to know...
+
+**Getting to know each other better:** I'm available for a coffee if you want/need to discuss anything related to the course, or soccer, or the weather, or theology, or board games. I mean, feel free to schedule with me to have some time together. Don't be afraid of asking for help if you are struggling with anything.
+
+## {.smaller}
+
+::::{.columns style='align-items: center; display: flex;'}
+
+:::{.column width="50%"}
+![](/images/slides/CS112-tutoring.jpg)
 :::
-::::::
+
+:::{.column width="50%"}
+
+Calvin University is committed to offering **free tutoring** for most 100 and 200 level courses. Tutoring is a **weekly one-hour** commitment for the duration of the semester. Tutors at Calvin have been recommended by faculty members, have successfully completed the course, and have completed extensive training on student learning practices provided by the Center for Student Success.
+:::
+::::
+
+## Academic Integrity {.smaller}
+
+::::{.columns}
+
+:::{.column width="30%"}
+
+![](/images/slides/lab00-integrity.jpg)
+
+:::
+
+:::{.column width="70%"}
+
+**Yes, there is academic integrity in coding! And yes, it is *super* easy for your professors to detect if you copy code from the web. (Remember, some/most of your professors are older than Google. That means we’ve had a LOT of practice finding stuff on the web.)**
+
+Can you use code from the web? Yes. Make sure you cite it appropriately in comments. Do I recommend it? Maybe. If you can’t understand the code that you copy, it may not be wise to use it. You may have unintended consequences for using a bit of code you don’t understand...
+
+:::
+::::
+
+## Academic Integrity {.smaller}
+
+::::{.columns}
+
+:::{.column width="30%"}
+
+![](/images/slides/lab00-integrity.jpg)
+
+:::
+
+:::{.column width="70%"}
+
+Overall, all code that is pair programmed should be marked appropriately - the author’s name, email address, and date of programming. You should not claim other author’s code as your own. Appropriately cite any code you take from the web, and make it clear what is your code and what is copied code.
+
+This is especially important for resources such as ChatGPT! Part of using code generated by ChatGPT is linking the source conversation.
+
+**Side note: any code you submit for labs/projects/etc should be able to be 100% understood by yourself and others!**
+:::
+::::
 
 ## Bible Reflection for a Data Structures Lab Session
 
