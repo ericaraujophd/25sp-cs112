@@ -1,7 +1,7 @@
 ---
 title: "CS112 - Data Structures"
 subtitle: "<br><br> 25SP LABS"
-author: "Eric Araújo"
+author: "Prof. Norman and Prof. Araújo"
 title-slide-attributes:
   data-background-image: /images/slides/pexels-jeshoots-238118.jpg
   data-background-size: contain
@@ -197,4 +197,4 @@ C.S. Lewis | Mere Christianity
 
 ## Lab 00
 
-![](/images/slides/ericaraujo.png)
+![](/images/slides/ericaraujo.png){width="50%"}
