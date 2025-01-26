@@ -115,10 +115,16 @@ Each lab and homework will contain a link to a **GitHub Classroom** assignment i
 
 When you click on the link, a repository for you will be created. The webpage will give you instructions on how to see that repository. The webpage for your repo will look something like this: **https://github.com/24SP-CS112/lab00-yourgithubteam**
 
+:::{.callout-important}
 Click on the [invitation for this lab.](https://classroom.github.com/a/AloYXnvi){target="_blank"}
+:::
+
+<!-- ::: callout-important
+All labs are meant to be done in pairs using pair programming. That is: you **must** find a pair before accepting the invitation. For the labs, **and only for the labs**, the invitation will require you create or join a Team. The first to accept the invitation should create a Team name, so your partner can join in afterwards.
+::: -->
 
 ::: callout-important
-All labs are meant to be done in pairs using pair programming. That is: you **must** find a pair before accepting the invitation. For the labs, **and only for the labs**, the invitation will require you create or join a Team. The first to accept the invitation should create a Team name, so your partner can join in afterwards.
+All labs are meant to be done in pairs using pair programming but this one! That is: you **must** configure your VS Code and Github individually in order to work in the other assignments.
 :::
 
 Go to the webpage for your repository. You will need to get the ID of the repo. To get this, you click on the button **\<\> Code**, then click on the SSH tab. Then click on the two boxes to the right of where it says `git@github.com:...`. This copies your repo id to your clipboard.
@@ -131,11 +137,11 @@ The instructions in each assignment will remind you what to do:
 
 -   Open a terminal (it could be the terminal from Linux or you can use the terminal from VS Code by typing Ctr + Shift + \`).
 -   `cd cs112`
--   `git clone <your github repo here>` (replace everything between \< and \>)
+-   `git clone your-github-repo-url-here`
 
-For Lab 0, do this now replacing `<your github repo here>` with what you copied to your clipboard (i.e., paste it in).
+For Lab 0, do this now replacing `your-github-repo-url-here` with what you copied to your clipboard (i.e., paste it in).
 
-When you do this, `git clone` will download your repo to your **cs112** directory, into a directory called **lab0-yourgithubaccount** (where **yourgithubaccount** is actually your github account name.
+When you do this, `git clone your-github-repo-url-here` will download your repo to your **cs112** directory, into a directory called **lab0-yourgithubaccount** (where **yourgithubaccount** is actually your github account name.
 
 In the terminal do the following:
 

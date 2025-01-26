@@ -294,7 +294,6 @@ Note
 <h2 class="anchored" data-anchor-id="creating-a-project">Creating a Project</h2>
 <p>Each lab and homework will contain a link to a <strong>GitHub Classroom</strong> assignment invitation. The lab or homework will give you instructions on how to accept the invitation and then download the code for that assignment.</p>
 <p>When you click on the link, a repository for you will be created. The webpage will give you instructions on how to see that repository. The webpage for your repo will look something like this: <strong>https://github.com/24SP-CS112/lab00-yourgithubteam</strong></p>
-<p>Click on the <a href="https://classroom.github.com/a/AloYXnvi" target="_blank">invitation for this lab.</a></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -305,7 +304,23 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>All labs are meant to be done in pairs using pair programming. That is: you <strong>must</strong> find a pair before accepting the invitation. For the labs, <strong>and only for the labs</strong>, the invitation will require you create or join a Team. The first to accept the invitation should create a Team name, so your partner can join in afterwards.</p>
+<p>Click on the <a href="https://classroom.github.com/a/AloYXnvi" target="_blank">invitation for this lab.</a></p>
+</div>
+</div>
+<!-- ::: callout-important
+All labs are meant to be done in pairs using pair programming. That is: you **must** find a pair before accepting the invitation. For the labs, **and only for the labs**, the invitation will require you create or join a Team. The first to accept the invitation should create a Team name, so your partner can join in afterwards.
+::: -->
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All labs are meant to be done in pairs using pair programming but this one! That is: you <strong>must</strong> configure your VS Code and Github individually in order to work in the other assignments.</p>
 </div>
 </div>
 <p>Go to the webpage for your repository. You will need to get the ID of the repo. To get this, you click on the button <strong>&lt;&gt; Code</strong>, then click on the SSH tab. Then click on the two boxes to the right of where it says <code>git@github.com:...</code>. This copies your repo id to your clipboard.</p>
@@ -315,10 +330,10 @@ Important
 <ul>
 <li>Open a terminal (it could be the terminal from Linux or you can use the terminal from VS Code by typing Ctr + Shift + `).</li>
 <li><code>cd cs112</code></li>
-<li><code>git clone &lt;your github repo here&gt;</code> (replace everything between &lt; and &gt;)</li>
+<li><code>git clone your-github-repo-url-here</code></li>
 </ul>
-<p>For Lab 0, do this now replacing <code>&lt;your github repo here&gt;</code> with what you copied to your clipboard (i.e., paste it in).</p>
-<p>When you do this, <code>git clone</code> will download your repo to your <strong>cs112</strong> directory, into a directory called <strong>lab0-yourgithubaccount</strong> (where <strong>yourgithubaccount</strong> is actually your github account name.</p>
+<p>For Lab 0, do this now replacing <code>your-github-repo-url-here</code> with what you copied to your clipboard (i.e., paste it in).</p>
+<p>When you do this, <code>git clone your-github-repo-url-here</code> will download your repo to your <strong>cs112</strong> directory, into a directory called <strong>lab0-yourgithubaccount</strong> (where <strong>yourgithubaccount</strong> is actually your github account name.</p>
 <p>In the terminal do the following:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This will show you the name of the directory containing the <strong>lab0</strong> code.</p>

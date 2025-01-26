@@ -1,0 +1,62 @@
+---
+title: "CS112 - Data Structures"
+subtitle: "<br><br> 25SP LAB 01"
+author: "Prof. Norman and Prof. Araújo"
+title-slide-attributes:
+  data-background-image: /images/slides/pexels-jeshoots-238118.jpg
+  data-background-size: contain
+  data-background-opacity: "0.3"
+# output:
+#   xaringan::moon_reader:
+#     css: ["../xaringan-themer.css", "../slides.css"]
+#     lib_dir: libs
+#     nature:
+#       ratio: "16:9"
+#       highlightLines: true
+#       highlightStyle: solarized-light
+#       countIncrementalSlides: false
+format: 
+    revealjs:
+        theme: default
+        menu: false
+        slide-level: 2
+        navigation-mode: linear
+        transition: slide
+        scrollable: true
+        history: false
+        logo: /images/calvin-logo.png
+        css: slides-style.css
+        # simplemenu:
+        #     scale: 0.6
+        #     barhtml:
+        #         header: "<div class='menubar'><a href='../week05.html'>back</a><ul class='menu'></ul></div>"
+# revealjs-plugins:
+#     - simplemenu
+---
+
+## Lab 01: What is it about?
+
+
+## Reflection
+
+::::: columns
+::: {.column width="40%"}
+![](/images/slides/68B8675F-1A08-466C-A749-D8B7E6B37E95.JPG){fig-alt="." fig-align="left" width="100%"}
+:::
+
+::: {.column width="60%"}
+Prof. Eric Araújo was born in Brazil, where he was a Professor for 13+ years before joining Calvin University last summer. His research interest lie in Cognitive Modeling. He got his PhD from the VU Amsterdam (The Netherlands), where he met his wife, Amy. Prof. Araújo loves board games, C.S. Lewis and his beloved soccer team, Cruzeiro.
+:::
+:::::
+
+## Dad Joke of the Week
+
+::::: columns
+::: {.column width="40%"}
+![](/images/slides/me.jpg){fig-alt="." fig-align="left" width="100%"}
+:::
+
+::: {.column width="60%"}
+Prof. Victor Norman has been teaching CS112 for about 5 years. His research interests lie in Pedagogical best practices and integrating faith and computer science. For fun, he writes code! He also enjoys playing his euphonium in the Calvin Symphonic Band and Burton Street Brass quintent.
+:::
+:::::
