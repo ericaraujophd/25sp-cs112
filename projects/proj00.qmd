@@ -31,7 +31,7 @@ eval: false
 -   Click the green [**Code**]{style="color:green;"} button, then SSH, and copy the link it shows.
 -   In a terminal,
     -   `cd` to the directory where you are putting all your CS112 assignments.
-    -   type: `git clone <paste-the-contents-of-the-link-you-copied>`
+    -   type: `git clone paste-the-contents-of-the-link-you-copied`
 -   `cd` to the new directory containing your repo.
 -   type `code .` to start up Visual Studio Code in that directory.
 -   Inspect the code you got in the assignment.
