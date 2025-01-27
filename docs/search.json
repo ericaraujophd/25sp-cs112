@@ -1915,7 +1915,7 @@
     "href": "projects/proj01.html#step-0.-prepare",
     "title": "Project 01: More Control Structures",
     "section": "Step 0. Prepare",
-    "text": "Step 0. Prepare\n\nClick this link and then “Accept this assignment”.\nWait a few seconds and refresh the page. Refresh until the page says “You’re ready to go!”. The page has a link to a github repo.\nClick the link to see your new repo on github.com.\nClick the green Code button and copy the SSH link it shows.\nIn a terminal,\n\ncd to the directory where you are putting all your CS112 assignments.\ntype git clone &lt;paste-the-contents-of-the-link-you-copied&gt;\n\ncd to the new directory containing your repo.\ntype code . to start up Visual Studio Code in that directory.\nInspect the code you got in the assignment."
+    "text": "Step 0. Prepare\n\nClick this link and then “Accept this assignment”.\nWait a few seconds and refresh the page. Refresh until the page says “You’re ready to go!”. The page has a link to a github repo.\nClick the link to see your new repo on github.com.\nClick the green Code button and copy the SSH link it shows.\nIn a terminal,\n\ncd to the directory where you are putting all your CS112 assignments.\ntype git clone paste-the-contents-of-the-link-you-copied\n\ncd to the new directory containing your repo.\ntype code . to start up Visual Studio Code in that directory.\nInspect the code you got in the assignment."
   },
   {
     "objectID": "projects/proj01.html#step-1.-function-practice-1",

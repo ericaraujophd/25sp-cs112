@@ -21,19 +21,19 @@ eval: false
 
 ## Objectives:
 
-1.  Practice using for loops, while loops, and if statements.
+1.  Practice using `for` loops, `while` loops, and `if` statements.
 2.  Practice creating functions and passing parameters.
 3.  Practice writing unit tests.
 
 ## Step 0. Prepare
 
--   Click [this link](https://classroom.github.com/a/_PwngVPD){target="_blank"} and then "Accept this assignment".
+-   Click [this link](){target="_blank"} and then "Accept this assignment".
 -   Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
 -   Click the link to see your new repo on github.com.
 -   Click the green [**Code**]{style="color:green;"} button and copy the SSH link it shows.
 -   In a terminal,
     -   `cd` to the directory where you are putting all your CS112 assignments.
-    -   type `git clone <paste-the-contents-of-the-link-you-copied>`
+    -   type `git clone paste-the-contents-of-the-link-you-copied`
 -   `cd` to the new directory containing your repo.
 -   type `code .` to start up Visual Studio Code in that directory.
 -   Inspect the code you got in the assignment.
@@ -42,11 +42,11 @@ eval: false
 
 In **utils.h**, create a function **prototype** called `constrain()` that has 3 parameters:
 
--   value, a double
--   low, a double
--   high, a double
+-   value, a `double`
+-   low, a `double`
+-   high, a `double`
 
-`constrain()` returns a **double**, which is the value constrained by low and high. I.e., if the value is greater than high then, return high. If it is less than low, return low. Else, return the value itself unchanged. Remember, in **utils.h** you are writing just the prototype.
+`constrain()` returns a `double`, which is the value constrained by low and high. I.e., if the value is greater than high then, return high. If it is less than low, return low. Else, return the value itself unchanged. Remember, in **utils.h** you are writing just the prototype.
 
 Now, in **utils.cpp**, implement the function.
 

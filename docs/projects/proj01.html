@@ -248,7 +248,7 @@ Prime Numbers.
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives:</h2>
 <ol type="1">
-<li>Practice using for loops, while loops, and if statements.</li>
+<li>Practice using <code>for</code> loops, <code>while</code> loops, and <code>if</code> statements.</li>
 <li>Practice creating functions and passing parameters.</li>
 <li>Practice writing unit tests.</li>
 </ol>
@@ -256,14 +256,14 @@ Prime Numbers.
 <section id="step-0.-prepare" class="level2">
 <h2 class="anchored" data-anchor-id="step-0.-prepare">Step 0. Prepare</h2>
 <ul>
-<li>Click <a href="https://classroom.github.com/a/_PwngVPD" target="_blank">this link</a> and then “Accept this assignment”.</li>
+<li>Click <a href="" target="_blank">this link</a> and then “Accept this assignment”.</li>
 <li>Wait a few seconds and refresh the page. Refresh until the page says “You’re ready to go!”. The page has a link to a github repo.</li>
 <li>Click the link to see your new repo on github.com.</li>
 <li>Click the green <span style="color:green;"><strong>Code</strong></span> button and copy the SSH link it shows.</li>
 <li>In a terminal,
 <ul>
 <li><code>cd</code> to the directory where you are putting all your CS112 assignments.</li>
-<li>type <code>git clone &lt;paste-the-contents-of-the-link-you-copied&gt;</code></li>
+<li>type <code>git clone paste-the-contents-of-the-link-you-copied</code></li>
 </ul></li>
 <li><code>cd</code> to the new directory containing your repo.</li>
 <li>type <code>code .</code> to start up Visual Studio Code in that directory.</li>
@@ -274,11 +274,11 @@ Prime Numbers.
 <h2 class="anchored" data-anchor-id="step-1.-function-practice-1">Step 1. function practice, 1</h2>
 <p>In <strong>utils.h</strong>, create a function <strong>prototype</strong> called <code>constrain()</code> that has 3 parameters:</p>
 <ul>
-<li>value, a double</li>
-<li>low, a double</li>
-<li>high, a double</li>
+<li>value, a <code>double</code></li>
+<li>low, a <code>double</code></li>
+<li>high, a <code>double</code></li>
 </ul>
-<p><code>constrain()</code> returns a <strong>double</strong>, which is the value constrained by low and high. I.e., if the value is greater than high then, return high. If it is less than low, return low. Else, return the value itself unchanged. Remember, in <strong>utils.h</strong> you are writing just the prototype.</p>
+<p><code>constrain()</code> returns a <code>double</code>, which is the value constrained by low and high. I.e., if the value is greater than high then, return high. If it is less than low, return low. Else, return the value itself unchanged. Remember, in <strong>utils.h</strong> you are writing just the prototype.</p>
 <p>Now, in <strong>utils.cpp</strong>, implement the function.</p>
 <p>In <strong>tests.cpp</strong>, in the <code>TEST_CASE("step1")</code>, add more <code>REQUIRES()</code> function calls to test that your function is correct in all cases. We have provided one test there already.</p>
 <p>Compile using <code>make</code>. Then, run like this:</p>
