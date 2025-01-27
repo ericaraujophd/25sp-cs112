@@ -25,17 +25,15 @@ At the end of this unit, students will be able to...
 [Slides](https://docs.google.com/presentation/d/1uux2sZHfW1BRzdjNmUDpt5TDD7hOEgbLBW-G7KJNNUc/edit?usp=sharing){target="_blank"}
 :::
 
-
 ::: reading
 -   [Chapters 3 and 4](https://runestone.academy/runestone/books/published/cpp4python/index.html){target="_blank"}
 :::
 
-```{=html}
-<!-- ::: video
-[Video](https://youtu.be/_YqEHZccujc)
+
+::: reading
+[Makefiles](https://makefiletutorial.com/){target="_blank"}
 :::
--->
-```
+
 :::::
 
 <!-- ## Lab -->
