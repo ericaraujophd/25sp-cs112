@@ -52,15 +52,15 @@ Think about the algorithm to find a duplicate value in an array. Consider the fo
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-nrix{text-align:center;vertical-align:middle}
+.tg .tg-jlbi{font-family:"Lucida Console", Monaco, monospace !important;font-size:22px;text-align:center;vertical-align:middle}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
 <div class="tg-wrap"><table class="tg"><thead>
   <tr>
-    <td class="tg-nrix">11</td>
-    <td class="tg-nrix">7</td>
-    <td class="tg-nrix">31</td>
-    <td class="tg-nrix">4</td>
-    <td class="tg-nrix">7</td>
+    <td class="tg-jlbi">11</td>
+    <td class="tg-jlbi">7</td>
+    <td class="tg-jlbi">31</td>
+    <td class="tg-jlbi">4</td>
+    <td class="tg-jlbi">7</td>
   </tr></thead>
 </table></div>
 
