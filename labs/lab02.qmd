@@ -23,21 +23,22 @@ In this exercise, you will:
 
 1.  Read in a file and process its contents.
 2.  Practice creating functions
-3.  Practice writing for loops and if statements.
+3.  Practice writing `for` loops and `if` statements.
 4.  Use the debugger to execute a program statement by statement.
 
 ## Step 0. Prepare
 
--   Click [this link]() and then "Accept this assignment".
+-   Find a partner before starting anything!
+-   Click [this link](){target="_blank"} and then scroll down to choose a Team name. "Accept this assignment".
 -   Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
 -   Click the link to see your new repo on github.com.
 -   Click the green [**Code**]{style="color:green"} button and copy the SSH link it shows.
 -   In a terminal,
     -   `cd` to the directory where you are putting all your CS112 assignments.
-    -   type `git clone <paste-the-contents-of-the-link-you-copied>`
+    -   type `git clone paste-the-contents-of-the-link-you-copied`
 -   `cd` to the new directory containing your repo.
 -   type `code .` to start up Visual Studio Code in that directory.
--   Make sure both you and your partner are in the same Team for this assignment.
+-   Make sure both you and your partner are in the same Team for this assignment. Only one of you will work on the code at a time during the session.
 -   Inspect the code you got in the assignment.
 
 ## Finding duplicates in an array of integers
@@ -46,6 +47,7 @@ In this assignment, you will write a short function, `findDuplicate()`, that sea
 
 Think about the algorithm to find a duplicate value in an array. Consider the following array:
 
+```{=html}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -54,20 +56,57 @@ Think about the algorithm to find a duplicate value in an array. Consider the fo
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-jlbi{font-family:"Lucida Console", Monaco, monospace !important;font-size:22px;text-align:center;vertical-align:middle}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-<div class="tg-wrap"><table class="tg"><thead>
-  <tr>
-    <td class="tg-jlbi">11</td>
-    <td class="tg-jlbi">7</td>
-    <td class="tg-jlbi">31</td>
-    <td class="tg-jlbi">4</td>
-    <td class="tg-jlbi">7</td>
-  </tr></thead>
-</table></div>
+```
+
+::: tg-wrap
+<table class="tg">
+
+<thead>
+
+<tr>
+
+<td class="tg-jlbi">
+
+11
+
+</td>
+
+<td class="tg-jlbi">
+
+7
+
+</td>
+
+<td class="tg-jlbi">
+
+31
+
+</td>
+
+<td class="tg-jlbi">
+
+4
+
+</td>
+
+<td class="tg-jlbi">
+
+7
+
+</td>
+
+</tr>
+
+</thead>
+
+</table>
+:::
 
 How would you write code to detect that 7 is in the array twice? Talk to your partner about your algorithm. I highly recommend you write pseudo-code for your algorithm. If you want to finish the lab in an efficient way, you'll take time to write the algorithm and test it on some inputs, revising it until you get it right.
 
 When you have an algorithm, consider this array:
 
+```{=html}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -76,18 +115,55 @@ When you have an algorithm, consider this array:
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-jlbi{font-family:"Lucida Console", Monaco, monospace !important;font-size:22px;text-align:center;vertical-align:middle}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-<div class="tg-wrap"><table class="tg"><thead>
-  <tr>
-    <td class="tg-jlbi">11</td>
-    <td class="tg-jlbi">7</td>
-    <td class="tg-jlbi">7</td>
-    <td class="tg-jlbi">4</td>
-    <td class="tg-jlbi">71</td>
-  </tr></thead>
-</table></div>
+```
+
+::: tg-wrap
+<table class="tg">
+
+<thead>
+
+<tr>
+
+<td class="tg-jlbi">
+
+11
+
+</td>
+
+<td class="tg-jlbi">
+
+7
+
+</td>
+
+<td class="tg-jlbi">
+
+7
+
+</td>
+
+<td class="tg-jlbi">
+
+4
+
+</td>
+
+<td class="tg-jlbi">
+
+71
+
+</td>
+
+</tr>
+
+</thead>
+
+</table>
+:::
 
 And this array:
 
+```{=html}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -96,15 +172,51 @@ And this array:
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-jlbi{font-family:"Lucida Console", Monaco, monospace !important;font-size:22px;text-align:center;vertical-align:middle}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-<div class="tg-wrap"><table class="tg"><thead>
-  <tr>
-    <td class="tg-jlbi">11</td>
-    <td class="tg-jlbi">7</td>
-    <td class="tg-jlbi">7</td>
-    <td class="tg-jlbi">4</td>
-    <td class="tg-jlbi">71</td>
-  </tr></thead>
-</table></div>
+```
+
+::: tg-wrap
+<table class="tg">
+
+<thead>
+
+<tr>
+
+<td class="tg-jlbi">
+
+7
+
+</td>
+
+<td class="tg-jlbi">
+
+43
+
+</td>
+
+<td class="tg-jlbi">
+
+31
+
+</td>
+
+<td class="tg-jlbi">
+
+12
+
+</td>
+
+<td class="tg-jlbi">
+
+71
+
+</td>
+
+</tr>
+
+</thead>
+
+</table>
+:::
 
 Does your algorithm seem to work on these arrays? Will your algorithm work for arrays with 10,000 values? How about an array with 0 elements or 1 element? Does it work?
 
@@ -127,7 +239,7 @@ Your function is called `findDuplicate()`, has 3 parameters, and returns **bool*
 ```
 
 | Parameter name | Parameter type | Description |
-|----------------|----------------|----------------------------------------|
+|-----------------|-----------------|--------------------------------------|
 | arr | array of int | arr of integers to search |
 | size | int | size of the array |
 | dup_value | int & | The out parameter containing the first duplicate value, if one is found. |
@@ -138,7 +250,7 @@ The function's prototype should look like this:
 bool findDuplicate(int arr[], int size, int &dup_value);
 ```
 
-That's all that you should have in your .h file.
+That's all that you should have in your header (.h) file.
 
 In **functions.cpp**, implement your function. To repeat from above: If a duplicate value is found, the function returns **true**, and "returns" the duplicate value through the *out* parameter, **dup_value**. If no duplicate value is found, the function returns **false**. Work from your algorithm. Do your best to implement the function correctly, but don't take too much time on this, as the next steps will help you make sure your code is correct.
 

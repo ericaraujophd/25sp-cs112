@@ -219,14 +219,14 @@ Now, Commit and Sync your code to github. Make sure the appropriate tests pass.
 
 Now, write code to:
 
-1.  implement a function called `getPlan()` and move your code from **Step 3** above into it. The function returns the **string** ("silver" or "gold") that the user enters. This function (and the ones in the next steps) is again in **functions.cpp** and **functions.h**.
-2.  move the code that gets the number of months from the user into a function called `getMonths()`. This function returns the number of months a user enters. Note that the prompt asking the user to enter the number of months should read something nice, like this:
+1.  implement a function called `getPlan()` and copy your code from **Step 3** above into it. The function returns the **string** ("silver" or "gold") that the user enters. This function (and the ones in the next steps) is again in **functions.cpp** and **functions.h**.
+2.  copy the code that gets the number of months from the user into a function called `getMonths()`. This function returns the number of months a user enters. Note that the prompt asking the user to enter the number of months should read something nice, like this:
 
 ```         
     Enter the number of months: 
 ```
 
-3.  move the code that computes the cost into a function called `computeCost()`. This function takes the plan name and the months as arguments and returns the cost.
+3.  copy the code that computes the cost into a function called `computeCost()`. This function takes the plan name and the months as arguments and returns the cost.
 4.  Uncomment and study step7 of **tests.cpp**. The code just does 4 things: call `getPlan()`, call `getMonths()`, call `computeCost()`, and print out the cost. Anyone who looks at that code will understand it because the code is short and uses good function names.
 
 Test with:

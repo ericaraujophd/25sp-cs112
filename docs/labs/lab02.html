@@ -224,25 +224,26 @@ Beware of the bugs!
 <ol type="1">
 <li>Read in a file and process its contents.</li>
 <li>Practice creating functions</li>
-<li>Practice writing for loops and if statements.</li>
+<li>Practice writing <code>for</code> loops and <code>if</code> statements.</li>
 <li>Use the debugger to execute a program statement by statement.</li>
 </ol>
 </section>
 <section id="step-0.-prepare" class="level2">
 <h2 class="anchored" data-anchor-id="step-0.-prepare">Step 0. Prepare</h2>
 <ul>
-<li>Click <a href="">this link</a> and then “Accept this assignment”.</li>
+<li>Find a partner before starting anything!</li>
+<li>Click <a href="" target="_blank">this link</a> and then scroll down to choose a Team name. “Accept this assignment”.</li>
 <li>Wait a few seconds and refresh the page. Refresh until the page says “You’re ready to go!”. The page has a link to a github repo.</li>
 <li>Click the link to see your new repo on github.com.</li>
 <li>Click the green <span style="color:green"><strong>Code</strong></span> button and copy the SSH link it shows.</li>
 <li>In a terminal,
 <ul>
 <li><code>cd</code> to the directory where you are putting all your CS112 assignments.</li>
-<li>type <code>git clone &lt;paste-the-contents-of-the-link-you-copied&gt;</code></li>
+<li>type <code>git clone paste-the-contents-of-the-link-you-copied</code></li>
 </ul></li>
 <li><code>cd</code> to the new directory containing your repo.</li>
 <li>type <code>code .</code> to start up Visual Studio Code in that directory.</li>
-<li>Make sure both you and your partner are in the same Team for this assignment.</li>
+<li>Make sure both you and your partner are in the same Team for this assignment. Only one of you will work on the code at a time during the session.</li>
 <li>Inspect the code you got in the assignment.</li>
 </ul>
 </section>
@@ -263,19 +264,19 @@ Beware of the bugs!
 <thead>
 <tr>
 <td class="tg-jlbi">
-11
+<p>11</p>
 </td>
 <td class="tg-jlbi">
-7
+<p>7</p>
 </td>
 <td class="tg-jlbi">
-31
+<p>31</p>
 </td>
 <td class="tg-jlbi">
-4
+<p>4</p>
 </td>
 <td class="tg-jlbi">
-7
+<p>7</p>
 </td>
 </tr>
 </thead>
@@ -296,19 +297,19 @@ Beware of the bugs!
 <thead>
 <tr>
 <td class="tg-jlbi">
-11
+<p>11</p>
 </td>
 <td class="tg-jlbi">
-7
+<p>7</p>
 </td>
 <td class="tg-jlbi">
-7
+<p>7</p>
 </td>
 <td class="tg-jlbi">
-4
+<p>4</p>
 </td>
 <td class="tg-jlbi">
-71
+<p>71</p>
 </td>
 </tr>
 </thead>
@@ -328,19 +329,19 @@ Beware of the bugs!
 <thead>
 <tr>
 <td class="tg-jlbi">
-11
+<p>7</p>
 </td>
 <td class="tg-jlbi">
-7
+<p>43</p>
 </td>
 <td class="tg-jlbi">
-7
+<p>31</p>
 </td>
 <td class="tg-jlbi">
-4
+<p>12</p>
 </td>
 <td class="tg-jlbi">
-71
+<p>71</p>
 </td>
 </tr>
 </thead>
@@ -363,9 +364,9 @@ Beware of the bugs!
 </style>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 22%">
-<col style="width: 22%">
-<col style="width: 55%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 52%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -394,7 +395,7 @@ Beware of the bugs!
 </table>
 <p>The function’s prototype should look like this:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">bool</span> findDuplicate<span class="op">(</span><span class="dt">int</span> arr<span class="op">[],</span> <span class="dt">int</span> size<span class="op">,</span> <span class="dt">int</span> <span class="op">&amp;</span>dup_value<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>That’s all that you should have in your .h file.</p>
+<p>That’s all that you should have in your header (.h) file.</p>
 <p>In <strong>functions.cpp</strong>, implement your function. To repeat from above: If a duplicate value is found, the function returns <strong>true</strong>, and “returns” the duplicate value through the <em>out</em> parameter, <strong>dup_value</strong>. If no duplicate value is found, the function returns <strong>false</strong>. Work from your algorithm. Do your best to implement the function correctly, but don’t take too much time on this, as the next steps will help you make sure your code is correct.</p>
 </section>
 <section id="step-2.-unit-test-your-function" class="level2">
