@@ -68,37 +68,43 @@ How would you write code to detect that 7 is in the array twice? Talk to your pa
 
 When you have an algorithm, consider this array:
 
-```{=html}
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-</style>
-```
-
-|     |     |     |     |     |
-|-----|-----|-----|-----|-----|
-| 11  | 07   | 07   | 04   | 71  |
+.tg .tg-jlbi{font-family:"Lucida Console", Monaco, monospace !important;font-size:22px;text-align:center;vertical-align:middle}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+<div class="tg-wrap"><table class="tg"><thead>
+  <tr>
+    <td class="tg-jlbi">11</td>
+    <td class="tg-jlbi">7</td>
+    <td class="tg-jlbi">7</td>
+    <td class="tg-jlbi">4</td>
+    <td class="tg-jlbi">71</td>
+  </tr></thead>
+</table></div>
 
 And this array:
 
-```{=html}
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-</style>
-```
-
-|     |     |     |     |     |
-|-----|-----|-----|-----|-----|
-| 07   | 43  | 31  | 12  | 71  |
+.tg .tg-jlbi{font-family:"Lucida Console", Monaco, monospace !important;font-size:22px;text-align:center;vertical-align:middle}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
+<div class="tg-wrap"><table class="tg"><thead>
+  <tr>
+    <td class="tg-jlbi">11</td>
+    <td class="tg-jlbi">7</td>
+    <td class="tg-jlbi">7</td>
+    <td class="tg-jlbi">4</td>
+    <td class="tg-jlbi">71</td>
+  </tr></thead>
+</table></div>
 
 Does your algorithm seem to work on these arrays? Will your algorithm work for arrays with 10,000 values? How about an array with 0 elements or 1 element? Does it work?
 
