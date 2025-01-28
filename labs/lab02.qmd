@@ -46,22 +46,23 @@ In this assignment, you will write a short function, `findDuplicate()`, that sea
 
 Think about the algorithm to find a duplicate value in an array. Consider the following array:
 
-```{=html}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-```
-
-::: tg-wrap
-+----+---+----+---+---+
-| 11 | 7 | 31 | 4 | 7 |
-+----+---+----+---+---+
-:::
+<div class="tg-wrap"><table class="tg"><thead>
+  <tr>
+    <td class="tg-nrix">11</td>
+    <td class="tg-nrix">7</td>
+    <td class="tg-nrix">31</td>
+    <td class="tg-nrix">4</td>
+    <td class="tg-nrix">7</td>
+  </tr></thead>
+</table></div>
 
 How would you write code to detect that 7 is in the array twice? Talk to your partner about your algorithm. I highly recommend you write pseudo-code for your algorithm. If you want to finish the lab in an efficient way, you'll take time to write the algorithm and test it on some inputs, revising it until you get it right.
 
@@ -78,9 +79,9 @@ When you have an algorithm, consider this array:
 </style>
 ```
 
-+----+---+---+---+----+
-| 11 | 7 | 7 | 4 | 71 |
-+----+---+---+---+----+
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| 11  | 07   | 07   | 04   | 71  |
 
 And this array:
 
@@ -95,9 +96,9 @@ And this array:
 </style>
 ```
 
-+---+----+----+----+----+
-| 7 | 43 | 31 | 12 | 71 |
-+---+----+----+----+----+
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| 07   | 43  | 31  | 12  | 71  |
 
 Does your algorithm seem to work on these arrays? Will your algorithm work for arrays with 10,000 values? How about an array with 0 elements or 1 element? Does it work?
 
@@ -119,15 +120,11 @@ Your function is called `findDuplicate()`, has 3 parameters, and returns **bool*
 </style>
 ```
 
-+----------------------+----------------------+--------------------------------------------------------------------------+
-| Parameter name       | Parameter type       | Description                                                              |
-+======================+======================+==========================================================================+
-| arr                  | array of int         | arr of integers to search                                                |
-+----------------------+----------------------+--------------------------------------------------------------------------+
-| size                 | int                  | size of the array                                                        |
-+----------------------+----------------------+--------------------------------------------------------------------------+
-| dup_value            | int &                | The out parameter containing the first duplicate value, if one is found. |
-+----------------------+----------------------+--------------------------------------------------------------------------+
+| Parameter name | Parameter type | Description |
+|----------------|----------------|----------------------------------------|
+| arr | array of int | arr of integers to search |
+| size | int | size of the array |
+| dup_value | int & | The out parameter containing the first duplicate value, if one is found. |
 
 The function's prototype should look like this:
 
