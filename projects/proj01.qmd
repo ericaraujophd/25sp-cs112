@@ -1,6 +1,6 @@
 ---
 title: "Project 01: More Control Structures"
-format: 
+format:
   html:
     css: /projects/proj-styles.css
 # engine: knitr
@@ -27,7 +27,7 @@ eval: false
 
 ## Step 0. Prepare
 
--   Click [this link](){target="_blank"} and then "Accept this assignment".
+-   Click [this link](https://classroom.github.com/a/_PwngVPD){target="_blank"} and then "Accept this assignment".
 -   Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
 -   Click the link to see your new repo on github.com.
 -   Click the green [**Code**]{style="color:green;"} button and copy the SSH link it shows.
@@ -82,10 +82,10 @@ Write a function prototype `isPrime()` in the **primes.h** file. The function ta
 
 For the implementation in the .cpp file, `isPrime()` returns **true** if the value is a prime number (and **false** otherwise). Here is the pseudo-code:
 
-```         
+```
 A prime number is a number that is evenly divisible by only itself and 1. That is,
   for each integer "divisor" value from 2 through n / 2,
-    if you divide the number by that divisor, and the remainder is 0, 
+    if you divide the number by that divisor, and the remainder is 0,
           that number is not prime -- return false.
   if you get through all possible divisors, the number is prime: return true.
 ```
