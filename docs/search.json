@@ -1223,6 +1223,20 @@
     "text": "Step 5. Implement your application\nNow that you have a good function that finds duplicates, use it to implement a simple application.\nLook in main.cpp, where you will find the steps to implement, as comments.\nCompile your code with\nmake lab2\nImplement steps 1 - 6 of the algorithm. Step 4 is implemented for you already (assuming you read in the number of lines in the file into a variable named size).\nI HIGHLY RECOMMEND YOU IMPLEMENT your code in small iterations: just write the code for Step 1., compile it and make sure it is correct. Then go on to Step 2. Repeat…\nStep 7. says to “print appropriate output”. This means your application should either print out that there are no duplicates, or should print out that a duplicate was found, and should print what that duplicate value is. E.g., here are a few runs of my solution:\n% ./lab2\nEnter a filename: input_files/in3.txt\nEnter the number of lines in the file: 0\nNo duplicate number was found.\nand another run:\n% ./lab2\nEnter a filename: input_files/in5.txt\nEnter the number of lines in the file: 5\nA duplicate number, 91, has been found.\n\n\n\n\n\n\nNote\n\n\n\nYour output must match the output above EXACTLY. You should try your solution against all the files in the input_files/ directory. These files will be used in the autograding tests run when you submit."
   },
   {
+    "objectID": "labs/lab02.html#submit",
+    "href": "labs/lab02.html#submit",
+    "title": "Lab 02: File I/O, Control Structures, and the Debugger",
+    "section": "Submit",
+    "text": "Submit\nIn VS Code, click on the Source Control icon on the upper left and type in a commit message, then click the checkmark icon to submit your code. Go through the various pop-up boxes to commit and SYNC your changes to your repo.\nVerify you have synced your code to github by going to your online repo webpage and looking to see that the files are correct.\nAlso, check to see that the automated tests pass."
+  },
+  {
+    "objectID": "labs/lab02.html#grading-rubric",
+    "href": "labs/lab02.html#grading-rubric",
+    "title": "Lab 02: File I/O, Control Structures, and the Debugger",
+    "section": "Grading Rubric",
+    "text": "Grading Rubric\nYour submission will be graded this way: 18 pts total\n\n10 pts for a correct function implementation\n7 pts for correct code in main().\n\n1 pts for style: good variable names, perfect indentation, etc.\n\nWays students have lost points in the past:\n\n-1: For loop in main.cpp has no body (or no semicolon, either way the code did not compile).\n-1: No assert statement for when the file is not opened; missing body or semicolon causes the “numbers” variable not to be recognized by the compiler.\n-10% (-1.8) for 1 day late.\n-1: Improper indentation in main.cpp.\n-1: Poor formatting.\n-1: Array not dynamically allocated with “new” (Step 4)."
+  },
+  {
     "objectID": "labs/lab03.html",
     "href": "labs/lab03.html",
     "title": "Lab 03: Classes",

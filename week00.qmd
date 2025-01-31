@@ -64,8 +64,7 @@ At the end of this unit, students will be able to...
 :::
 
 ::: slides
-Dad Joke + Reflection
-[Slides](/slides/lab00-slides.qmd)
+Dad Joke + Reflection [Slides](/slides/lab00-slides.qmd)
 :::
 ::::::
 

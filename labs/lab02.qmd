@@ -390,4 +390,30 @@ A duplicate number, 91, has been found.
 Your output must match the output above EXACTLY. You should try your solution against all the files in the `input_files/` directory. These files will be used in the autograding tests run when you submit.
 :::
 
+
+## Submit
+
+In VS Code, click on the **Source Control** icon on the upper left and type in a commit message, then click the checkmark icon to submit your code. Go through the various pop-up boxes to commit and SYNC your changes to your repo.
+
+Verify you have synced your code to github by going to your online repo webpage and looking to see that the files are correct.
+
+Also, check to see that the automated tests pass.
+
+## Grading Rubric
+
+Your submission will be graded this way: 18 pts total
+
+- 10 pts for a correct function implementation 
+- 7 pts for correct code in main(). 			
+- 1 pts for style: good variable names, perfect indentation, etc.
+
+Ways students have lost points in the past:
+
+- -1: For loop in main.cpp has no body (or no semicolon, either way the code did not compile). 
+- -1: No assert statement for when the file is not opened; missing body or semicolon causes the "numbers" variable not to be recognized by the compiler. 
+- -10% (-1.8) for 1 day late.
+- -1: Improper indentation in main.cpp.
+- -1: Poor formatting.
+- -1: Array not dynamically allocated with "new" (Step 4).
+
 <!-- [^1]: how to add footnotes. -->
