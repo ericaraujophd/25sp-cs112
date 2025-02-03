@@ -82,7 +82,7 @@ Write a function prototype `isPrime()` in the **primes.h** file. The function ta
 
 For the implementation in the .cpp file, `isPrime()` returns **true** if the value is a prime number (and **false** otherwise). Here is the pseudo-code:
 
-```
+```         
 A prime number is a number that is evenly divisible by only itself and 1. That is,
   for each integer "divisor" value from 2 through n / 2,
     if you divide the number by that divisor, and the remainder is 0,
