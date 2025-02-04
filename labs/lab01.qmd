@@ -80,115 +80,15 @@ Add code in **functions.cpp** in `insurance()` to implement the insurance plan s
 ```
 
 ::: tg-wrap
-<table class="tg">
-
-<thead>
-
-<tr>
-
-<th class="tg-0lax">
-
-</th>
-
-<th class="tg-0lax" colspan="3">
-
-[Months]{style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td class="tg-0lax">
-
-[Plan Name]{style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[1]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[2-6]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[7+]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="tg-0lax">
-
-[silver]{style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[\$90]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[\$60]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[\$60]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-</tr>
-
-<tr>
-
-<td class="tg-0lax">
-
-[gold]{style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[\$90]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[\$70]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-<td class="tg-0lax">
-
-[\$35]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
++-----------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                       | \[Months\]{style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent"} |
++=======================================================================================================================+====================================================================================================================+
+| \[Plan Name\]{style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent"} | \[1\]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}      |
++-----------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| \[silver\]{style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}    | \[\\\$90\]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"} |
++-----------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| \[gold\]{style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent"}      | \[\\\$90\]{style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"} |
++-----------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 :::
 
 <!-- ![Plan table](/images/labs/lab01/plan-table.png) -->

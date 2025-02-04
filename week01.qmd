@@ -18,7 +18,7 @@ At the end of this unit, students will be able to...
 
 ## Slides, videos, and application exercises
 
-::::: slide-deck
+:::::: slide-deck
 **Week 01: Slides**
 
 ::: slides
@@ -29,12 +29,10 @@ At the end of this unit, students will be able to...
 -   [Chapters 3 and 4](https://runestone.academy/runestone/books/published/cpp4python/index.html){target="_blank"}
 :::
 
-
 ::: reading
 [Makefiles](https://makefiletutorial.com/){target="_blank"}
 :::
-
-:::::
+::::::
 
 <!-- ## Lab -->
 
@@ -50,7 +48,7 @@ At the end of this unit, students will be able to...
 :::
 
 ::: slides
-[Dad Joke + Reflection](https://calvincollege-my.sharepoint.com/:p:/g/personal/ea47_calvin_edu/EbpOOgr61e5Ev_psySo8a8wBbEegXYjHNfaMsdA6SMoIKg?e=TC2lXw){target="_blank"}
+[Dad Joke + Reflection](https://calvincollege-my.sharepoint.com/:p:/g/personal/ea47_calvin_edu/EbpOOgr61e5Ev_psySo8a8wBg-r1uLwWAEXCMBSpVwVzqQ?e=Z5gIW4){target="_blank"}
 :::
 ::::::
 
