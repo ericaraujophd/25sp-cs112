@@ -372,7 +372,7 @@ Step 7. says to "print appropriate output". This means your application should e
 
 ``` bash
 % ./lab2
-Enter a filename: input_files/in3.txt
+Enter a filename: input_files/in0.txt
 Enter the number of lines in the file: 0
 No duplicate number was found.
 ```
