@@ -109,7 +109,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../labs/lab-styles.css">
 <meta property="og:title" content="Lab 03: Classes – CS112 - Data Structures">
 <meta property="og:description" content="CS112 will teach students to use C++ for creating data structures.">
-<meta property="og:image" content="https://ericaraujo.com/24fa-cs112/images/labs/lab03/student-cover.jpeg">
 <meta property="og:site_name" content="CS112 - Data Structures">
 <meta name="twitter:title" content="Lab 03: Classes – CS112 - Data Structures">
 <meta name="twitter:description" content="CS112 will teach students to use C++ for creating data structures.">
@@ -223,23 +222,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <center>
 <figure class="figure">
-<p><img src="../images/labs/lab03/student-cover.jpeg" alt="A cartoon style image of a computer science student wearing a T-shirt with a binary code pattern" width="400" class="figure-img"></p>
+<p><img src="../images/labs/lab03/classy.gif" alt="Classy." width="400" class="figure-img"></p>
 <figcaption>
-A student created by AI.
+ClassY.
 </figcaption>
 </figure>
 </center>
 <section id="step-0.-prepare" class="level2">
 <h2 class="anchored" data-anchor-id="step-0.-prepare">Step 0. Prepare</h2>
 <ul>
-<li>Click this <a href="" target="_blank">link</a> and then “Accept this assignment”. Make sure you and your partner are in the same Team.</li>
+<li>Click this <a href="" target="_blank">link</a> and then “Accept this assignment”. Make sure you and your partner are in the <strong>same Team</strong>. Pick a name for your team different from previous labs. I recommend you keep the name and add a -lab03 to it.</li>
 <li>Wait a few seconds and refresh the page. Refresh until the page says “You’re ready to go!”. The page has a link to a github repo.</li>
 <li>Click the link to see your new repo on github.com.</li>
 <li>Click the green <span style="color:green"><strong>Code</strong></span> button and copy the SSH link it shows.</li>
 <li>In a terminal,
 <ul>
 <li><code>cd</code> to the directory where you are putting all your CS112 assignments.</li>
-<li>type <code>git clone &lt;paste-the-contents-of-the-link-you-copied&gt;</code></li>
+<li>type <code>git clone paste-the-contents-of-the-link-you-copied</code></li>
 </ul></li>
 <li><code>cd</code> to the new directory containing your repo.</li>
 <li>type <code>code .</code> to start up Visual Studio Code in that directory.</li>
@@ -254,53 +253,84 @@ A student created by AI.
 <p>The instance variables for a Student will be:</p>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;margin:0px auto;}
-.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
   font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:0px;color:#333;
   font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
 <div class="tg-wrap">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 13%">
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 62%">
-</colgroup>
+<table class="tg">
 <thead>
-<tr class="header">
-<th>[Instance Variable Name]{style=“color:unset;background-color:unset”}</th>
-<th>[Type]{style=“color:unset;background-color:unset”}</th>
-<th>[Default value]{style=“color:unset;background-color:unset”}</th>
-<th>[Notes]{style=“color:unset;background-color:unset”}</th>
+<tr>
+<th class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Instance Variable Name</span>
+</th>
+<th class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Type</span>
+</th>
+<th class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Default value</span>
+</th>
+<th class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Notes</span>
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>[myName]{style=“color:unset;background-color:unset”}</td>
-<td>[string]{style=“color:unset;background-color:unset”}</td>
-<td>[“”]{style=“color:unset;background-color:unset”}</td>
-<td>[Immutable (NOTE: this]{style=“color:unset;background-color:unset”} [is not]{style=“font-weight:bolder”} [a const in our class, but we will]{style=“color:unset;background-color:unset”} [not]{style=“font-weight:bolder”} [be making setter functions for these immutable values.)]{style=“color:unset;background-color:unset”}</td>
+<tr>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">myName</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">string</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">““</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Immutable (NOTE: this </span><span style="font-weight:700;font-style:normal;text-decoration:underline;color:#000;background-color:transparent">is not</span><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"> a const in our class, but we will </span><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">not </span><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">be making setter functions for these immutable values.)</span>
+</td>
 </tr>
-<tr class="even">
-<td>[myId]{style=“color:unset;background-color:unset”}</td>
-<td>[unsigned int]{style=“color:unset;background-color:unset”}</td>
-<td>[0]{style=“color:unset;background-color:unset”}</td>
-<td>[Immutable (NOTE: this]{style=“color:unset;background-color:unset”} [is not]{style=“font-weight:bolder”} [a const in our class, but we will]{style=“color:unset;background-color:unset”} [not]{style=“font-weight:bolder”} [be making setter functions for these immutable values.)]{style=“color:unset;background-color:unset”}</td>
+<tr>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">myId</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">unsigned int</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Immutable (NOTE: this </span><span style="font-weight:700;font-style:normal;text-decoration:underline;color:#000;background-color:transparent">is not</span><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"> a const in our class, but we will </span><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">not </span><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">be making setter functions for these immutable values.)</span>
+</td>
 </tr>
-<tr class="odd">
-<td>[myGpa]{style=“color:unset;background-color:unset”}</td>
-<td>[float]{style=“color:unset;background-color:unset”}</td>
-<td>[0.0]{style=“color:unset;background-color:unset”}</td>
-<td></td>
+<tr>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">myGpa</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">float</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0.0</span>
+</td>
+<td class="tg-0lax">
+</td>
 </tr>
-<tr class="even">
-<td>[myMajor]{style=“color:unset;background-color:unset”}</td>
-<td>[string]{style=“color:unset;background-color:unset”}</td>
-<td>[“Undecided”]{style=“color:unset;background-color:unset”}</td>
-<td></td>
+<tr>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">myMajor</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">string</span>
+</td>
+<td class="tg-0lax">
+<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">“Undecided”</span>
+</td>
+<td class="tg-0lax">
+</td>
 </tr>
 </tbody>
 </table>
