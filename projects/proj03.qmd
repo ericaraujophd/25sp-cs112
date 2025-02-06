@@ -9,9 +9,9 @@ format:
 
 <figure>
 
-<img src="/images/projects/proj03-header.jpeg" alt="Created by AI Prompt: create a piece of art that echoes grading inside the classroom" width="450"/>
+<img src="/images/projects/proj03-header.gif" alt="Scene from Never Have I Ever" width="450"/>
 
-<figcaption>Created by AI Prompt: *create a piece of art that echoes grading inside the classroom*</figcaption>
+<figcaption>Scene from Never Have I Ever</figcaption>
 
 </figure>
 
@@ -79,41 +79,36 @@ Now, the fun part: when we insert a score into the array, we don't want to just 
 
 For example, suppose the array looks like this:
 
-```{=html}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-nrix{text-align:center;vertical-align:middle}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-```
-
-::: tg-wrap
-<table>
-<tbody>
-<tr class="odd">
-<td><p>100</p></td>
-<td><p>95</p></td>
-<td><p>93</p></td>
-<td><p>89</p></td>
-<td><p>87</p></td>
-<td><p>70</p></td>
-<td><p>49</p></td>
-<td><p>22</p></td>
-<td><p>19</p></td>
-<td><p>17</p></td>
-</tr>
+<div class="tg-wrap"><table class="tg"><tbody>
+  <tr>
+    <td class="tg-0pky">100</td>
+    <td class="tg-0pky">95</td>
+    <td class="tg-0pky">93</td>
+    <td class="tg-0pky">89</td>
+    <td class="tg-0pky">87</td>
+    <td class="tg-0pky">70</td>
+    <td class="tg-0pky">49</td>
+    <td class="tg-0pky">22</td>
+    <td class="tg-0pky">19</td>
+    <td class="tg-0pky">17</td>
+  </tr>
 </tbody>
-</table>
-:::
+</table></div>
+
+
 
 and `myNumScores = 10`.
 
 If the main code now calls `addScore(77)`, the array should look like this:
 
-```{=html}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -122,26 +117,22 @@ If the main code now calls `addScore(77)`, the array should look like this:
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-```
-
-::: tg-wrap
-<table>
-<tbody>
-<tr class="odd">
-<td><p>100</p></td>
-<td><p>95</p></td>
-<td><p>93</p></td>
-<td><p>89</p></td>
-<td><p>87</p></td>
-<td><p>[77]{style=color:red}</p></td>
-<td><p>70</p></td>
-<td><p>49</p></td>
-<td><p>22</p></td>
-<td><p>19</p></td>
-</tr>
+<div class="tg-wrap"><table class="tg"><tbody>
+  <tr>
+    <td class="tg-0lax">100</td>
+    <td class="tg-0lax">95</td>
+    <td class="tg-0lax">93</td>
+    <td class="tg-0lax">89</td>
+    <td class="tg-0lax">87</td>
+    <td class="tg-0lax"><span style="color:red">77</span></td>
+    <td class="tg-0lax">70</td>
+    <td class="tg-0lax">49</td>
+    <td class="tg-0lax">22</td>
+    <td class="tg-0lax">19</td>
+  </tr>
 </tbody>
-</table>
-:::
+</table></div>
+
 
 Notice that every number $<= 77$ has been shifted up in the array, and the last number has been "lost". Even though we have called `addScore()` 11 times, `myNumScores` is still 10.
 
@@ -158,7 +149,6 @@ To summarize, the algorithm for `addScore(score)` is:
 
 To implement this, you must create two **private** methods in the class:
 
-```{=html}
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;margin:0px auto;}
 .tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
@@ -168,17 +158,25 @@ To implement this, you must create two **private** methods in the class:
 .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-```
+<div class="tg-wrap"><table class="tg"><thead>
+  <tr>
+    <th class="tg-1wig"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Method name</span></th>
+    <th class="tg-1wig"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">parameters</span></th>
+    <th class="tg-1wig"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">return type</span></th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">findLocationToInsert()</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">int newScore</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">int: the index of where to insert the newScore, or -1 if the score is not a new high score.</span></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">shiftUp()</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">int fromIndex</span></td>
+    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">void</span></td>
+  </tr>
+</tbody></table></div>
 
-::: tg-wrap
-+------------------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
-| \[Method name\]{style="color:unset;background-color:unset"}            | \[parameters\]{style="color:unset;background-color:unset"}    | \[return type\]{style="color:unset;background-color:unset"}                                                                                 |
-+========================================================================+===============================================================+=============================================================================================================================================+
-| \[findLocationToInsert()\]{style="color:unset;background-color:unset"} | \[int newScore\]{style="color:unset;background-color:unset"}  | \[int: the index of where to insert the newScore, or -1 if the score is not a new high score.\]{style="color:unset;background-color:unset"} |
-+------------------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
-| \[shiftUp()\]{style="color:unset;background-color:unset"}              | \[int fromIndex\]{style="color:unset;background-color:unset"} | \[void\]{style="color:unset;background-color:unset"}                                                                                        |
-+------------------------------------------------------------------------+---------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+
-:::
 
 ::: callout-important
 If the new score is **lower** than all stored high scores, `findLocationToInsert` should return -1. Your code in `addScore()` should handle this situation, as shown in the algorithm above.
