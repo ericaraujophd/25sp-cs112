@@ -61,7 +61,7 @@ No readings for Week 03.
 :::
 
 ::: starter
-[Starter](){target="_blank"}
+[Starter](https://classroom.github.com/a/3KDKrPH7){target="_blank"}
 :::
 :::::
 
