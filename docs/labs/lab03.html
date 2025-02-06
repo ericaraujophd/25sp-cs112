@@ -231,7 +231,7 @@ ClassY.
 <section id="step-0.-prepare" class="level2">
 <h2 class="anchored" data-anchor-id="step-0.-prepare">Step 0. Prepare</h2>
 <ul>
-<li>Click this <a href="" target="_blank">link</a> and then “Accept this assignment”. Make sure you and your partner are in the <strong>same Team</strong>. Pick a name for your team different from previous labs. I recommend you keep the name and add a -lab03 to it.</li>
+<li>Click this <a href="https://classroom.github.com/a/sC4_rfPV" target="_blank">link</a> and then “Accept this assignment”. Make sure you and your partner are in the <strong>same Team</strong>. Pick a name for your team different from previous labs. I recommend you keep the name and add a -lab03 to it.</li>
 <li>Wait a few seconds and refresh the page. Refresh until the page says “You’re ready to go!”. The page has a link to a github repo.</li>
 <li>Click the link to see your new repo on github.com.</li>
 <li>Click the green <span style="color:green"><strong>Code</strong></span> button and copy the SSH link it shows.</li>
@@ -371,7 +371,20 @@ Compile
 </div>
 <p>So, create a getter function (in both the <strong>Student.h</strong> and <strong>Student.cpp</strong> files) called <code>getMajor()</code>.</p>
 <p>Compile and run (in a terminal, run <code>./tester "Student class"</code>) – this should work now.</p>
-<p>Now, repeat the above steps for the other tests and instance variables <strong>(maybe make this part more clear in the future)</strong>. Start with a test in <strong>tests.cpp</strong> first, then implement the prototype and code.</p>
+<p>Now, repeat the above steps for the other tests and instance variables.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>That is, create tests for the getters and then implement them according to the instructions at the table above. Start with a test in <strong>tests.cpp</strong> first, then implement the prototype and code.</p>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -399,13 +412,13 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Example:</strong> for the setGpa test, set the student’s gpa to 3.25, then in a REQUIRE statement, call <code>getGpa()</code> and make sure the value is 3.25.</p>
+<p><strong>Example:</strong> for the <code>setGpa</code> test, set the student’s gpa to 3.25, then in a REQUIRE statement, call <code>getGpa()</code> and make sure the value is 3.25.</p>
 </div>
 </div>
 </section>
 <section id="step-4.-create-an-explicit-value-constructor" class="level3">
 <h3 class="anchored" data-anchor-id="step-4.-create-an-explicit-value-constructor">Step 4. Create an explicit-value constructor</h3>
-<p>Now, create a second constructor – the explicit-value constructor. This constructor should take the two immutable fields as parameters, and store their values in the instance variables. Initialize all the other variables to their default values. BUT FIRST, create tests. I called my SECTION “student explicit-value constructor”, and in it I create a Student with the explicit-value constructor and then use the getters on all instance variables to make sure the object has the correct values in it.</p>
+<p>Now, create a second constructor – the explicit-value constructor. This constructor should take the two immutable fields as parameters, and store their values in the instance variables. Initialize all the other variables to their default values. BUT FIRST, create tests. I called my SECTION <code>"student explicit-value constructor"</code>, and in it I create a <code>Student</code> with the explicit-value constructor and then use the getters on all instance variables to make sure the object has the correct values in it.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -420,7 +433,7 @@ Compile and test the result. Fix any errors.
 </div>
 </div>
 <p>You are now done with this simple class. We could add tons of other functionality to it, but not now…</p>
-<p>Before you go on, <strong>Commit and Sync</strong> your changes to your github repo. You can easily do this from VSCode. After you do this, you should be able to see that the automated tests fail – but the one test that tests the “Student class” passes. If it does not pass, fix your code (or your tests), and resubmit until it does pass.</p>
+<p>Before you go on, <strong>Commit and Sync</strong> your changes to your github repo. You can easily do this from VSCode. After you do this, you should be able to see that the automated tests fail – but the one test that tests the <code>"Student class"</code> passes. If it does not pass, fix your code (or your tests), and resubmit until it does pass.</p>
 </section>
 </section>
 <section id="part-2-fraction-class" class="level2">

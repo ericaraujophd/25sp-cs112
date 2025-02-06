@@ -19,7 +19,7 @@ format:
 
 ## Step 0. Prepare
 
--   Click this [link](){target="_blank"} and then "Accept this assignment". Make sure you and your partner are in the **same Team**. Pick a name for your team different from previous labs. I recommend you keep the name and add a -lab03 to it.
+-   Click this [link](https://classroom.github.com/a/sC4_rfPV){target="_blank"} and then "Accept this assignment". Make sure you and your partner are in the **same Team**. Pick a name for your team different from previous labs. I recommend you keep the name and add a -lab03 to it.
 -   Wait a few seconds and refresh the page. Refresh until the page says "You're ready to go!". The page has a link to a github repo.
 -   Click the link to see your new repo on github.com.
 -   Click the green [**Code**]{style="color:green"} button and copy the SSH link it shows.
@@ -105,7 +105,11 @@ So, create a getter function (in both the **Student.h** and **Student.cpp** file
 
 Compile and run (in a terminal, run `./tester "Student class"`) -- this should work now.
 
-Now, repeat the above steps for the other tests and instance variables **(maybe make this part more clear in the future)**. Start with a test in **tests.cpp** first, then implement the prototype and code.
+Now, repeat the above steps for the other tests and instance variables. 
+
+:::{.callout-important}
+That is, create tests for the getters and then implement them according to the instructions at the table above. Start with a test in **tests.cpp** first, then implement the prototype and code.
+:::
 
 ::: callout-note
 ## NOTE
@@ -118,12 +122,12 @@ Don't delete any old tests -- just keep adding more. Put each test in its own `S
 For the instance variables that are mutable (see the table above), create setter methods. But first, for each, create a test. Put all of these tests in a new `SECTION` within the "Student class" `TEST_CASE`.
 
 ::: callout-tip
-**Example:** for the setGpa test, set the student's gpa to 3.25, then in a REQUIRE statement, call `getGpa()` and make sure the value is 3.25.
+**Example:** for the `setGpa` test, set the student's gpa to 3.25, then in a REQUIRE statement, call `getGpa()` and make sure the value is 3.25.
 :::
 
 ### Step 4. Create an explicit-value constructor
 
-Now, create a second constructor -- the explicit-value constructor. This constructor should take the two immutable fields as parameters, and store their values in the instance variables. Initialize all the other variables to their default values. BUT FIRST, create tests. I called my SECTION "student explicit-value constructor", and in it I create a Student with the explicit-value constructor and then use the getters on all instance variables to make sure the object has the correct values in it.
+Now, create a second constructor -- the explicit-value constructor. This constructor should take the two immutable fields as parameters, and store their values in the instance variables. Initialize all the other variables to their default values. BUT FIRST, create tests. I called my SECTION `"student explicit-value constructor"`, and in it I create a `Student` with the explicit-value constructor and then use the getters on all instance variables to make sure the object has the correct values in it.
 
 ::: callout-important
 ## Compile and test the result. Fix any errors.
@@ -131,7 +135,7 @@ Now, create a second constructor -- the explicit-value constructor. This constru
 
 You are now done with this simple class. We could add tons of other functionality to it, but not now...
 
-Before you go on, **Commit and Sync** your changes to your github repo. You can easily do this from VSCode. After you do this, you should be able to see that the automated tests fail -- but the one test that tests the "Student class" passes. If it does not pass, fix your code (or your tests), and resubmit until it does pass.
+Before you go on, **Commit and Sync** your changes to your github repo. You can easily do this from VSCode. After you do this, you should be able to see that the automated tests fail -- but the one test that tests the `"Student class"` passes. If it does not pass, fix your code (or your tests), and resubmit until it does pass.
 
 ## Part 2: Fraction class
 
