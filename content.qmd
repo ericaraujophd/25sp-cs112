@@ -9,7 +9,7 @@ format:
 CS 112 is organized by week, with each week structured as follows:
 
 -   Classroom sessions are Monday-Wednesday-Friday.
-    -   Prof. Araújo lecures' codes are [available in here](https://github.com/25sp-cs112-org/cs112b-codes){target="_blank"}
+    -   Prof. Araújo lectures' codes are [available in here](https://github.com/25sp-cs112-org/cs112b-codes){target="_blank"}
 -   The lab sessions are on Tuesdays.
 -   Your lab submission is due Thursday at 23:59.
 -   Your project submission is due the next Monday at 23:59 (the night before your next lab).
