@@ -242,7 +242,7 @@ void Vec::setSize(unsigned newSize) {
 }
 ```
 
-Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment all the code in the `TEST_CASE` to test "setSize". Then complete the stub so that it passes the test. Think carefully! This one is deceptively tricky to get right! Algorithm:
+Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment all the code in the `TEST_CASE("setSize")`. Then complete the stub so that it passes the test. Think carefully! This one is deceptively tricky to get right! Algorithm:
 
 1.  If `mySize` and `newSize` are different:
     a.  If `newSize` is zero:
@@ -260,7 +260,7 @@ Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomm
         6.  Deallocate `myArray`.
         7.  Set `myArray` to `newArray`.
 
-When your method passes all tests, continue.
+When your method passes all tests (67 assertions in 9 test cases), continue. 
 
 ## Step 10. Equality
 
@@ -283,13 +283,13 @@ bool Vec::operator==(const Vec& v2) const {
 }
 ```
 
-Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment the code to test "equality". Then add statements to the stub so that it passes the test. Algorithm:
+Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment the code to test "equality" (`TEST_CASE("equality")`). Then add statements to the stub so that it passes the test. Algorithm:
 
 1.  Check to see if `mySize` is NOT the same as the size of v2. If the two vectors are not the same size, return false.
 2.  Compare each item~i~ in `myArray` to each item~i~ from v2's array: If any are not equal, return **false**.
 3.  The two arrays are equal in size, and all their values are the same, so return **true**.
 
-Continue when your method passes all tests.
+Continue when your method passes all tests. By now you should have 74 assertions in 9 test cases.
 
 ## Step 11. ostream Output
 
@@ -302,7 +302,7 @@ void Vec::writeTo(ostream& out) const {
 }
 ```
 
-Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment the test "writeToStream". Then add statements to this stub so that it passes the test. Algorithm:
+Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment the test "writeToStream" (`TEST_CASE("writeToStream")`). Then add statements to this stub so that it passes the test. Algorithm:
 
 -   Send each value in `myArray` to the out stream, followed by a single space.
 

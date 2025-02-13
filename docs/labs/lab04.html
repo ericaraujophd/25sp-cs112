@@ -449,7 +449,7 @@ Important
 <p>Our next operation is to set a Vec’s size via a method (e.g., <code>v.setSize(8);</code>). The role of this method is to allow us to change the size of an existing Vec to some new size. Since the user must specify this new size, we need a parameter to store it. We might start by defining this stub:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> Vec<span class="op">::</span>setSize<span class="op">(</span><span class="dt">unsigned</span> newSize<span class="op">)</span> <span class="op">{</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Place a prototype for this method in the Vec class, and in <strong>tests.cpp</strong>, uncomment all the code in the <code>TEST_CASE</code> to test “setSize”. Then complete the stub so that it passes the test. Think carefully! This one is deceptively tricky to get right! Algorithm:</p>
+<p>Place a prototype for this method in the Vec class, and in <strong>tests.cpp</strong>, uncomment all the code in the <code>TEST_CASE("setSize")</code>. Then complete the stub so that it passes the test. Think carefully! This one is deceptively tricky to get right! Algorithm:</p>
 <ol type="1">
 <li>If <code>mySize</code> and <code>newSize</code> are different:
 <ol type="a">
@@ -475,7 +475,7 @@ Important
 </ol></li>
 </ol></li>
 </ol>
-<p>When your method passes all tests, continue.</p>
+<p>When your method passes all tests (67 assertions in 9 test cases), continue.</p>
 </section>
 <section id="step-10.-equality" class="level2">
 <h2 class="anchored" data-anchor-id="step-10.-equality">Step 10. Equality</h2>
@@ -486,13 +486,13 @@ Important
 <p>This equality operator should not change either of its operands. We start by defining this stub:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="dt">bool</span> Vec<span class="op">::</span><span class="kw">operator</span><span class="op">==(</span><span class="at">const</span> Vec<span class="op">&amp;</span> v2<span class="op">)</span> <span class="at">const</span> <span class="op">{</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Place a prototype for this method in the Vec class, and in <strong>tests.cpp</strong>, uncomment the code to test “equality”. Then add statements to the stub so that it passes the test. Algorithm:</p>
+<p>Place a prototype for this method in the Vec class, and in <strong>tests.cpp</strong>, uncomment the code to test “equality” (<code>TEST_CASE("equality")</code>). Then add statements to the stub so that it passes the test. Algorithm:</p>
 <ol type="1">
 <li>Check to see if <code>mySize</code> is NOT the same as the size of v2. If the two vectors are not the same size, return false.</li>
 <li>Compare each item<sub>i</sub> in <code>myArray</code> to each item<sub>i</sub> from v2’s array: If any are not equal, return <strong>false</strong>.</li>
 <li>The two arrays are equal in size, and all their values are the same, so return <strong>true</strong>.</li>
 </ol>
-<p>Continue when your method passes all tests.</p>
+<p>Continue when your method passes all tests. By now you should have 74 assertions in 9 test cases.</p>
 </section>
 <section id="step-11.-ostream-output" class="level2">
 <h2 class="anchored" data-anchor-id="step-11.-ostream-output">Step 11. ostream Output</h2>
@@ -500,7 +500,7 @@ Important
 <p>Whereas (i) our method returns nothing to its caller, (ii) it needs to “know” the ostream to which it is to write, (iii) it modifies that ostream by inserting items, and (iv) it should not modify any Vec instance variables, we might begin with this stub:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> Vec<span class="op">::</span>writeTo<span class="op">(</span>ostream<span class="op">&amp;</span> out<span class="op">)</span> <span class="at">const</span> <span class="op">{</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Place a prototype for this method in the Vec class, and in <strong>tests.cpp</strong>, uncomment the test “writeToStream”. Then add statements to this stub so that it passes the test. Algorithm:</p>
+<p>Place a prototype for this method in the Vec class, and in <strong>tests.cpp</strong>, uncomment the test “writeToStream” (<code>TEST_CASE("writeToStream")</code>). Then add statements to this stub so that it passes the test. Algorithm:</p>
 <ul>
 <li>Send each value in <code>myArray</code> to the out stream, followed by a single space.</li>
 </ul>
