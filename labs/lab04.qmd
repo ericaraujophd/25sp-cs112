@@ -325,7 +325,7 @@ Assuming that `mySize` equals the number of values in in, the Vec `readFrom(istr
 
 -   Extract each value from `in`, storing each in "the next" item of `myArray`.
 
-Continue when your method passes all the tests. (My solution passes with 80 assertions in 9 test cases)
+Continue when your method passes all the tests. (My solution passes with 82 assertions in 9 test cases. If you have less, uncomment `TEST_CASE("getSize")`)
 
 ::: callout-tip
 ## Congratulations!
