@@ -191,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-11.-ostream-output" id="toc-step-11.-ostream-output" class="nav-link" data-scroll-target="#step-11.-ostream-output">Step 11. ostream Output</a></li>
   <li><a href="#step-12.-istream-input" id="toc-step-12.-istream-input" class="nav-link" data-scroll-target="#step-12.-istream-input">Step 12. istream Input</a></li>
   <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">Submit</a></li>
-  <li><a href="#grading-rubric-24-pts-total" id="toc-grading-rubric-24-pts-total" class="nav-link" data-scroll-target="#grading-rubric-24-pts-total">Grading Rubric: 24 pts total</a></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ericaraujophd/24fa-cs112/edit/main/labs/lab04.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ericaraujophd/24fa-cs112/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -269,7 +269,7 @@ Important
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Compile. debug and fix any errors.
+Compile, debug and fix any errors.
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -279,16 +279,16 @@ Compile. debug and fix any errors.
 </section>
 <section id="step-2.-instance-variables" class="level2">
 <h2 class="anchored" data-anchor-id="step-2.-instance-variables">Step 2. Instance Variables</h2>
-<p>If you look in <strong>Vec.h</strong>, you’ll see that we are (for now) using a <code>typedef</code> to define the identifier <code>Item</code> as a synonym for the type <strong>double</strong>.</p>
+<p>If you look in <strong>Vec.h</strong>, you’ll see that we are (for now) using a <code>typedef</code> to define the identifier <code>Item</code> as a synonym for the type <code>double</code>.</p>
 <p>You’ll also see that the <code>private:</code> section of class Vec is currently empty. As a minimalist dynamic array, our Vec will need to “remember” two things:</p>
 <ol type="1">
 <li>How many Items it is currently storing; and,</li>
-<li>The <code>Items</code> it is currently storing.</li>
+<li>The <code>Item</code>s it is currently storing.</li>
 </ol>
-<p>To let a Vec “remember” the first of these, add an instance variable named <code>mySize</code> of type <strong>unsigned</strong>:</p>
+<p>To let a Vec “remember” the first of these, add an instance variable named <code>mySize</code> of type <code>unsigned</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">private</span><span class="op">:</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unsigned</span> mySize<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>To let a Vec “remember” the second of these, add an instance variable named <code>myArray</code> capable of storing the address of an Item:</p>
+<p>To let a Vec “remember” the second of these, add an instance variable named <code>myArray</code> capable of storing the address of an <code>Item</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">private</span><span class="op">:</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">unsigned</span> mySize<span class="op">;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    Item   <span class="op">*</span>myArray<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -296,8 +296,8 @@ Compile. debug and fix any errors.
 </section>
 <section id="step-3.-the-default-constructor" class="level2">
 <h2 class="anchored" data-anchor-id="step-3.-the-default-constructor">Step 3. The Default Constructor</h2>
-<p>The role of the default constructor is to provide the instance variables with default values. In a data structure, these are usually values that are appropriate for an “empty” structure. In <strong>Vec.cpp</strong>, complete the default constructor for the class, so that it sets <code>mySize</code> to zero, and sets <code>myArray</code> to <strong>nullptr</strong>. Compile and run the project (<code>make tester &amp;&amp; ./tester</code>).</p>
-<p>The test should pass, but notice that it isn’t actually doing anything… To make a useful test, we need to see if <code>mySize</code> is 0 and <code>myArray</code> is <strong>nullptr</strong>. However, <code>myArray</code> and <code>mySize</code> are private, so the test cannot “reach into” the innards of the Vec object to check the values. To resolve this, we will create a getter for <code>mySize</code>. In the .h file, in the <code>public:</code> section, add the prototypes:</p>
+<p>The role of the default constructor is to provide the instance variables with default values. In a data structure, these are usually values that are appropriate for an “empty” structure. In <strong>Vec.cpp</strong>, complete the default constructor for the class, so that it sets <code>mySize</code> to zero, and sets <code>myArray</code> to <code>nullptr</code>. Compile and run the project (<code>make tester &amp;&amp; ./tester</code>).</p>
+<p>The test should pass, but notice that it isn’t actually doing anything… To make a useful test, we need to see if <code>mySize</code> is 0 and <code>myArray</code> is <code>nullptr</code>. However, <code>myArray</code> and <code>mySize</code> are private, so the test cannot “reach into” the innards of the Vec object to check the values. To resolve this, we will create a getter for <code>mySize</code>. In the <strong>.h</strong> file, in the <code>public:</code> section, add the prototypes:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">unsigned</span> getSize<span class="op">()</span> <span class="at">const</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In the <strong>Vec.cpp</strong> file, add this code:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">unsigned</span> Vec<span class="op">::</span>getSize<span class="op">()</span> <span class="at">const</span> <span class="op">{</span></span>
@@ -313,10 +313,10 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Notice that we are <strong>NOT</strong> going to add a getter method for <code>myArray</code>, which would allow a user of the Vec class to get the address where the values are being stored. We do not want to expose this internal detail to the user, as the user could abuse it and start putting values directly into memory. So, because we won’t make a getter for <code>myArray</code>, we won’t be able to make tests to check the value of <code>myArray</code>.</p>
+<p>Notice that we are <strong>NOT</strong> going to add a getter method for <code>myArray</code>, which would allow a user of the Vec class to get the address where the values are being stored. We do not want to expose this internal detail to the user, as the user could abuse it and start putting values directly into memory. So, because we won’t make a getter for <code>myArray</code>, we won’t be able to make tests to check the value of <code>myArray</code>. (Unless we create a method that returns <code>true</code> if <code>myArray</code> is not <code>nullptr</code>, and false otherwise)</p>
 </div>
 </div>
-<p>Uncomment the lines in the first (“default”) <code>SECTION</code> and compile and run (<code>make tester &amp;&amp; ./tester</code>).</p>
+<p>Uncomment the lines in the first (“default”) <code>SECTION</code> and compile and run (<code>make tester &amp;&amp; ./tester</code>). You should get 1 assertion in 9 test cases passed.</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -336,7 +336,7 @@ Before you go the next step!
 <p>The explicit-value constructor’s role is to initialize an object using values provided by the user. In a data structure, the user often wants to specify a non-zero starting size for the structure. (e.g., <code>Vec v(5);</code> should construct <code>v</code> as a vector capable of storing 5 items.) To store the value the user specifies, our constructor will need a parameter, so we might start by writing this stub for the constructor:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Vec<span class="op">::</span>Vec<span class="op">(</span><span class="dt">unsigned</span> size<span class="op">)</span> <span class="op">{</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Put the above code in your .cpp file, and add a prototype for this constructor to the Vec class in <strong>Vec.h</strong>. Then in <strong>tests.cpp</strong>, uncomment the first 2 lines of code in the “explicit-value” SECTION that tests this constructor. Save/compile/run the tests. The test should fail. To make it pass, add code to your explicit-value constructor. Here is the algorithm to follow:</p>
+<p>Put the above code in your <strong>.cpp</strong> file, and add a prototype for this constructor to the Vec class in <strong>Vec.h</strong>. Then in <strong>tests.cpp</strong>, uncomment <strong>ONLY THE FIRST 2 LINES OF CODE</strong> in the “explicit-value” <code>SECTION</code> that tests this constructor (if you hadn’t changed the <strong>tests.cpp</strong> file, those should be lines 14-15). Save/compile/run the tests. The test should fail. To make it pass, add code to your explicit-value constructor. Here is the algorithm to follow:</p>
 <ol type="1">
 <li>Set <code>mySize</code> to <code>size</code></li>
 <li>If <code>size</code> is positive (greater than zero):
@@ -346,24 +346,24 @@ Before you go the next step!
 </ul></li>
 <li>Otherwise:
 <ul>
-<li>Set <code>myArray</code> to <strong>nullptr</strong>.</li>
+<li>Set <code>myArray</code> to <code>nullptr</code>.</li>
 </ul></li>
 </ol>
-<p>Continue when your class passes all tests.</p>
+<p>Continue when your class passes all tests (2 assertions in 9 test cases).</p>
 </section>
 <section id="step-5.-getting-the-value-of-an-item" class="level2">
 <h2 class="anchored" data-anchor-id="step-5.-getting-the-value-of-an-item">Step 5. Getting the Value of an Item</h2>
 <p>The rest of the test for the “explicit-value constructor” looks to see if <code>myArray</code> was initialized correctly. In order to do this, we need to be able to retrieve the value in each location in <code>myArray</code>. To do that, we’ll implement a <code>getItem()</code> method that lets us retrieve the value of an item at a given index (e.g., <code>Item it = v.getItem(i);</code>). Since this method (i) needs the index of the value it is to retrieve, and (ii) does not change its receiver’s instance variables, we will start by defining this stub:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Item Vec<span class="op">::</span>getItem<span class="op">(</span><span class="dt">unsigned</span> index<span class="op">)</span> <span class="at">const</span> <span class="op">{</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Place a prototype for this method in the Vec class, and in <strong>tests.cpp</strong>, uncomment the rest of the test code in the “explicit-value” constructor SECTION. For the sake of time, here is the code for .cpp file:</p>
+<p>Place a prototype for this method in the Vec class, and in <strong>tests.cpp</strong>, uncomment the rest of the test code in the “explicit-value” constructor <code>SECTION</code>. For the sake of time, here is the code for <strong>.cpp</strong> file:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Item Vec<span class="op">::</span>getItem<span class="op">(</span><span class="dt">unsigned</span> index<span class="op">)</span> <span class="at">const</span> <span class="op">{</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>index <span class="op">&lt;</span> <span class="dv">0</span> <span class="op">||</span> index <span class="op">&gt;=</span> mySize<span class="op">)</span> <span class="op">{</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">throw</span> range_error<span class="op">(</span><span class="st">"Bad index"</span><span class="op">);</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> myArray<span class="op">[</span>index<span class="op">];</span></span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>When all tests pass, continue.</p>
+<p>When all tests pass, continue (15 assertions in 9 test cases).</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -383,7 +383,7 @@ Note
 <p>Our next operation is to set the value of a particular item in a Vec (e.g., <code>v.setItem(i, val);</code>). Since the method needs both the index of the item to change, and the new value for the item, we will start with this stub:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> Vec<span class="op">::</span>setItem<span class="op">(</span><span class="dt">unsigned</span> index<span class="op">,</span> <span class="at">const</span> Item<span class="op">&amp;</span> it<span class="op">)</span> <span class="op">{</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Place a prototype for this method in the <code>Vec</code> class, and in <strong>tests.cpp</strong>, uncomment the code to test “setItem”.</p>
+<p>Place a prototype for this method in the <code>Vec</code> class, and in <strong>tests.cpp</strong>, uncomment the code to test <code>TEST_CASE("setItem")</code> (22 assertions in 9 test cases).</p>
 <p>Try to build and run the test to see what errors you get; then complete the stub so that it passes the test. Again, for the sake of time, here is the code for <strong>Vec.cpp</strong>.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> Vec<span class="op">::</span>setItem<span class="op">(</span><span class="dt">unsigned</span> index<span class="op">,</span> <span class="at">const</span> Item<span class="op">&amp;</span> it<span class="op">)</span> <span class="op">{</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>index <span class="op">&lt;</span> <span class="dv">0</span> <span class="op">||</span> index <span class="op">&gt;=</span> mySize<span class="op">)</span> <span class="op">{</span></span>
@@ -391,7 +391,7 @@ Note
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    myArray<span class="op">[</span>index<span class="op">]</span> <span class="op">=</span> it<span class="op">;</span></span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>When all tests pass for testing <code>setItem</code>, also uncomment the <code>getItem</code> TEST_CASE. If you have everything working, you should be passing 29 assertions in 9 test cases.</p>
+<p>When all tests pass for testing <code>setItem</code>, also uncomment the <code>TEST_CASE("getItem")</code>. If you have everything working, you should be passing 29 assertions in 9 test cases.</p>
 </section>
 <section id="step-7.-the-copy-constructor" class="level2">
 <h2 class="anchored" data-anchor-id="step-7.-the-copy-constructor">Step 7. The Copy Constructor</h2>
@@ -417,7 +417,7 @@ Important
 <p>If we were to mistakenly make the copy constructor’s parameter a <strong>call-by-value</strong> parameter instead of a <strong>call-by-const-reference</strong> parameter, an infinite recursion will occur when the copy constructor is invoked. The reason is that passing a Vec to a call-by-value parameter will invoke the copy constructor, which will take the thing to be copied as a parameter, which will invoke the copy constructor, which will take the thing to be copied as a parameter, which will invoke the copy constructor, which… To avoid this, the parameter of a copy constructor should always be a const-reference parameter, as shown above.</p>
 </div>
 </div>
-<p>Add the code above to the .cpp file. Then, add a prototype to the Vec class, and in <strong>tests.cpp</strong> uncomment the code in the “copy” constructor SECTION to test it. Then add statements to your stub to construct a Vec that is a distinct copy of original, and check to see if the tests pass. Here is the algorithm to follow:</p>
+<p>Add the code above to the .cpp file. Then, add a prototype to the Vec class, and in <strong>tests.cpp</strong> uncomment the code in the “copy” constructor SECTION (<code>SECTION("copy")</code>) to test it. Then add statements to your stub to construct a Vec that is a distinct copy of original, and check to see if the tests pass. Here is the algorithm to follow:</p>
 <ol type="1">
 <li>Set <code>mySize</code> to the <code>size</code> of original</li>
 <li>If <code>original.mySize</code> is greater than zero:
@@ -427,7 +427,7 @@ Important
 </ol></li>
 <li>Otherwise, set <code>myArray</code> to <code>nullptr</code>.</li>
 </ol>
-<p>Continue when your constructor passes all tests. (I am now seeing 35 assertions in 9 test cases passing.)</p>
+<p>Continue when your constructor passes all tests. (I am now seeing 42 assertions in 9 test cases passing.)</p>
 </section>
 <section id="step-8.-the-destructor" class="level2">
 <h2 class="anchored" data-anchor-id="step-8.-the-destructor">Step 8. The Destructor</h2>
@@ -437,12 +437,12 @@ Important
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Skeleton code is already in the .h and .cpp files. Uncomment the code to test the destructor in <strong>tests.cpp</strong>. Then add the statements to the destructor to reclaim the dynamic array whose address is in <code>myArray</code>, set <code>myArray</code> to <strong>nullptr</strong>, and set <code>mySize</code> to zero. Compile and see if your statements pass the test. Here is the algorithm to follow:</p>
 <ol type="1">
-<li>Use <code>delete []</code> to deallocate the array whose address is stored in <code>myArray</code> <code>delete [] myArray;</code></li>
+<li>Use <code>delete []</code> to deallocate the array whose address is stored in <code>myArray</code>: <code>delete [] myArray;</code></li>
 <li>Set <code>myArray</code> to <code>nullptr</code></li>
 <li>Set <code>mySize</code> to zero.</li>
 </ol>
 <p>Technically, only the first step is strictly necessary. The reason is that the destructor is only invoked at the end of an object’s lifetime. Since the object will no longer exist, resetting its instance variables is not necessary (except to pass the test).</p>
-<p>Continue when your destructor passes all tests.</p>
+<p>Continue when your destructor passes all tests, including the section <code>TEST_CASE("destructor")</code>. By now, you should have 43 assertions in 9 test cases.</p>
 </section>
 <section id="step-9.-setting-a-vecs-size" class="level2">
 <h2 class="anchored" data-anchor-id="step-9.-setting-a-vecs-size">Step 9. Setting a Vec’s Size</h2>
@@ -538,8 +538,9 @@ Congratulations!
 <p>To verify your submission to github.com, go to a browser and go to the location of your repo in github.com.</p>
 <p>Also, verify that your submission passes all the automated tests in github. The automated tests are the same as those in tests.cpp.</p>
 </section>
-<section id="grading-rubric-24-pts-total" class="level2">
-<h2 class="anchored" data-anchor-id="grading-rubric-24-pts-total">Grading Rubric: 24 pts total</h2>
+<section id="grading-rubric" class="level2">
+<h2 class="anchored" data-anchor-id="grading-rubric">Grading Rubric</h2>
+<p>24 pts total</p>
 <ul>
 <li>16 pts for correct code that passes all the tests</li>
 <li>2 pts for clean, neat code, well-indented, and readable</li>
