@@ -50,7 +50,7 @@ Vec -- A First Dynamic Data Structure
 :::
 
 ::: slides
-[Slides](/slides/lab04-slides.qmd)
+[Slides](){target="_blank"}
 :::
 ::::::
 
