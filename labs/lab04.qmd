@@ -304,9 +304,9 @@ void Vec::writeTo(ostream& out) const {
 
 Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment the test "writeToStream" (`TEST_CASE("writeToStream")`). Then add statements to this stub so that it passes the test. Algorithm:
 
--   Send each value in `myArray` to the out stream, followed by a single space.
+-   Send each value in `myArray` to the `out` stream, followed by a single space.
 
-Continue when your method passes all the tests.
+Continue when your method passes all the tests (75 assertions in 9 test cases).
 
 ## Step 12. istream Input
 
@@ -319,13 +319,13 @@ void Vec::readFrom(istream& in) {
 }
 ```
 
-Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment the test "readFromStream". Then add statements to this stub so that it passes the test.
+Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment the test `TEST_CASE("readFromStream")`. Then add statements to this stub so that it passes the test.
 
 Assuming that `mySize` equals the number of values in in, the Vec `readFrom(istream& in)` method should:
 
--   Extract each value from in, storing each in "the next" item of `myArray`.
+-   Extract each value from `in`, storing each in "the next" item of `myArray`.
 
-Continue when your method passes all the tests. (My solution passes \~82 assertions!)
+Continue when your method passes all the tests. (My solution passes with 80 assertions in 9 test cases)
 
 ::: callout-tip
 ## Congratulations!
