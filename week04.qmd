@@ -1,6 +1,6 @@
 ---
 title: "Week 04: Vectors -- Dynamic Arrays"
-format: 
+format:
   html:
     css: /styles.css
 # draft: true
@@ -32,6 +32,8 @@ Students will be able to...
 ::: reading
 No readings for Week 4.
 :::
+
+[PyList Code from Class](https://calvincollege-my.sharepoint.com/personal/vtn2_calvin_edu/Documents/Forms/All.aspx?FolderCTID=0x012000EFB773C951074442AD945C2617928AA7&id=%2Fpersonal%2Fvtn2_calvin_edu%2FDocuments%2F25sp-cs112%2Fpylist)
 :::::
 
 <!-- ## Lab -->
