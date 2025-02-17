@@ -344,19 +344,47 @@ Warning
 <section id="const-subscript" class="level3">
 <h3 class="anchored" data-anchor-id="const-subscript">1.1 Const subscript</h3>
 <p>If a Vec object is defined as constant then indexing the array in the Vec must also be constant – i.e., it cannot allow code to change the array. In <strong>tests.cpp</strong>, see a function called <code>testConstSubscript()</code>. This function takes a const-ref parameter. The subscripting of that Vec parameter will require us to implement the const subscripting method. The code in the method is identical to the code you wrote in the previous step above, but it returns <code>const Item &amp;</code>, and is a const method – i.e., has <code>const</code> on the end of the line. Implement that method now so that all subscripting tests pass.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The function <code>testConstSubscript()</code> can be found on line 315 in <strong>tests.cpp</strong>. Make sure you uncomment the function and the following <code>TEST_CASE("subscript")</code> and run <code>make tester &amp;&amp; ./tester</code> before proceeding. You should have 131 assertions in 11 test cases passed at this point.</p>
+</div>
+</div>
 </section>
 <section id="vector-addition" class="level3">
 <h3 class="anchored" data-anchor-id="vector-addition">1.2 Vector Addition</h3>
 <p>The expression:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>v3 <span class="op">=</span> v1 <span class="op">+</span> v2<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>should set <code>v3 == {3, 6, 9}</code>, without leaking memory.</p>
-<p>When C++ compiles <code>v1 + v2</code>, it looks at the types of the values that surround the <code>+</code>. It sees that <code>v1</code> is a Vec object, so it actually will call <code>operator+()</code> on the <code>v1</code> object, passing <code>v2</code> as the parameter. Thus, the prototype is <code>Vec Vec::operator+(const Vec &amp;rhs) const</code>. <code>v1</code> is the “this” object that <code>operator+</code> is being called on. <code>v2</code> is being passed in as the <strong>rhs</strong> (right-hand-side) parameter.</p>
-<p>The implementation is quite simple: make sure the sizes of the two Vecs are the same. If not, throw an error of type <code>invalid_argument</code>. If they are the same, create a new Vec object (of the correct size) and loop, repeated adding the values from <code>myArray[i]</code> and <code>rhs[i]</code> together and putting the result into the new Vec object.</p>
+<p>When C++ compiles <code>v1 + v2</code>, it looks at the types of the values that surround the <code>+</code>. It sees that <code>v1</code> is a Vec object, so it actually will call <code>operator+()</code> on the <code>v1</code> object, passing <code>v2</code> as the parameter. Thus, the prototype is</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Vec Vec<span class="op">::</span><span class="kw">operator</span><span class="op">+(</span><span class="at">const</span> Vec <span class="op">&amp;</span>rhs<span class="op">)</span> <span class="at">const</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>v1</code> is the “this” object that <code>operator+</code> is being called on. <code>v2</code> is being passed in as the <strong>rhs</strong> (right-hand-side) parameter.</p>
+<p>Implement it. The implementation is quite simple: make sure the sizes of the two Vecs are the same. If not, throw an error of type <code>invalid_argument</code>. If they are the same, create a new Vec object (of the correct size) and loop, repeated adding the values from <code>myArray[i]</code> and <code>rhs[i]</code> together and putting the result into the new Vec object.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Uncomment the <code>TEST_CASE("addition")</code> in line 344 to test if your code works. Do not move foward if you get errors.You should have 139 assertions in 12 test cases passed at this moment.</p>
+</div>
+</div>
 </section>
 <section id="vector-subtraction" class="level3">
 <h3 class="anchored" data-anchor-id="vector-subtraction">1.3 Vector Subtraction</h3>
 <p>The expression:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>v3 <span class="op">=</span> v1 <span class="op">-</span> v2<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>v3 <span class="op">=</span> v1 <span class="op">-</span> v2<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>should set <code>v3 == {-1, -2, -3}</code>, without leaking memory.</p>
 <p>To make life easier for you, <strong>tests.cpp</strong> contains tests for each of these operations. Use these tests and test-driven development to build your operations. If you get your program to compile, but it fails a test and you cannot figure out what is wrong, <strong>use the debugger</strong>! If necessary, draw a memory diagram and trace through the execution of the problematic function one statement at a time, until you identify the logic error.</p>
 </section>
@@ -401,7 +429,7 @@ Note
 <p>Your application should have the user enter the vectors in the format expected by your <code>readFrom(istream&amp;)</code> method: numbers separated by whitespace. (It does not have to parse through curly-brace and comma characters.) Likewise, your application can display the starship’s position using the format provided by your <code>writeTo(ostream&amp;)</code> method – numbers separated by spaces.</p>
 <p>To get you well on your way, your repo contains <strong>App.cpp</strong> and <strong>App.h</strong>. These files provide most of what you have to implement to finish this project. Just implement the missing TODO parts.</p>
 <p>Now that you have addition implemented, you’ll need to uncomment the line in <strong>App.cpp</strong> that reads</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>res <span class="op">=</span> res <span class="op">+</span> v<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>res <span class="op">=</span> res <span class="op">+</span> v<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You will have to edit <code>main()</code> in <strong>main.cpp</strong> to:</p>
 <ol type="1">
 <li>call the <code>App()</code> constructor, and then</li>
