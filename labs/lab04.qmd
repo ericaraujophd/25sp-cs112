@@ -28,7 +28,7 @@ In this exercise, you will:
 
 ## Introduction
 
-You should know how to [get the assignment](){target="_blank"}. So, do it.
+You should know how to [get the assignment](https://classroom.github.com/a/wFocGkd5){target="_blank"}. So, do it.
 
 ::: callout-important
 Don't forget to make sure you and your partner are in the same Team! Also edit the README.md file and put both of your names and emails in the file.

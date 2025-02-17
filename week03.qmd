@@ -47,7 +47,7 @@ No readings for Week 03.
 :::
 
 ::: slides
-[Slides](/slides/lab03-slides.qmd)
+[Slides](https://calvincollege-my.sharepoint.com/:p:/g/personal/ea47_calvin_edu/ESpo4FJkgElJqLcdoqRKffkB50ivxcC0AHmEcv38EUQqXg?e=3EgLSU){target="_blank"}
 :::
 ::::::
 
