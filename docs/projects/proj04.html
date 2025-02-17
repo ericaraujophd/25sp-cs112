@@ -181,10 +181,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-0.-prepare" id="toc-step-0.-prepare" class="nav-link" data-scroll-target="#step-0.-prepare">Step 0. Prepare</a></li>
   <li><a href="#step-1.-introduction" id="toc-step-1.-introduction" class="nav-link" data-scroll-target="#step-1.-introduction">Step 1. Introduction</a>
   <ul class="collapse">
-  <li><a href="#subscript" id="toc-subscript" class="nav-link" data-scroll-target="#subscript">1 - Subscript</a></li>
-  <li><a href="#const-subscript" id="toc-const-subscript" class="nav-link" data-scroll-target="#const-subscript">2 - Const subscript</a></li>
-  <li><a href="#vector-addition" id="toc-vector-addition" class="nav-link" data-scroll-target="#vector-addition">3 - Vector Addition</a></li>
-  <li><a href="#vector-subtraction" id="toc-vector-subtraction" class="nav-link" data-scroll-target="#vector-subtraction">4 - Vector Subtraction</a></li>
+  <li><a href="#subscript" id="toc-subscript" class="nav-link" data-scroll-target="#subscript">1.0 Subscript</a></li>
+  <li><a href="#const-subscript" id="toc-const-subscript" class="nav-link" data-scroll-target="#const-subscript">1.1 Const subscript</a></li>
+  <li><a href="#vector-addition" id="toc-vector-addition" class="nav-link" data-scroll-target="#vector-addition">1.2 Vector Addition</a></li>
+  <li><a href="#vector-subtraction" id="toc-vector-subtraction" class="nav-link" data-scroll-target="#vector-subtraction">1.3 Vector Subtraction</a></li>
   </ul></li>
   <li><a href="#step-2.-application" id="toc-step-2.-application" class="nav-link" data-scroll-target="#step-2.-application">Step 2. Application</a></li>
   <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">Submit</a></li>
@@ -255,7 +255,7 @@ READ THIS: IT IS DIFFERENT THAN NORMAL!
 <li>In a terminal,
 <ul>
 <li><code>cd</code> to the directory where you are putting all your CS112 assignments.</li>
-<li>type <code>git clone &lt;paste-the-contents-of-the-link-you-copied&gt;</code></li>
+<li>type <code>git clone paste-the-contents-of-the-link-you-copied</code></li>
 </ul></li>
 <li><code>cd</code> to the new directory containing your repo.</li>
 </ul>
@@ -270,9 +270,9 @@ BECAUSE your project depends on your lab code, you need to copy your lab code ov
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><code>cd</code> to your lab04 directory</li>
-<li><code>cp Vec.h Vec.cpp &lt;your project directory&gt;</code></li>
-<li><code>cd</code> to your project directory</li>
+<li><code>cd</code> to your <strong>lab04</strong> directory (use <code>pwd</code> to make sure you are in the right directory)</li>
+<li><code>cp Vec.h Vec.cpp your-project-directory</code> (the full path to your project 4 directory)</li>
+<li><code>cd</code> to your project 4 directory</li>
 </ul>
 </div>
 </div>
@@ -329,7 +329,7 @@ Warning
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>v2 <span class="op">==</span> <span class="op">{</span><span class="dv">2</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">6</span><span class="op">}</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>v3 <span class="op">==</span> <span class="op">{</span><span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="subscript" class="level3">
-<h3 class="anchored" data-anchor-id="subscript">1 - Subscript</h3>
+<h3 class="anchored" data-anchor-id="subscript">1.0 Subscript</h3>
 <p>The subscript operator (<code>[i]</code>) can be implemented such that using subscripting on the left-hand-side of an assignment (i.e., setting a value in the array) and using subscripting on the right-hand-side (i.e., getting a value in the array) both work. Thus, the method will be similar to both <code>setItem(i)</code> and <code>getItem(i)</code>.</p>
 <ul>
 <li>Normally, the subscript operation on an array <strong>does not</strong> perform bounds checking on the index value i, but yours should perform bounds checking. More precisely, your subscript operator should throw a <code>range_error</code> if it is passed a “bad” index value.</li>
@@ -342,11 +342,11 @@ Warning
 <p>Because the method is returning a reference to the item in the array, subscripting works for both sides of an assignment.</p>
 </section>
 <section id="const-subscript" class="level3">
-<h3 class="anchored" data-anchor-id="const-subscript">2 - Const subscript</h3>
+<h3 class="anchored" data-anchor-id="const-subscript">1.1 Const subscript</h3>
 <p>If a Vec object is defined as constant then indexing the array in the Vec must also be constant – i.e., it cannot allow code to change the array. In <strong>tests.cpp</strong>, see a function called <code>testConstSubscript()</code>. This function takes a const-ref parameter. The subscripting of that Vec parameter will require us to implement the const subscripting method. The code in the method is identical to the code you wrote in the previous step above, but it returns <code>const Item &amp;</code>, and is a const method – i.e., has <code>const</code> on the end of the line. Implement that method now so that all subscripting tests pass.</p>
 </section>
 <section id="vector-addition" class="level3">
-<h3 class="anchored" data-anchor-id="vector-addition">3 - Vector Addition</h3>
+<h3 class="anchored" data-anchor-id="vector-addition">1.2 Vector Addition</h3>
 <p>The expression:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>v3 <span class="op">=</span> v1 <span class="op">+</span> v2<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>should set <code>v3 == {3, 6, 9}</code>, without leaking memory.</p>
@@ -354,7 +354,7 @@ Warning
 <p>The implementation is quite simple: make sure the sizes of the two Vecs are the same. If not, throw an error of type <code>invalid_argument</code>. If they are the same, create a new Vec object (of the correct size) and loop, repeated adding the values from <code>myArray[i]</code> and <code>rhs[i]</code> together and putting the result into the new Vec object.</p>
 </section>
 <section id="vector-subtraction" class="level3">
-<h3 class="anchored" data-anchor-id="vector-subtraction">4 - Vector Subtraction</h3>
+<h3 class="anchored" data-anchor-id="vector-subtraction">1.3 Vector Subtraction</h3>
 <p>The expression:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>v3 <span class="op">=</span> v1 <span class="op">-</span> v2<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>should set <code>v3 == {-1, -2, -3}</code>, without leaking memory.</p>
