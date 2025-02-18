@@ -305,6 +305,7 @@ void Vec::writeTo(ostream& out) const {
 Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomment the test "writeToStream" (`TEST_CASE("writeToStream")`). Then add statements to this stub so that it passes the test. Algorithm:
 
 -   Send each value in `myArray` to the `out` stream, followed by a single space.
+-   Use `to_string()` to convert the values to string, otherwise your tests might fail.
 
 Continue when your method passes all the tests (75 assertions in 9 test cases).
 
