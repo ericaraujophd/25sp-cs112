@@ -386,12 +386,24 @@ Note
 <p>The expression:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>v3 <span class="op">=</span> v1 <span class="op">-</span> v2<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>should set <code>v3 == {-1, -2, -3}</code>, without leaking memory.</p>
-<p>To make life easier for you, <strong>tests.cpp</strong> contains tests for each of these operations. Use these tests and test-driven development to build your operations. If you get your program to compile, but it fails a test and you cannot figure out what is wrong, <strong>use the debugger</strong>! If necessary, draw a memory diagram and trace through the execution of the problematic function one statement at a time, until you identify the logic error.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To make life easier for you, <strong>tests.cpp</strong> contains tests for each this operation also (<code>TEST_CASE("subtraction")</code>). Use these tests and test-driven development to build your operations. If you get your program to compile, but it fails a test and you cannot figure out what is wrong, <strong>use the debugger</strong>! If necessary, draw a memory diagram and trace through the execution of the problematic function one statement at a time, until you identify the logic error. At this point, you should have (all going well) 147 assertions in 13 test cases passed.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="step-2.-application" class="level2">
 <h2 class="anchored" data-anchor-id="step-2.-application">Step 2. Application</h2>
-<p>Congratulations! You have been named the navigation officer on the starship <strong>U.S.S. Boobyprize</strong>, whose hyper-spatial engines allow the ship and its crew to explore the universe. Current theories suggest that reality consists of 11 or more dimensions, so you need a program to help you navigate through an N-dimensional space.</p>
+<p>Congratulations! 🎉🎉🎉🎉 You have been named the navigation officer on the starship <strong>U.S.S. Boobyprize</strong>, whose hyper-spatial engines allow the ship and its crew to explore the universe. Current theories suggest that reality consists of 11 or more dimensions, so you need a program to help you navigate through an N-dimensional space.</p>
 <p>Vectors can be used to store positions (and/or directional forces) in a coordinate system. Vectors of length 2 can be used to store 2-dimensional (x, y) information; vectors of length 3 can be used to store 3-dimensional (x, y, z) information; and so on. Your task is to write a program that:</p>
 <ol type="1">
 <li>Prompts for and has the user enter the number of dimensions in their space, storing this number in a variable N, which it can then use to define vector objects.</li>

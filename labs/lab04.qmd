@@ -28,7 +28,7 @@ In this exercise, you will:
 
 ## Introduction
 
-You should know how to [get the assignment](https://classroom.github.com/a/wFocGkd5){target="_blank"}. So, do it.
+You should know how to [get the assignment](https://classroom.github.com/a/XDw01uaw){target="_blank"}. So, do it.
 
 ::: callout-important
 Don't forget to make sure you and your partner are in the same Team! Also edit the README.md file and put both of your names and emails in the file.
@@ -260,7 +260,7 @@ Place a prototype for this method in the Vec class, and in **tests.cpp**, uncomm
         6.  Deallocate `myArray`.
         7.  Set `myArray` to `newArray`.
 
-When your method passes all tests (67 assertions in 9 test cases), continue. 
+When your method passes all tests (67 assertions in 9 test cases), continue.
 
 ## Step 10. Equality
 

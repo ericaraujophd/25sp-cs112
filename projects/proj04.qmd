@@ -155,11 +155,14 @@ v3 = v1 - v2;
 
 should set `v3 == {-1, -2, -3}`, without leaking memory.
 
-To make life easier for you, **tests.cpp** contains tests for each of these operations. Use these tests and test-driven development to build your operations. If you get your program to compile, but it fails a test and you cannot figure out what is wrong, **use the debugger**! If necessary, draw a memory diagram and trace through the execution of the problematic function one statement at a time, until you identify the logic error.
+
+:::{.callout-note}
+To make life easier for you, **tests.cpp** contains tests for each this operation also (`TEST_CASE("subtraction")`). Use these tests and test-driven development to build your operations. If you get your program to compile, but it fails a test and you cannot figure out what is wrong, **use the debugger**! If necessary, draw a memory diagram and trace through the execution of the problematic function one statement at a time, until you identify the logic error. At this point, you should have (all going well) 147 assertions in 13 test cases passed.
+:::
 
 ## Step 2. Application
 
-Congratulations! You have been named the navigation officer on the starship **U.S.S. Boobyprize**, whose hyper-spatial engines allow the ship and its crew to explore the universe. Current theories suggest that reality consists of 11 or more dimensions, so you need a program to help you navigate through an N-dimensional space.
+Congratulations! 🎉🎉🎉🎉 You have been named the navigation officer on the starship **U.S.S. Boobyprize**, whose hyper-spatial engines allow the ship and its crew to explore the universe. Current theories suggest that reality consists of 11 or more dimensions, so you need a program to help you navigate through an N-dimensional space.
 
 Vectors can be used to store positions (and/or directional forces) in a coordinate system. Vectors of length 2 can be used to store 2-dimensional (x, y) information; vectors of length 3 can be used to store 3-dimensional (x, y, z) information; and so on. Your task is to write a program that:
 
