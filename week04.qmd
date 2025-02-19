@@ -68,6 +68,6 @@ Vec -- A First Dynamic Data Structure
 :::
 
 ::: starter
-<!-- [Starter](https://classroom.github.com/a/MYgQH28S){target="_blank"} -->
+[Starter](https://classroom.github.com/a/UNGNFgcx){target="_blank"}
 :::
 :::::
