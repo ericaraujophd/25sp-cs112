@@ -24,11 +24,11 @@ By the end of this unit, students will be able to...
 **Week 05: Slides**
 
 ::: slides
-[Slides](https://docs.google.com/presentation/d/19Dyq-ocaGfhTA623PzKYofXuDHr-gz8eRP19zv65Mu0/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/19Dyq-ocaGfhTA623PzKYofXuDHr-gz8eRP19zv65Mu0/edit?usp=sharing){target="_blank"}
 :::
 
 ::: source
-[Code from Class](https://calvincollege-my.sharepoint.com/:f:/g/personal/vtn2_calvin_edu/Eredz2bHiShCtI0CVssiaggB8tUES6QbacEf2cc4PBhTgQ?e=uoV7Uu)
+[Code from Class](https://calvincollege-my.sharepoint.com/:f:/g/personal/vtn2_calvin_edu/Eredz2bHiShCtI0CVssiaggB8tUES6QbacEf2cc4PBhTgQ?e=uoV7Uu){target="_blank"}
 :::
 
 ::: reading
