@@ -48,20 +48,20 @@ Generic Containers (Templates)
 :::
 
 ::: starter
-[Starter](){target="_blank"}
+[Starter](https://classroom.github.com/a/6VXyhrSc){target="_blank"}
 :::
 
 ::: slides
-[Slides](/slides/lab05-slides.qmd)
+[Slides]()
 :::
 ::::::
 
 <!-- ## Homework assignments -->
 
 ::::: homework
-**Project 05:**
+**Project 05**
 
-Name of Proj 05
+Processing Video Game Data using the Bridges API
 
 ::: instructions
 [Instructions](/projects/proj05.qmd)
