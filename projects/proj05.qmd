@@ -9,7 +9,7 @@ format:
 
 <figure>
 
-<img src="/images/projects/proj05-header.jpeg" alt="Created by AI Prompt: a C++ array fading away" width="350"/>
+<img src="/images/projects/proj05-header.gif" alt="Created by AI Prompt: a C++ array fading away" width="350"/>
 
 <figcaption>Created by AI Prompt: *a C++ array fading away*</figcaption>
 
@@ -39,7 +39,7 @@ This assignment is to process the games to
 
 ## Step 1. Setup
 
-Make your **proj5** repo as normal, using [this link](){target="_blank"}.
+Make your **proj5** repo as normal, using [this link](https://classroom.github.com/a/lrml-eLW){target="_blank"}.
 
 You will need to make yourself a [Bridges Account here](http://bridges-cs.herokuapp.com/signup){target="_blank"}.
 

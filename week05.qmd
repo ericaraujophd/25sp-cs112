@@ -68,6 +68,6 @@ Processing Video Game Data using the Bridges API
 :::
 
 ::: starter
-[Starter](){target="_blank"}
+[Starter](https://classroom.github.com/a/lrml-eLW){target="_blank"}
 :::
 :::::
