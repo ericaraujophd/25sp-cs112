@@ -131,9 +131,9 @@ v3 = v1 + v2;
 
 should set `v3 == {3, 6, 9}`, without leaking memory.
 
-When C++ compiles `v1 + v2`, it looks at the types of the values that surround the `+`. It sees that `v1` is a Vec object, so it actually will call `operator+()` on the `v1` object, passing `v2` as the parameter. Thus, the prototype is 
+When C++ compiles `v1 + v2`, it looks at the types of the values that surround the `+`. It sees that `v1` is a Vec object, so it actually will call `operator+()` on the `v1` object, passing `v2` as the parameter. Thus, the prototype is
 
-```cpp
+``` cpp
 Vec Vec::operator+(const Vec &rhs) const
 ```
 
@@ -141,7 +141,7 @@ Vec Vec::operator+(const Vec &rhs) const
 
 Implement it. The implementation is quite simple: make sure the sizes of the two Vecs are the same. If not, throw an error of type `invalid_argument`. If they are the same, create a new Vec object (of the correct size) and loop, repeated adding the values from `myArray[i]` and `rhs[i]` together and putting the result into the new Vec object.
 
-:::{.callout-note}
+::: callout-note
 Uncomment the `TEST_CASE("addition")` in line 344 to test if your code works. Do not move foward if you get errors.You should have 139 assertions in 12 test cases passed at this moment.
 :::
 
@@ -155,8 +155,7 @@ v3 = v1 - v2;
 
 should set `v3 == {-1, -2, -3}`, without leaking memory.
 
-
-:::{.callout-note}
+::: callout-note
 To make life easier for you, **tests.cpp** contains tests for each this operation also (`TEST_CASE("subtraction")`). Use these tests and test-driven development to build your operations. If you get your program to compile, but it fails a test and you cannot figure out what is wrong, **use the debugger**! If necessary, draw a memory diagram and trace through the execution of the problematic function one statement at a time, until you identify the logic error. At this point, you should have (all going well) 147 assertions in 13 test cases passed.
 :::
 
@@ -176,7 +175,8 @@ Vectors can be used to store positions (and/or directional forces) in a coordina
 
 For example, if the user is in a 3-dimensional system, enters the starting point {0, 0, 0}, and then enters the following four 3-dimensional relative-positions:
 
-```{1, 0, 0}
+```
+{1, 0, 0}
 {0, 1, 0}
 {0, 0, 1}
 {1, 2, 3}
@@ -186,7 +186,8 @@ the program should then display the starting position (`{0,0,0}`) and the sum fr
 
 As another example, if the user is navigating through a 5-dimensional space, enters `{1, 0, 1, 0, 1}` as the starting point, and enters three 5-dimensional relative-positions:
 
-```{0, 1, 0, 1, 0}
+```
+{0, 1, 0, 1, 0}
 {2, 2, 2, 2, 2}
 {-3, -3, -3, -3, -3}
 ```
