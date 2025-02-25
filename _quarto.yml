@@ -9,7 +9,7 @@ website:
   page-navigation: true
   title: "CS112 - Data Structures"
   description: "CS112 will teach students to use C++ for creating data structures."
-  site-url: "https://ericaraujo.com/24fa-cs112"
+  site-url: "https://ericaraujo.com/25sp-cs112"
 
   favicon: ./images/cs112-logo.png
   
@@ -99,7 +99,7 @@ format:
     code-copy: true
     code-overflow: wrap
     mainfont: "Atkinson Hyperlegible"
-    fontsize: "24"
+    fontsize: "32"
     include-in-header: "style/fontawesome.html"
 
 freeze: auto
