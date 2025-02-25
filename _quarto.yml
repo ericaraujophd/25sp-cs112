@@ -13,7 +13,7 @@ website:
 
   favicon: ./images/cs112-logo.png
   
-  repo-url: https://github.com/ericaraujophd/24fa-cs112
+  repo-url: https://github.com/ericaraujophd/25sp-cs112
   repo-actions: [edit, issue]
 
   open-graph: true
@@ -36,7 +36,7 @@ website:
  
     right:
       - icon: github
-        href: https://github.com/ericaraujophd/24fa-cs112
+        href: https://github.com/ericaraujophd/25sp-cs112
         aria-label: GitHub
       # - icon: cloud-fill
       #   href: https://rstudio.cloud/spaces/1655/join?access_code=5rdjusfIYF5iI0Gum2vNsBDLdtdnIEELBkf2EivK
@@ -99,7 +99,7 @@ format:
     code-copy: true
     code-overflow: wrap
     mainfont: "Atkinson Hyperlegible"
-    fontsize: "32"
+    fontsize: "40px"
     include-in-header: "style/fontawesome.html"
 
 freeze: auto
