@@ -43,8 +43,8 @@ format:
 ## BECAUSE your project depends on your lab code, you need to copy your lab code over to this repo. That is, you have to copy **Vec.h** and **Vec.cpp** you've implemented during Lab 04 to this repo after cloning it. In a terminal:
 
 -   `cd` to your **lab04** directory (use `pwd` to make sure you are in the right directory)
--   `cp Vec.h Vec.cpp your-project-directory` (the full path to your project 4 directory)
--   `cd` to your project 4 directory
+-   `cp Vec.h Vec.cpp your-project-4-directory` (the full path to your project 4 directory)
+-   `cd` to your project 4 directory (`your-project-4-directory`)
 :::
 
 In the video below I've copied the files from my **lab04** folder to the **proj04** folder as requested. Can you follow up with the steps?
