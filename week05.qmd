@@ -48,7 +48,7 @@ Generic Containers (Templates)
 :::
 
 ::: starter
-[Starter](https://classroom.github.com/a/6VXyhrSc){target="_blank"}
+[Starter](https://classroom.github.com/a/A9e4F6bm){target="_blank"}
 :::
 
 ::: slides
