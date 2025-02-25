@@ -52,7 +52,7 @@ Generic Containers (Templates)
 :::
 
 ::: slides
-[Slides]()
+[Slides](https://calvincollege-my.sharepoint.com/:p:/g/personal/ea47_calvin_edu/EdKlMONUpYdNiliaYucu1uEBPSS2SC3aIkQ2vufi3mOloA?e=PbaD85){target="_blank"}
 :::
 ::::::
 
