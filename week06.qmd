@@ -46,7 +46,7 @@ No readings for Week 6.
 :::
 
 ::: starter
-[Source](){target="_blank"}
+[Source](https://classroom.github.com/a/R-5cjIhW){target="_blank"}
 :::
 
 ::: slides
@@ -58,5 +58,4 @@ No readings for Week 6.
 
 ::: homework
 **Project 06: No project on Week 06**
-
 :::
