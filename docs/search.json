@@ -720,7 +720,7 @@
     "href": "labs/lab06.html#introduction",
     "title": "Lab 06: More List Operations",
     "section": "Introduction",
-    "text": "Introduction\nIn this week’s lab you will add more functionality to the List class we built in class.\nHere is the invite.\nUse git clone to get your copy of the assignment, as we have been doing. You should have these files: List.cpp, List.h, tests.cpp, plus a makefile, etc.\nIf you are working with a partner, so make sure you join the same Team when creating your repos. Also, put both your names in the README.md file now."
+    "text": "Introduction\nIn this week’s lab you will add more functionality to the List class we built in class.\nHere is the invite.\nUse git clone to get your copy of the assignment, as we have been doing. You should have these files: List.cpp, List.h, tests.cpp, plus a makefile, etc.\nIf you are working with a partner, make sure you join the same Team when creating your repos. Also, put both your names in the README.md file now."
   },
   {
     "objectID": "labs/lab06.html#step-1.-append",
@@ -741,7 +741,7 @@
     "href": "labs/lab06.html#step-3.-copy-constructor",
     "title": "Lab 06: More List Operations",
     "section": "Step 3. Copy constructor",
-    "text": "Step 3. Copy constructor\nYou knew it was coming…\ntests.cpp does not contain any test cases for this, so you’ll have to implement them yourself. My solution has 1 TEST_CASE with 3 SECTIONS: copying a 0-element List, copying a 1-element List, and copying a \\(&gt;1\\)-element list. The name of the TEST_CASE must be copy constructor:\nTEST_CASE(\"copy\") {\n     // add your tests here -- either inside SECTION()s or not.\n}\nThe prototype of the copy constructor will be:\nList(const List & original);\nHere is the algorithm to implement the copy constructor:\n\nSet all the instance variables (myFirst, myLast, mySize) to default values.\nWalk the list of nodes in original, calling append() on the value in each node. (You are calling append() on “this” node, thus adding a new node each time to the List being constructed.)"
+    "text": "Step 3. Copy constructor\nYou knew it was coming…\ntests.cpp does not contain any test cases for this, so you’ll have to implement them yourself. My solution has 1 TEST_CASE with 3 SECTIONS: copying a 0-element List, copying a 1-element List, and copying a \\(&gt;1\\)-element list. The name of the TEST_CASE must be “copy”:\nTEST_CASE(\"copy\") {\n     // add your tests here -- either inside SECTION()s or not.\n}\nThe prototype of the copy constructor will be:\nList(const List & original);\nHere is the algorithm to implement the copy constructor:\n\nSet all the instance variables (myFirst, myLast, mySize) to default values.\nWalk the list of nodes in original, calling append() on the value in each node. (You are calling append() on “this” node, thus adding a new node each time to the List being constructed.)"
   },
   {
     "objectID": "labs/lab06.html#step-4.-equality",
