@@ -60,7 +60,7 @@ TEST_CASE("lookfor") {
 
 You knew it was coming...
 
-**tests.cpp** does not contain any test cases for this, so you'll have to implement them yourself. My solution has 1 `TEST_CASE` with 3 `SECTIONS`: copying a 0-element List, copying a 1-element List, and copying a $>1$-element list. The name of the TEST_CASE must be copy constructor:
+**tests.cpp** does not contain any test cases for this, so you'll have to implement them yourself. My solution has 1 `TEST_CASE` with 3 `SECTIONS`: copying a 0-element List, copying a 1-element List, and copying a $>1$-element list. The name of the TEST_CASE must be "copy":
 
 ``` cpp
 TEST_CASE("copy") {
