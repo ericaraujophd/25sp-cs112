@@ -297,7 +297,7 @@ Note
 <section id="step-4.-print-all-games-in-a-selected-genre." class="level2">
 <h2 class="anchored" data-anchor-id="step-4.-print-all-games-in-a-selected-genre.">Step 4. Print all games in a selected genre.</h2>
 <p>In the case statement in the main code, ask the user for a number of a genre: (the user enters 32 below)</p>
-<pre><code>Enter a number of a game genre to see how many games are in that genre: **32**</code></pre>
+<p><em>Enter a number of a game genre to see how many games are in that genre:</em> <strong>32</strong></p>
 <p>From that number, index into your vector of game genres to get the name of that genre. Then, call a function, described below to get all titles in that genre. After you get the titles, print each one out.</p>
 <p>Your function needs to iterate through all games, looking for the games that belong to a given genre. I called my function <code>getTitlesInGenre()</code>. The function should return the <code>vector&lt;string&gt;</code> containing those games’ titles, in sorted order. My implementation of <code>getTitlesInGenre()</code> takes two parameters – the vector of all Games, and a string that holds the genre to search for. Make sure you pass both parameters in <strong>efficiently</strong>.</p>
 <p>Remember that a game can belong to multiple genres, so you’ll have to get the genres for each game, and go through each genre to look to see if the game belongs to the “target” genre.</p>
@@ -312,10 +312,10 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>Your code should only add a game’s title to the results if the game’s title is not already in the results. If your <code>vector&lt;string&gt;</code> results variable is called <code>results</code>, then use this code to detect if the game’s title is already in the <code>results</code>, and add it only if it isn’t:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">// if not already found in the vector, add it.</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>find<span class="op">(</span>results<span class="op">.</span>begin<span class="op">(),</span> results<span class="op">.</span>end<span class="op">(),</span> game<span class="op">.</span>getTitle<span class="op">())</span> <span class="op">==</span> results<span class="op">.</span>end<span class="op">())</span> <span class="op">{</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    results<span class="op">.</span>push_back<span class="op">(</span>game<span class="op">.</span>getTitle<span class="op">());</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">// if not already found in the vector, add it.</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>find<span class="op">(</span>results<span class="op">.</span>begin<span class="op">(),</span> results<span class="op">.</span>end<span class="op">(),</span> game<span class="op">.</span>getTitle<span class="op">())</span> <span class="op">==</span> results<span class="op">.</span>end<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    results<span class="op">.</span>push_back<span class="op">(</span>game<span class="op">.</span>getTitle<span class="op">());</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <p>Don’t forget to sort the results before returning it from the function.</p>
@@ -336,7 +336,7 @@ Note
 <section id="testing" class="level2">
 <h2 class="anchored" data-anchor-id="testing">Testing:</h2>
 <p>The graders will test your code by running the pexpect script, <strong>test.exp</strong>, you see in your repo. They will do this by just running</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> test.exp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> test.exp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>That script runs your game’s executable and sends it menu items, looking for the correct output. You could try this against your code too. This should work on lab machines, but won’t work on your machine unless you install the python <strong>pexpect</strong> library.</p>
 </section>
 <section id="submission" class="level2">

@@ -113,9 +113,7 @@ All genres:
 
 In the case statement in the main code, ask the user for a number of a genre: (the user enters 32 below)
 
-```         
-Enter a number of a game genre to see how many games are in that genre: **32**
-```
+*Enter a number of a game genre to see how many games are in that genre:* **32**
 
 From that number, index into your vector of game genres to get the name of that genre. Then, call a function, described below to get all titles in that genre. After you get the titles, print each one out.
 
