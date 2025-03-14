@@ -33,15 +33,15 @@ For a given operation and several values of $n$, our basic methodology will be t
 
 ## Getting Started
 
-[Accept the invitation](){target="_blank"} to the lab and do git clone to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file and share your repo on github.com
+[Accept the invitation](){target="_blank"} to the lab and do `git clone` to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
 
 ## Experiment 0: Vector Subscript
 
 The purpose of this experiment is to get a feel for how to use the `Timer` class to time the vector subscript operation. This experiment contains a method named `timeAccessAtIndex()` that uses `Timer` to measure how long it takes to access the item at a given index in a vector. The `run()` method calls `timeAccessesForVectorOfSize()` for various vector sizes. This method calls the `timeAccessesAtIndex()` method three times, to see how long it takes to access the first, middle and last value in the vector.
 
-Compile (`make all`) and run `./lab7`.
+Compile (`make all`) and run `./lab8`.
 
-To report your results, create an online spreadsheet -- either Google Sheets or online Excel. On the worksheet, write `Lab 7: Experiment 0` in the first row; on the next row create column-headings labeled `size`, `first`, `middle`, and `last`. Then add rows for each vector size (i.e., 10, 100, 1000, 10000, 100000). For each row size, enter the times your program displayed for accessing the first, middle, and last value in the vector of size size.
+To report your results, create an online spreadsheet -- either Google Sheets or online Excel. On the worksheet, write `Lab 8: Experiment 0` in the first row; on the next row create column-headings labeled `size`, `first`, `middle`, and `last`. Then add rows for each vector size (i.e., 10, 100, 1000, 10000, 100000). For each row size, enter the times your program displayed for accessing the first, middle, and last value in the vector of size size.
 
 When you have entered all of your data, create a well-labeled line chart from your timing results. Your chart should look something like this:
 
@@ -53,7 +53,7 @@ Note these properties of the graph:
 -   The vertical lab gives the units.
 -   I have chosen to show the values with little circles -- you can choose any shape (circle, square, etc.)
 
-**Analysis.** On the chart shown above, the data are "noisy" (thanks to our imprecise clock), ranging from a low of 30.7667 nsec to a high of 33.6957 nsec. However the lines are basically flat -- there is no significant change to the access time as the vector size increases by orders of magnitudes. If I use the spreadsheet to compute the averages for the first, middle, and last columns, they are all approximately the same. Your chart should be similar. (Note that I ran my tests on my MacBookPro. The values you get on the lab machines may be quite different.)
+**Analysis.** On the chart shown above, the data are "noisy" (thanks to our imprecise clock), ranging from a low of 25.6798 nsec to a high of 37.9145 nsec. However the lines are basically flat -- there is no significant change to the access time as the vector size increases by orders of magnitudes. If I use the spreadsheet to compute the averages for the first, middle, and last columns, they are all approximately the same. Your chart should be similar. (Note that I ran my tests on my MacBookPro. The values you get on the lab machines may be quite different.)
 
 The relative flatness of these lines and their close proximity to one another indicate that the time to perform this operation remains constant as the size of the vector increases. These results thus indicate empirically that the vector subscript operation is an $O(1)$ (i.e., constant time) operation.
 
