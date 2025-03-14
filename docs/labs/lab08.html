@@ -284,11 +284,13 @@ Road Runner.
 <section id="experiment-1-vector-list-appending" class="level2">
 <h2 class="anchored" data-anchor-id="experiment-1-vector-list-appending">Experiment 1: Vector &amp; List Appending</h2>
 <p>In our next experiment, we will use a similar procedure to measure how long it takes to append an item to a vector and compare that with how long it takes to append an item to a list.</p>
-<p>In <strong>main.cpp</strong>, comment out the lines referring to <code>Experiment0</code> and uncomment the lines referring to <code>Experiment1</code>.</p>
+<p>In <strong>main.cpp</strong>, comment out the lines referring to <code>Experiment0</code> and uncomment the lines referring to <code>Experiment1</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  Experiment1 exp1<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  exp1<span class="op">.</span>run<span class="op">();</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In your <strong>makefile</strong>, replace <strong>Experiment0.cpp</strong> with <strong>Experiment1.cpp</strong> on the 4th line.</p>
-<p>Recompile your project (<code>make all</code>) and run <code>./lab7</code>. As you can see, <code>Experiment1</code> contains code to time how long it takes to append a value to a vector. It does this two ways:</p>
+<p>Recompile your project (<code>make all</code>) and run <code>./lab8</code>. As you can see, <code>Experiment1</code> contains code to time how long it takes to append a value to a vector. It does this two ways:</p>
 <ol type="1">
-<li>It first invokes <code>timeAppendToVectorOfSize(n)</code> for varying values of n.</li>
+<li>It first invokes <code>timeAppendToVectorOfSize(n)</code> for varying values of <em>n</em>.</li>
 <li>It then uses <code>timeRepeatedAppendUntilVectorIsSize(n)</code> to measure the average time an append operation takes as a vector grows very large.</li>
 </ol>
 <p>Our <code>timeAppendToVectorOfSize(n)</code> method uses an approach similar to that of <code>Experiment0</code>, but timing how long it takes the vector <code>push_back(item)</code> method to append a single value. By contrast, our <code>timeRepeatedAppendUntilVectorIsSize(n)</code> starts with an empty vector and then times the average length of time to append a value, as <code>push_back()</code> is called repeatedly.</p>
@@ -298,7 +300,7 @@ Road Runner.
 <li><code>timeRepeatedAppendUntilListIsSize(n)</code> that measures the average time an append operation takes as a <code>list</code> grows very large.</li>
 </ol>
 <p>Using the existing vector methods in <code>Experiment 1</code> as a model, <strong>write these two methods</strong>; then compile and run the executable to display the append times for both vectors and lists.</p>
-<p>When you have good data, return to your spreadsheet. Create a new worksheet, and label the first row <code>Lab 7: Experiment 1</code>. On the next row, place column headings for <strong>size</strong>, <strong>vector</strong>, and <strong>list</strong>. Then add a separate row for each size (10, 100, 1000, 10000, and 100000). Add your data to your worksheet; then create a chart similar to that of <code>Experiment0</code>.</p>
+<p>When you have good data, return to your spreadsheet. Create a new worksheet, and label the first row <code>Lab 8: Experiment 1</code>. On the next row, place column headings for <strong>size</strong>, <strong>vector</strong>, and <strong>list</strong>. Then add a separate row for each size (10, 100, 1000, 10000, and 100000). Add your data to your worksheet; then create a chart similar to that of <code>Experiment0</code>.</p>
 <p>Study your chart. Using it and the data in your spreadsheet, answer the following questions on your spreadsheet, below your chart:</p>
 <ol type="1">
 <li>What does your data indicate about the time required to append an item to a vector as the vector grows larger? Is the timing behavior produced by <code>timeAppendToVectorOfSize(n)</code> consistent with that of <code>timeRepeatedAppendToVectorOfSize(n)</code>? Explain why or why not. What is the “Big Oh” notation for each? (Remember that our vector’s size is increasing exponentially.)</li>
@@ -309,14 +311,14 @@ Road Runner.
 <section id="experiment-2-vector-list-prepending" class="level2">
 <h2 class="anchored" data-anchor-id="experiment-2-vector-list-prepending">Experiment 2: Vector &amp; List Prepending</h2>
 <p>Our final experiment is to compare how long it takes to prepend an item to a <em>vector</em>, compared to a <em>list</em>.</p>
-<p>In <strong>main.cpp</strong>, comment out the lines referring to <code>Experiment1</code> and uncomment the lines referring to <code>Experiment2</code>. In the <strong>makefile</strong>, change <code>SOURCES</code> to <code>Experiment2.cpp</code>.</p>
-<p>Recompile your project and run <code>Experiment2</code> as it is written. As you can see, <code>Experiment2</code> contains code to time how long it takes to prepend a value to a vector. It does this two ways:</p>
+<p>In <strong>main.cpp</strong>, comment out the lines referring to <code>Experiment1</code> and uncomment the lines referring to <code>Experiment2</code>. In the <strong>makefile</strong>, change <code>SOURCES</code> to <code>Experiment2.cpp</code> (line 4).</p>
+<p>Recompile your project and run <code>Experiment2</code> as it is written. As you can see, <code>Experiment2</code> contains code to time how long it takes to prepend a value to a <strong>vector</strong>. It does this two ways:</p>
 <ol type="1">
 <li>It first invokes <code>timePrependToVectorOfSize(n)</code> for varying values of n.</li>
 <li>It then uses <code>timeRepeatedPrependUntilVectorIsSize(n)</code> to measure the average time a prepend operation takes as a vector grows very large.</li>
 </ol>
 <p>Our <code>timePrependToVectorOfSize(n)</code> method uses an approach similar to that of <code>Experiment1</code>, but the STL vector template does not provide a <code>push_front()</code> method by which we can prepend a value. However, STL does provide a generic <code>insert()</code> algorithm that we can use for this task. More precisely, the statement:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>insert<span class="op">(</span>iterator<span class="op">,</span> value<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>insert<span class="op">(</span>iterator<span class="op">,</span> value<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>will insert value at the position indicated by iterator.</p>
 <p>An <strong>iterator</strong> is an abstract pointer. Every STL container provides at least two methods that return iterators:</p>
 <ul>
@@ -324,18 +326,16 @@ Road Runner.
 <li><code>end()</code>, that returns an iterator to the first location beyond the last item in the container.</li>
 </ul>
 <p>Thus, we can use the statement:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>insert<span class="op">(</span>v<span class="op">.</span>begin<span class="op">(),</span> i<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>to prepend the value of our loop-control variable i to our vector.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>insert<span class="op">(</span>v<span class="op">.</span>begin<span class="op">(),</span> i<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>to prepend the value of our loop-control variable <code>i</code> to our vector.</p>
 <p>Our <code>timeRepeatedPrependUntilVectorIsSize(n)</code> method also uses the STL <code>insert()</code> method.</p>
 <p>Your task is to write two methods that do the same things for <code>lists</code>:</p>
-<ul>
+<ol type="1">
 <li><code>timePrependToListOfSize(n)</code> that can be used to measure the average time to prepend an item to a list of size n; and</li>
-</ul>
-<ol start="2" type="1">
 <li><code>timeRepeatedPrependUntilListIsSize(n)</code> that measures the average time a prepend operation takes as a list grows very large.</li>
 </ol>
-<p>Using the existing <code>Experiment 2</code> vector methods as a model, <strong>write these two methods</strong>; then invoke them so that <code>Experiment2</code> displays the append times for both vectors and lists.</p>
-<p>When you have good data, return to your spreadsheet. Create a new worksheet, and label the first row <code>Lab 7: Experiment 2</code>. On the next row, place column headings for <strong>size</strong>, <strong>vector</strong>, and <strong>list</strong>. Then add a separate row for each size (10, 100, 1000, 10000, and 100000). Add your data to your worksheet; then create a chart similar to that of <code>Experiment1</code>.</p>
+<p>Using the existing Experiment 2 vector methods as a model, <strong>write these two methods</strong>; then invoke them so that <code>Experiment2</code> displays the append times for both vectors and lists.</p>
+<p>When you have good data, return to your spreadsheet. Create a new worksheet, and label the first row <code>Lab 8: Experiment 2</code>. On the next row, place column headings for <strong>size</strong>, <strong>vector</strong>, and <strong>list</strong>. Then add a separate row for each size (10, 100, 1000, 10000, and 100000). Add your data to your worksheet; then create a chart similar to that of <code>Experiment1</code>.</p>
 <p>Study your chart. Using it and the data in your spreadsheet, answer the following questions on your spreadsheet, below your chart:</p>
 <ol type="1">
 <li>What does your data indicate about the time required to prepend an item to a vector as the vector grows larger? Is the timing behavior produced by <code>timePrependToVectorOfSize(n)</code> consistent with that of <code>timeRepeatedPrependToVectorOfSize(n)</code>? Explain why or why not. What is the “Big Oh” notation for each?</li>
@@ -353,7 +353,7 @@ Road Runner.
 </section>
 <section id="submission" class="level2">
 <h2 class="anchored" data-anchor-id="submission">Submission</h2>
-<p>👉 <strong>Download a PDF version of your spreadsheet and put it in your directory</strong>, named <strong>Lab7Results.pdf</strong>. Make sure your PDF contains all 3 worksheets!</p>
+<p>👉 <strong>Download a PDF version of your spreadsheet and put it in your directory</strong>, named <strong>Lab8Results.pdf</strong>. Make sure your PDF contains all 3 worksheets!</p>
 <p>Make sure you commit <strong>all your files</strong> and changes to github for grading.</p>
 </section>
 <section id="grading-rubric" class="level2">
