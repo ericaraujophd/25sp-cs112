@@ -210,8 +210,10 @@ window.Quarto = {
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
   <li><a href="#experiment-0-vector-subscript" id="toc-experiment-0-vector-subscript" class="nav-link" data-scroll-target="#experiment-0-vector-subscript">Experiment 0: Vector Subscript</a></li>
   <li><a href="#experiment-1-vector-list-appending" id="toc-experiment-1-vector-list-appending" class="nav-link" data-scroll-target="#experiment-1-vector-list-appending">Experiment 1: Vector &amp; List Appending</a></li>
-  <li><a href="#experiment-2-vector-list-prepending" id="toc-experiment-2-vector-list-prepending" class="nav-link" data-scroll-target="#experiment-2-vector-list-prepending">Experiment 2: Vector &amp; List Prepending</a></li>
+  <li><a href="#experiment-2-vector-list-prepending" id="toc-experiment-2-vector-list-prepending" class="nav-link" data-scroll-target="#experiment-2-vector-list-prepending">Experiment 2: Vector &amp; List Prepending</a>
+  <ul class="collapse">
   <li><a href="#finally" id="toc-finally" class="nav-link" data-scroll-target="#finally">Finally</a></li>
+  </ul></li>
   <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
   </ul>
@@ -263,7 +265,20 @@ Road Runner.
 </section>
 <section id="getting-started" class="level2">
 <h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
-<p><a href="" target="_blank">Accept the invitation</a> to the lab and do <code>git clone</code> to get the files, as usual. Make sure your partner is part of the same Team and edit the <strong>README.md</strong> file.</p>
+<p><a href="https://classroom.github.com/a/y3GHJWru" target="_blank">Accept the invitation</a> to the lab and do <code>git clone</code> to get the files, as usual. Make sure your partner is part of the same Team and edit the <strong>README.md</strong> file.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There is no autograder configuration for this lab, so don’t freak out if you don’t see the green mark when you commit and push your files to github.</p>
+</div>
+</div>
 </section>
 <section id="experiment-0-vector-subscript" class="level2">
 <h2 class="anchored" data-anchor-id="experiment-0-vector-subscript">Experiment 0: Vector Subscript</h2>
@@ -342,14 +357,14 @@ Road Runner.
 <li>What does your data indicate about the time required to prepend an item to a list as the list grows larger? Is the timing behavior produced by <code>timePrependToListOfSize(n)</code> consistent with that of <code>timeRepeatedPrependUntilListIsSize(n)</code>? What is the “Big Oh” notation for each?</li>
 <li>What can you say about the time required to prepend an item to a vector, compared to a list, as each gets large?</li>
 </ol>
-</section>
-<section id="finally" class="level2">
-<h2 class="anchored" data-anchor-id="finally">Finally</h2>
-<p>Unlike vector, the STL list does provide a <code>push_front()</code> method that works just like <code>push_back()</code> only on the other end of the list. In your <code>timePrependToListOfSize(n)</code> method, comment out your call to <code>insert()</code> and replace it with a call to <code>push_front()</code>. Then rerun your experiment. Add a new column named list (<code>push_front</code>) to your <code>Experiment2</code> spreadsheet. Under it, add the timing results for this revised version to your spreadsheet and its chart. <strong>Then answer the following question below your other answers on your Experiment2 spreadsheet:</strong></p>
+<section id="finally" class="level3">
+<h3 class="anchored" data-anchor-id="finally">Finally</h3>
+<p>Unlike <strong>vector</strong>, the STL <strong>list</strong> does provide a <code>push_front()</code> method that works just like <code>push_back()</code> only on the other end of the list. In your <code>timePrependToListOfSize(n)</code> method, comment out your call to <code>insert()</code> and replace it with a call to <code>push_front()</code>. Then rerun your experiment. Add a new column named list (<code>push_front</code>) to your <code>Experiment2</code> spreadsheet. Under it, add the timing results for this revised version to your spreadsheet and its chart. <strong>Then answer the following question below your other answers on your Experiment2 spreadsheet:</strong></p>
 <ol start="4" type="1">
 <li>How does the timing for prepending using <code>push_front()</code> compare to the timing of prepending using <code>insert()</code>? Is the “Big Oh” the same or different for these two different ways of prepending?</li>
 </ol>
 <p>Whew! Congratulations, you’re done (after doing the submission below).</p>
+</section>
 </section>
 <section id="submission" class="level2">
 <h2 class="anchored" data-anchor-id="submission">Submission</h2>

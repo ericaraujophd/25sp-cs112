@@ -33,7 +33,11 @@ For a given operation and several values of $n$, our basic methodology will be t
 
 ## Getting Started
 
-[Accept the invitation](){target="_blank"} to the lab and do `git clone` to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
+[Accept the invitation](https://classroom.github.com/a/y3GHJWru){target="_blank"} to the lab and do `git clone` to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
+
+:::{.callout-important}
+There is no autograder configuration for this lab, so don't freak out if you don't see the green mark when you commit and push your files to github.
+:::
 
 ## Experiment 0: Vector Subscript
 
@@ -141,9 +145,9 @@ Study your chart. Using it and the data in your spreadsheet, answer the followin
 2.  What does your data indicate about the time required to prepend an item to a list as the list grows larger? Is the timing behavior produced by `timePrependToListOfSize(n)` consistent with that of `timeRepeatedPrependUntilListIsSize(n)`? What is the "Big Oh" notation for each?
 3.  What can you say about the time required to prepend an item to a vector, compared to a list, as each gets large?
 
-## Finally
+### Finally
 
-Unlike vector, the STL list does provide a `push_front()` method that works just like `push_back()` only on the other end of the list. In your `timePrependToListOfSize(n)` method, comment out your call to `insert()` and replace it with a call to `push_front()`. Then rerun your experiment. Add a new column named list (`push_front`) to your `Experiment2` spreadsheet. Under it, add the timing results for this revised version to your spreadsheet and its chart. **Then answer the following question below your other answers on your Experiment2 spreadsheet:**
+Unlike **vector**, the STL **list** does provide a `push_front()` method that works just like `push_back()` only on the other end of the list. In your `timePrependToListOfSize(n)` method, comment out your call to `insert()` and replace it with a call to `push_front()`. Then rerun your experiment. Add a new column named list (`push_front`) to your `Experiment2` spreadsheet. Under it, add the timing results for this revised version to your spreadsheet and its chart. **Then answer the following question below your other answers on your Experiment2 spreadsheet:**
 
 4.  How does the timing for prepending using `push_front()` compare to the timing of prepending using `insert()`? Is the "Big Oh" the same or different for these two different ways of prepending?
 
