@@ -41,7 +41,7 @@ No readings for Week 08.
 :::
 
 ::: starter
-[Source](https://classroom.github.com/a/y3GHJWru)
+[Source](https://classroom.github.com/a/y3GHJWru){target="_blank"}
 :::
 
 ::: slides
@@ -59,6 +59,6 @@ No readings for Week 08.
 :::
 
 ::: starter
-[Starter](https://classroom.github.com/a/1PkbebTy)
+[Starter](https://classroom.github.com/a/FsOuNCfE){target="_blank"}
 :::
 :::::
