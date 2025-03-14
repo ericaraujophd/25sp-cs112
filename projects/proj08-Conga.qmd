@@ -207,11 +207,11 @@ Please enter:
 
 ## Details
 
-[Accept the project assignment](){target="_blank"} and use git clone to get the files.
+[Accept the project assignment](https://classroom.github.com/a/1PkbebTy){target="_blank"} and use git clone to get the files.
 
 The `CongaLine` class in **CongaLine.h** has a `List` member named `myLine`, in which it stores the names of the people currently in the dance line. Since a Conga Line needs to have at least two people, the `CongaLine` constructor has two string parameters to which we can pass two people's names, and our simulation uses this constructor to create an initial line containing "Ann" and "Bob".
 
-Assuming your List template is correct, these files should build (`make tester` and `make proj7`) and run correctly as they are. However, some of the lines in the file **CongaLine.cpp** are "commented out", including:
+Assuming your List template is correct, these files should build (`make tester` and `make proj8`) and run correctly as they are. However, some of the lines in the file **CongaLine.cpp** are "commented out", including:
 
 ``` cpp
 //  if (!myLine.insertAfter(otherPersonsName, yourName)) {
@@ -235,7 +235,11 @@ and
 //  cout << "\n " << myLine << "\n\n";
 ```
 
-Before you can uncomment these lines, you will need to implement the corresponding List operations in **List.h**. Aside from uncommenting these lines, you should not make any other changes to **main.cpp**, **CongaLine.h**, or **CongaLine.cpp**.
+Before you can uncomment these lines, you will need to implement the corresponding List operations in **List.h**. 
+
+:::{.callout-warning}
+Aside from uncommenting these lines, you should not make any other changes to **main.cpp**, **CongaLine.h**, or **CongaLine.cpp**.
+:::
 
 ### The insertBefore/After Methods
 
@@ -246,7 +250,9 @@ The semantics of the first two operations are as follows:
 
 Each operation should work correctly regardless of the position of `otherPersonsName` within `myLine`. If `otherPersonsName` is present within `myLine`, your operation should return **true**; otherwise it should return **false**, so that `CongaLine::run()` can display an error message.
 
+:::{.callout-important}
 To receive full credit for these operations, you should implement them in a time-efficient manner. In particular, you should avoid approaches that use multiple passes through the List, such as (a) first finding the index of the other person (one pass) and then (b) inserting before/after that index (a second pass). Implement each of these methods using a single pass through the List.
+:::
 
 ### The Output operation
 

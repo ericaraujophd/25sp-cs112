@@ -407,9 +407,9 @@ Conga!
 </section>
 <section id="details" class="level2">
 <h2 class="anchored" data-anchor-id="details">Details</h2>
-<p><a href="" target="_blank">Accept the project assignment</a> and use git clone to get the files.</p>
+<p><a href="https://classroom.github.com/a/1PkbebTy" target="_blank">Accept the project assignment</a> and use git clone to get the files.</p>
 <p>The <code>CongaLine</code> class in <strong>CongaLine.h</strong> has a <code>List</code> member named <code>myLine</code>, in which it stores the names of the people currently in the dance line. Since a Conga Line needs to have at least two people, the <code>CongaLine</code> constructor has two string parameters to which we can pass two people’s names, and our simulation uses this constructor to create an initial line containing “Ann” and “Bob”.</p>
-<p>Assuming your List template is correct, these files should build (<code>make tester</code> and <code>make proj7</code>) and run correctly as they are. However, some of the lines in the file <strong>CongaLine.cpp</strong> are “commented out”, including:</p>
+<p>Assuming your List template is correct, these files should build (<code>make tester</code> and <code>make proj8</code>) and run correctly as they are. However, some of the lines in the file <strong>CongaLine.cpp</strong> are “commented out”, including:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">//  if (!myLine.insertAfter(otherPersonsName, yourName)) {</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">//      cout &lt;&lt; "\n***" &lt;&lt; otherPersonsName</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">//           &lt;&lt; " is not dancing!\n" &lt;&lt; endl;</span></span>
@@ -421,7 +421,20 @@ Conga!
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">//  }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>and</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">//  cout &lt;&lt; "\n " &lt;&lt; myLine &lt;&lt; "\n\n";</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Before you can uncomment these lines, you will need to implement the corresponding List operations in <strong>List.h</strong>. Aside from uncommenting these lines, you should not make any other changes to <strong>main.cpp</strong>, <strong>CongaLine.h</strong>, or <strong>CongaLine.cpp</strong>.</p>
+<p>Before you can uncomment these lines, you will need to implement the corresponding List operations in <strong>List.h</strong>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Aside from uncommenting these lines, you should not make any other changes to <strong>main.cpp</strong>, <strong>CongaLine.h</strong>, or <strong>CongaLine.cpp</strong>.</p>
+</div>
+</div>
 <section id="the-insertbeforeafter-methods" class="level3">
 <h3 class="anchored" data-anchor-id="the-insertbeforeafter-methods">The insertBefore/After Methods</h3>
 <p>The semantics of the first two operations are as follows:</p>
@@ -430,7 +443,19 @@ Conga!
 <li><code>myLine.insertBefore(otherPersonsName, yourName);</code> Assuming that <code>otherPersonsName</code> is present in <code>myLine</code>, this operation should insert <code>yourName</code> into <code>myLine</code> immediately before <code>otherPersonsName</code>.</li>
 </ul>
 <p>Each operation should work correctly regardless of the position of <code>otherPersonsName</code> within <code>myLine</code>. If <code>otherPersonsName</code> is present within <code>myLine</code>, your operation should return <strong>true</strong>; otherwise it should return <strong>false</strong>, so that <code>CongaLine::run()</code> can display an error message.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>To receive full credit for these operations, you should implement them in a time-efficient manner. In particular, you should avoid approaches that use multiple passes through the List, such as (a) first finding the index of the other person (one pass) and then (b) inserting before/after that index (a second pass). Implement each of these methods using a single pass through the List.</p>
+</div>
+</div>
 </section>
 <section id="the-output-operation" class="level3">
 <h3 class="anchored" data-anchor-id="the-output-operation">The Output operation</h3>
