@@ -31,7 +31,8 @@ This week's project is to complete a program that simulates a Conga Line dance:
 
 When run, the `CongaLine` simulation should behave like the trace shown below:
 
-```         
+
+```default
 Ann and Bob have started a Conga Line!
 
  =Ann=Bob
@@ -202,6 +203,7 @@ Please enter:
  4 to quit
 --> 4
 ```
+
 
 ## Details
 

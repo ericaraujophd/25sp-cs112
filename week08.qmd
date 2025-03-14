@@ -54,8 +54,6 @@ No readings for Week 08.
 ::::: homework
 **Project 8: Conga!**
 
-Conga!
-
 ::: instructions
 [Instructions](/projects/proj08-Conga.qmd)
 :::
