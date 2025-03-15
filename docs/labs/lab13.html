@@ -221,9 +221,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <center>
 <figure class="figure">
-<p><img src="../images/labs/lab13/lab13-independenceday.png" alt="Independence Day (1996)." width="500" class="figure-img"></p>
+<p><img src="../images/labs/lab13/lab13-header.gif" alt="May the force be with you." width="500" class="figure-img"></p>
 <figcaption>
-Independence Day (1996).
+May the force be with you.
 </figcaption>
 </figure>
 </center>
@@ -245,16 +245,16 @@ Independence Day (1996).
 <li>Show all movies an actor was in.</li>
 <li>The main data structure you’ll create is an STL map that maps:</li>
 </ul>
-<pre><code>movie name → set of actors in the movie.</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>movie name → set of actors in the movie.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This is a complex data structure: each entry in the map contains a set (Thus, we’ll have a binary search tree of binary search trees).</p>
 <p>We’ll use the Bridges database of movie information. When you get the information from the <a href="https://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1dataset_1_1_movie_actor_wikidata.html">Bridges API</a>, you get a vector of objects of type <code>MovieActorWikidata</code>. Each object contains a movie and an actor in the movie (among other things). If you printed out those two things from <code>MovieActorWikidata</code> objects, you might see these values.</p>
-<pre><code>Movie: Young at Heart         Actor: Alan Hale, Jr.
-Movie: Wichita                Actor: Carl Benton Reid
-Movie: We're No Angels        Actor: Aldo Ray
-Movie: Young at Heart         Actor: Doris Day
-Movie: Wichita                Actor: Joel McCrea
-etc...</code></pre>
-<p>Thus, you see that the objects are not in any order, and do not have all the actors in a movie in each object. To get all actors for a movie, you’ll have to iterate over all the elements of the vector and learn 1) all the movies, and 2) all the actors in the movies.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Movie: Young at Heart         Actor: Alan Hale, Jr.</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Movie: Wichita                Actor: Carl Benton Reid</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Movie: We're No Angels        Actor: Aldo Ray</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>Movie: Young at Heart         Actor: Doris Day</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>Movie: Wichita                Actor: Joel McCrea</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>etc...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Thus, you see that the objects are not in any order, and do not have all the actors in a movie in each object. To get all actors for a movie, you’ll have to iterate over all the elements of the vector and learn (1) all the movies, and (2) all the actors in the movies.</p>
 <p>Note that sometimes an actor is listed multiple times for a movie. But, because we are using an <code>STL set</code>, it automatically handles attempts to insert an element multiple times.</p>
 </section>
 <section id="menu" class="level2">
@@ -315,33 +315,33 @@ etc...</code></pre>
 <p>Implement code for <code>showAllMovies()</code>, to iterate through all entries in <code>movies_by_name</code>, and print out the movie name and then iterate through all actors for that movie, printing them out. I’ve indented the actor’s name, so the output is more readable.</p>
 <p>You might find it very useful to make the inner loop a separate function. I called that function <code>showActorsInAMovie()</code>. It takes an iterator “pointing” to an object from the <code>movies_by_name</code> collection, and iterates over the “second” field (a set), printing each actor in the set. If you implement this function, you’ll find you can use it again below.</p>
 <p>When you think your code is correct (for this and the previous step), try loading all movies from 1955 and printing them all out. The first movie should be:</p>
-<pre><code>Movie: 5 Against the House
-        Alvy Moore
-        Brian Keith
-        George Cisar
-        Guy Madison
-        Hugh Sanders
-        Jean Willes
-        John Larch
-        John Zaremba
-        Kathryn Crosby
-        Kerwin Mathews
-        Kim Novak
-        Mark Hanna
-        Robert Sampson
-        William Conrad</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Movie:  5 Against the House</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>        Alvy Moore</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        Brian Keith</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        George Cisar</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        Guy Madison</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>        Hugh Sanders</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>        Jean Willes</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        John Larch</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>        John Zaremba</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>        Kathryn Crosby</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        Kerwin Mathews</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        Kim Novak</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>        Mark Hanna</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>        Robert Sampson</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        William Conrad</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The last movie you should see should look like this:</p>
-<pre><code>Movie: Young at Heart
-        Alan Hale, Jr.
-        Doris Day
-        Dorothy Malone
-        Elisabeth Fraser
-        Ethel Barrymore
-        Frank Ferguson
-        Frank Sinatra
-        Gig Young
-        Lonny Chapman
-        Robert Keith</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Movie:  Young at Heart</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>        Alan Hale, Jr.</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        Doris Day</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        Dorothy Malone</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        Elisabeth Fraser</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        Ethel Barrymore</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        Frank Ferguson</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        Frank Sinatra</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>        Gig Young</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>        Lonny Chapman</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>        Robert Keith</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="show-all-actors-for-a-single-movie-option" class="level3">
 <h3 class="anchored" data-anchor-id="show-all-actors-for-a-single-movie-option">Show All Actors For a Single Movie Option</h3>
@@ -351,10 +351,10 @@ etc...</code></pre>
 <h3 class="anchored" data-anchor-id="show-all-movies-for-an-actor-option">Show All Movies For an Actor Option</h3>
 <p>Finally, implement this option. Create a set of strings (I called my variable <code>movies_by_actor</code>.) And then go through all movies, looking for that actor. When you find him/her, add the movie to the <code>movies_by_actor</code>. Then, when you are done, print out the set.</p>
 <p>Here is a sample output:</p>
-<pre><code>Enter an actor name to show all movies for that actor: Alfred Hitchcock
-Rear Window
-The Trouble with Harry
-To Catch a Thief</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>Enter an actor name to show all movies for that actor: Alfred Hitchcock</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Rear Window</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>The Trouble with Harry</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>To Catch a Thief</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="turn-in" class="level2">
