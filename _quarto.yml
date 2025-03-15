@@ -99,7 +99,7 @@ format:
     code-copy: true
     code-overflow: wrap
     mainfont: "Atkinson Hyperlegible"
-    fontsize: "22px"
+    fontsize: "20px"
     include-in-header: "style/fontawesome.html"
 
 freeze: auto
