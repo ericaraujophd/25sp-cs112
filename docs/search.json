@@ -1371,21 +1371,21 @@
     "href": "labs/lab10.html",
     "title": "Lab 10: Recursion",
     "section": "",
-    "text": "Students will be able to…\n\nuse an AI model to write code to implement recursive algorithms.\nanalyze the code from an AI model"
+    "text": "This is going to take forever…"
   },
   {
     "objectID": "labs/lab10.html#learning-objectives",
     "href": "labs/lab10.html#learning-objectives",
     "title": "Lab 10: Recursion",
-    "section": "",
-    "text": "Students will be able to…\n\nuse an AI model to write code to implement recursive algorithms.\nanalyze the code from an AI model"
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nStudents will be able to…\n\nuse an AI model to write code to implement recursive algorithms.\nanalyze the code from an AI model"
   },
   {
     "objectID": "labs/lab10.html#introduction",
     "href": "labs/lab10.html#introduction",
     "title": "Lab 10: Recursion",
     "section": "Introduction",
-    "text": "Introduction\nIn this lab, for most steps, you will use ChatGPT or another AI model to generate recursive solutions to some simple problems. You will then analyze the code to verify it is correct and/or improve it.\nTo log in to ChatGPT (as if you didn’t already know :-), go to https://chatgpt.com}.\nAfter the AI generates C++ code, copy and paste it into a file, and compile and run it. You will be submitting multiple files each containing a main() in it.\nAccept the assignment.\n\n\n\n\nThis is going to take forever…"
+    "text": "Introduction\nIn this lab, for most steps, you will use ChatGPT or another AI model to generate recursive solutions to some simple problems. You will then analyze the code to verify it is correct and/or improve it.\nTo log in to ChatGPT (as if you didn’t already know :-), go to https://chatgpt.com.\nAfter the AI generates C++ code, copy and paste it into a file, and compile and run it. You will be submitting multiple files each containing a main() in it.\nAccept the assignment."
   },
   {
     "objectID": "labs/lab10.html#part-1-reverse-an-array-recursively",
@@ -1406,7 +1406,7 @@
     "href": "labs/lab10.html#part-3-sum-of-values-in-an-array-recursively",
     "title": "Lab 10: Recursion",
     "section": "Part 3: Sum of values in an array, recursively",
-    "text": "Part 3: Sum of values in an array, recursively\nPlace the code from slide 5 of the lecture slides into file sum_array.cpp. Add other code to initialize an array with 6 values. Compile and run the value and verify that the result is correct.\nNow, modify the code so that the base case is not when size == 0 but when size == 1.\nDescribe in a comment in the file why this solution is slightly more efficient."
+    "text": "Part 3: Sum of values in an array, recursively\nPlace the code from Slide 5 of the lecture slides into file sum_array.cpp. Add other code to initialize an array with 6 values. Compile and run the value and verify that the result is correct.\nNow, modify the code so that the base case is not when size == 0 but when size == 1.\nDescribe in a comment in the file why this solution is slightly more efficient."
   },
   {
     "objectID": "labs/lab10.html#part-4-fibonacci-sequence-recursively",
@@ -1420,7 +1420,14 @@
     "href": "labs/lab10.html#submit",
     "title": "Lab 10: Recursion",
     "section": "Submit",
-    "text": "Submit\nDon’t forget to submit all your code to github.\nGrading Rubric: 20 points total\n\n5 points for each of the 4 parts. Those 5 points consist of:\n\n2 points for code correctness\n3 points for your analysis of the code.\n\n\nWays students lost points in the past:\n\n-12: no analysis was given.\n-3: some of the questions were not answered properly."
+    "text": "Submit\nDon’t forget to submit all your code to github."
+  },
+  {
+    "objectID": "labs/lab10.html#grading-rubric",
+    "href": "labs/lab10.html#grading-rubric",
+    "title": "Lab 10: Recursion",
+    "section": "Grading Rubric",
+    "text": "Grading Rubric\n20 points total\n\n5 points for each of the 4 parts. Those 5 points consist of:\n\n2 points for code correctness\n3 points for your analysis of the code.\n\n\nWays students lost points in the past:\n\n-12: no analysis was given.\n-3: some of the questions were not answered properly."
   },
   {
     "objectID": "labs/lab05.html",
