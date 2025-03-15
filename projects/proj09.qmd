@@ -35,7 +35,7 @@ Consider this example:
 
 Pictorially the maze looks like this, with S being the starting point (at 0, 0) and G being the goal (at 2, 3).
 
-```default     
+``` default
 -------
 |SX  X|
 |   X |
@@ -46,7 +46,7 @@ Pictorially the maze looks like this, with S being the starting point (at 0, 0) 
 
 After the code solves the maze, the stack and pictorial representation look like this:
 
-```default
+``` default
 FINAL PATH: (2, 3, X) (3, 3, N) (3, 2, E) (3, 1, E) (2, 1, S) (1, 1, S) (1, 0, E) (0, 0, S)
 -------
 |SX  X|
@@ -58,7 +58,7 @@ FINAL PATH: (2, 3, X) (3, 3, N) (3, 2, E) (3, 1, E) (2, 1, S) (1, 1, S) (1, 0, E
 
 This maze was read from a file that looks like this:
 
-```default
+``` default
 4 5
 SX__X
 ___X_
@@ -115,7 +115,7 @@ Your main task is to implement the `readMazeFromFile()` and `isReachable()` func
 
 Here is sample output from running against file `maze1.txt`.
 
-```bash
+``` bash
 $ ./main
 Enter the name of the file containing the maze: maze1.txt
 push on stack. stack is now (0, 0, S)

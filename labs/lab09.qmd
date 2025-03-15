@@ -67,7 +67,7 @@ To let you focus on these Stack operations, the Stack class already contains pro
 
 Take a few minutes to look these over. Look carefully at the explicit-value constructor, and note the initial values each member is given. We might visualize the Stack objects it constructs as follows:
 
-![](/images/labs/lab09/lab09-diagram.png){width=70%}
+![](/images/labs/lab09/lab09-diagram.png){width="70%"}
 
 Take a minute to look over **tests.cpp** to see the tests it contains. Note that part of the test is commented out. Leave this part commented out for now; we will be uncommenting it in Part II.
 
@@ -91,19 +91,19 @@ The other operations only work correctly on a non-empty Stack, so before we can 
 
 In **tests.cpp**, uncomment the `TEST_CASE` that tests `testPushPeekTopAndIsFull()`. Take a moment to look over the tests it contains. The first test constructs a stack with capacity 1 and pushes an item onto it. We might visualize this stack as follows:
 
-![](/images/labs/lab09/lab09-diagram01.png){width=55%}
+![](/images/labs/lab09/lab09-diagram01.png){width="55%"}
 
 The second test constructs a stack with capacity 3 and pushes an item onto it. We might visualize this stack as follows:
 
-![](/images/labs/lab09/lab09-diagram02.png){width=70%}
+![](/images/labs/lab09/lab09-diagram02.png){width="70%"}
 
 The test then pushes a second item onto the stack:
 
-![](/images/labs/lab09/lab09-diagram03.png){width=70%}
+![](/images/labs/lab09/lab09-diagram03.png){width="70%"}
 
 The test then pushes a third item onto the stack, filling it:
 
-![](/images/labs/lab09/lab09-diagram04.png){width=70%}
+![](/images/labs/lab09/lab09-diagram04.png){width="70%"}
 
 Compile and run the test. You should see error messages indicating that `push()`, `peekTop()`, and `isFull()` do not exist.
 
@@ -264,7 +264,7 @@ You do NOT have to add any more methods (the linked list implementation has many
 
 Change one line -- line 4 -- by adding **Queue.cpp** to the end so that the line now reads:
 
-```default     
+``` default
 SOURCES = Stack.cpp Queue.cpp
 ```
 :::

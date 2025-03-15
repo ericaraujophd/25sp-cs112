@@ -65,7 +65,7 @@ Our next task is to be able to *insert* items into a BST. The `insert(it)` metho
 
 Note that if we use a simple approach to `insert()` in which the first item is stored in the root node, the second item is stored in a child node of the root node, and so on, then the order in which we add items can make a big difference in the shape of the tree. For example, if we insert items in a "carefully chosen random" order: 44, 66, 22, 55, 11, 77, 33, then our tree will be *balanced*:
 
-![](/images/labs/lab11/lab11-tree01.png)
+![](/images/labs/lab11/lab11-tree01.png){width="70%"}
 
 A tree's shape can be characterized in different ways. One way is by comparing its height, diameter, and maximum width:
 
@@ -77,13 +77,13 @@ The preceding tree's height is 3, its diameter is 5, and its maximum width is 4.
 
 By contrast, if we insert items in *ascending* order: 11, 22, 33, 44, 55, 66, 77, then our tree will be imbalanced one way:
 
-![](/images/labs/lab11/lab11-tree02.png)
+![](/images/labs/lab11/lab11-tree02.png){width="70%"}
 
 This tree's height is 7, its diameter is 7, and its maximum width is 1.
 
 Likewise, if we insert the items in descending order : 77, 66, 55, 44, 33, 22, 11, then our tree will be imbalanced the other way:
 
-![](/images/labs/lab11/lab11-tree03.png)
+![](/images/labs/lab11/lab11-tree03.png){width="70%"}
 
 As before, this tree's height is 7, its diameter is 7, and its maximum width is 1.
 
