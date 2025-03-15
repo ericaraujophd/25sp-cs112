@@ -43,9 +43,9 @@ Today's exercise has two parts:
 As you can see, this Stack class contains three instance variables:
 
 ``` cpp
-   unsigned myCapacity;
-   unsigned mySize;
-   Item*    myArray;
+unsigned myCapacity;
+unsigned mySize;
+Item*    myArray;
 ```
 
 We will be storing the address of a dynamically allocated array in `myArray`. We will be storing the length of that array in `myCapacity`, and in `mySize`, we will be storing the number of items in the array. As we shall see, this value will correspond to the index of the spot in that array where the next `Item` that we `push()` will be stored.
@@ -67,7 +67,7 @@ To let you focus on these Stack operations, the Stack class already contains pro
 
 Take a few minutes to look these over. Look carefully at the explicit-value constructor, and note the initial values each member is given. We might visualize the Stack objects it constructs as follows:
 
-![](/images/labs/lab09/lab09-diagram.png)
+![](/images/labs/lab09/lab09-diagram.png){width=70%}
 
 Take a minute to look over **tests.cpp** to see the tests it contains. Note that part of the test is commented out. Leave this part commented out for now; we will be uncommenting it in Part II.
 
@@ -91,19 +91,19 @@ The other operations only work correctly on a non-empty Stack, so before we can 
 
 In **tests.cpp**, uncomment the `TEST_CASE` that tests `testPushPeekTopAndIsFull()`. Take a moment to look over the tests it contains. The first test constructs a stack with capacity 1 and pushes an item onto it. We might visualize this stack as follows:
 
-![](/images/labs/lab09/lab09-diagram01.png)
+![](/images/labs/lab09/lab09-diagram01.png){width=60%}
 
 The second test constructs a stack with capacity 3 and pushes an item onto it. We might visualize this stack as follows:
 
-![](/images/labs/lab09/lab09-diagram02.png)
+![](/images/labs/lab09/lab09-diagram02.png){width=70%}
 
 The test then pushes a second item onto the stack:
 
-![](/images/labs/lab09/lab09-diagram03.png)
+![](/images/labs/lab09/lab09-diagram03.png){width=70%}
 
 The test then pushes a third item onto the stack, filling it:
 
-![](/images/labs/lab09/lab09-diagram04.png)
+![](/images/labs/lab09/lab09-diagram04.png){width=70%}
 
 Compile and run the test. You should see error messages indicating that `push()`, `peekTop()`, and `isFull()` do not exist.
 
@@ -117,7 +117,7 @@ Define the `peekTop()` method. Save/recompile, and verify that what you have wri
 
 Define the `push()` method. Save/recompile, and verify that what you have written compiles and links without errors. (Again, do not worry about exceptional cases, yet.)
 
-Run the tests. If you pass the tests, congratulations! If not, use the diagrams above to go back and fix your `push()`, `peekTop()`, and/or `isFull()` methods. If you get stuck, here are hints for [push()](/labs/lab09-hint-push.qmd), [peekTop()](), and [isFull()](/labs/lab09-hint-isfull.qmd), but only use them if you have to.
+Run the tests. If you pass the tests, congratulations! If not, use the diagrams above to go back and fix your `push()`, `peekTop()`, and/or `isFull()` methods. If you get stuck, here are hints for [push()](/labs/lab09-hint-push.qmd), [peekTop()](lab09-hint-peektop.qmd), and [isFull()](/labs/lab09-hint-isfull.qmd), but only use them if you have to.
 
 Continue when your methods pass all the tests.
 
@@ -166,7 +166,7 @@ Note that since `ExceptionType` is pretty much always a class, it is preferable 
 In **tests.cpp**, uncomment the following line in `TEST_CASE "testPop()"`:
 
 ``` cpp
-        REQUIRE_THROWS_AS(s1.peekTop(), StackException);
+REQUIRE_THROWS_AS(s1.peekTop(), StackException);
 ```
 
 This block tries to send the `peekTop()` message to an empty stack, and then catches the exception that should be thrown.
@@ -185,7 +185,7 @@ The class has two instance variables:
 The `StackException` constructor initializes these members using values it receives through its parameters. For example, if at the beginning of the `pop()` method, we find that the stack is empty, we can build an exception like this:
 
 ``` cpp
-   StackException("pop()", "stack is empty")
+StackException("pop()", "stack is empty")
 ```
 
 (don't do this yet in your code)
@@ -193,7 +193,7 @@ The `StackException` constructor initializes these members using values it recei
 If at the beginning of the the `push()` method, we find that the stack is full, we can build an exception like this:
 
 ``` cpp
-   StackException("push()", "stack is full")
+StackException("push()", "stack is full")
 ```
 
 The `asString()` method generates a string representation of these values, accompanied by some descriptive labels.
@@ -212,11 +212,11 @@ Now that we have created a `StackException` class by which we can precisely desc
 
 ``` cpp
 Item Stack::peekTop() const {
-    if (isEmpty()) {
-        throw StackException("peekTop()", "stack is empty");
-    } 
-    return myArray[mySize - 1];
-  }
+  if (isEmpty()) {
+      throw StackException("peekTop()", "stack is empty");
+  } 
+  return myArray[mySize - 1];
+}
 ```
 
 Make the changes seen above. Recompile and rerun your project. With these changes, what you have written should pass all the tests. Continue when it does so.
@@ -264,7 +264,7 @@ You do NOT have to add any more methods (the linked list implementation has many
 
 Change one line -- line 4 -- by adding **Queue.cpp** to the end so that the line now reads:
 
-```         
+```default     
 SOURCES = Stack.cpp Queue.cpp
 ```
 :::

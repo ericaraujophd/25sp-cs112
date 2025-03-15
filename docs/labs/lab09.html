@@ -257,9 +257,9 @@ It compiles!
 <section id="part-i-the-stack-class" class="level2">
 <h2 class="anchored" data-anchor-id="part-i-the-stack-class">Part I: The Stack Class</h2>
 <p>As you can see, this Stack class contains three instance variables:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>   <span class="dt">unsigned</span> myCapacity<span class="op">;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>   <span class="dt">unsigned</span> mySize<span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   Item<span class="op">*</span>    myArray<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">unsigned</span> myCapacity<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">unsigned</span> mySize<span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Item<span class="op">*</span>    myArray<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>We will be storing the address of a dynamically allocated array in <code>myArray</code>. We will be storing the length of that array in <code>myCapacity</code>, and in <code>mySize</code>, we will be storing the number of items in the array. As we shall see, this value will correspond to the index of the spot in that array where the next <code>Item</code> that we <code>push()</code> will be stored.</p>
 <p>As we have seen in class, the primary Stack operations are:</p>
 <ul>
@@ -277,7 +277,7 @@ It compiles!
 <li>an assignment operator.</li>
 </ul>
 <p>Take a few minutes to look these over. Look carefully at the explicit-value constructor, and note the initial values each member is given. We might visualize the Stack objects it constructs as follows:</p>
-<p><img src="../images/labs/lab09/lab09-diagram.png" class="img-fluid"></p>
+<p><img src="../images/labs/lab09/lab09-diagram.png" class="img-fluid" style="width:70.0%"></p>
 <p>Take a minute to look over <strong>tests.cpp</strong> to see the tests it contains. Note that part of the test is commented out. Leave this part commented out for now; we will be uncommenting it in Part II.</p>
 <p>Build the project (<code>make all</code>) and run tester (<code>./tester</code>). Verify that everything works correctly at the outset.</p>
 <section id="the-isempty-method" class="level3">
@@ -292,20 +292,20 @@ It compiles!
 <h3 class="anchored" data-anchor-id="the-push-peektop-and-isfull-methods">The push(), peekTop(), and isFull() Methods</h3>
 <p>The other operations only work correctly on a non-empty Stack, so before we can test them, we need to be able to add items to a Stack. Since the <code>push()</code> method allows us to add items to a Stack, we will build that method; and since pushing items onto a stack can fill it, we will also build the <code>isFull()</code> and <code>peekTop()</code> methods.</p>
 <p>In <strong>tests.cpp</strong>, uncomment the <code>TEST_CASE</code> that tests <code>testPushPeekTopAndIsFull()</code>. Take a moment to look over the tests it contains. The first test constructs a stack with capacity 1 and pushes an item onto it. We might visualize this stack as follows:</p>
-<p><img src="../images/labs/lab09/lab09-diagram01.png" class="img-fluid"></p>
+<p><img src="../images/labs/lab09/lab09-diagram01.png" class="img-fluid" style="width:60.0%"></p>
 <p>The second test constructs a stack with capacity 3 and pushes an item onto it. We might visualize this stack as follows:</p>
-<p><img src="../images/labs/lab09/lab09-diagram02.png" class="img-fluid"></p>
+<p><img src="../images/labs/lab09/lab09-diagram02.png" class="img-fluid" style="width:70.0%"></p>
 <p>The test then pushes a second item onto the stack:</p>
-<p><img src="../images/labs/lab09/lab09-diagram03.png" class="img-fluid"></p>
+<p><img src="../images/labs/lab09/lab09-diagram03.png" class="img-fluid" style="width:70.0%"></p>
 <p>The test then pushes a third item onto the stack, filling it:</p>
-<p><img src="../images/labs/lab09/lab09-diagram04.png" class="img-fluid"></p>
+<p><img src="../images/labs/lab09/lab09-diagram04.png" class="img-fluid" style="width:70.0%"></p>
 <p>Compile and run the test. You should see error messages indicating that <code>push()</code>, <code>peekTop()</code>, and <code>isFull()</code> do not exist.</p>
 <p>In <strong>Stack.h</strong>, add a prototype for <code>isFull()</code> to the class. Recompile. Next, add a prototype for <code>peekTop()</code> to the class. Recompile. You should now see just the error for <code>push()</code>. Add a prototype for <code>push()</code>; then recompile. You should now get only linking errors, since <code>isFull()</code>, <code>peekTop()</code>, and <code>push()</code> have been declared in <strong>Stack.h</strong> but not defined.</p>
 <p>In <strong>Stack.cpp</strong>, add a definition for <code>isFull()</code>. This definition should be as simple as possible (e.g., a single line).</p>
 <p>Save/compile, and verify that the linking error for <code>isFull()</code> goes away. (The errors for <code>peekTop()</code> and <code>push()</code> should still be there.)</p>
 <p>Define the <code>peekTop()</code> method. Save/recompile, and verify that what you have written compiles without errors. (You should still see a linking error for <code>push()</code>.) Note that you do not have to handle the case (now) when you try to <code>peekTop()</code> on an empty Stack.</p>
 <p>Define the <code>push()</code> method. Save/recompile, and verify that what you have written compiles and links without errors. (Again, do not worry about exceptional cases, yet.)</p>
-<p>Run the tests. If you pass the tests, congratulations! If not, use the diagrams above to go back and fix your <code>push()</code>, <code>peekTop()</code>, and/or <code>isFull()</code> methods. If you get stuck, here are hints for <a href="../labs/lab09-hint-push.html">push()</a>, <a href="">peekTop()</a>, and <a href="../labs/lab09-hint-isfull.html">isFull()</a>, but only use them if you have to.</p>
+<p>Run the tests. If you pass the tests, congratulations! If not, use the diagrams above to go back and fix your <code>push()</code>, <code>peekTop()</code>, and/or <code>isFull()</code> methods. If you get stuck, here are hints for <a href="../labs/lab09-hint-push.html">push()</a>, <a href="../labs/lab09-hint-peektop.html">peekTop()</a>, and <a href="../labs/lab09-hint-isfull.html">isFull()</a>, but only use them if you have to.</p>
 <p>Continue when your methods pass all the tests.</p>
 </section>
 <section id="the-pop-method" class="level3">
@@ -335,7 +335,7 @@ It compiles!
 <section id="catching-exceptions" class="level3">
 <h3 class="anchored" data-anchor-id="catching-exceptions">Catching Exceptions</h3>
 <p>In <strong>tests.cpp</strong>, uncomment the following line in <code>TEST_CASE "testPop()"</code>:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>        REQUIRE_THROWS_AS<span class="op">(</span>s1<span class="op">.</span>peekTop<span class="op">(),</span> StackException<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>REQUIRE_THROWS_AS<span class="op">(</span>s1<span class="op">.</span>peekTop<span class="op">(),</span> StackException<span class="op">);</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This block tries to send the <code>peekTop()</code> message to an empty stack, and then catches the exception that should be thrown.</p>
 <p>Save/recompile your project. You should get several errors, because <code>StackException</code> has not been defined. Verify that that is the cause of your errors, then continue.</p>
 </section>
@@ -348,10 +348,10 @@ It compiles!
 <li><code>myMessage</code>, to which a method can pass a description of what is wrong.</li>
 </ul>
 <p>The <code>StackException</code> constructor initializes these members using values it receives through its parameters. For example, if at the beginning of the <code>pop()</code> method, we find that the stack is empty, we can build an exception like this:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>   StackException<span class="op">(</span><span class="st">"pop()"</span><span class="op">,</span> <span class="st">"stack is empty"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>StackException<span class="op">(</span><span class="st">"pop()"</span><span class="op">,</span> <span class="st">"stack is empty"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>(don’t do this yet in your code)</p>
 <p>If at the beginning of the the <code>push()</code> method, we find that the stack is full, we can build an exception like this:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>   StackException<span class="op">(</span><span class="st">"push()"</span><span class="op">,</span> <span class="st">"stack is full"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>StackException<span class="op">(</span><span class="st">"push()"</span><span class="op">,</span> <span class="st">"stack is full"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The <code>asString()</code> method generates a string representation of these values, accompanied by some descriptive labels.</p>
 <p>At the bottom of <strong>StackException.h</strong>, there is a definition of <code>operator&lt;&lt;</code> that lets us output a <code>StackException</code> using the usual C++ stream-insertion operator.</p>
 <p>At the beginning of <strong>Stack.h</strong>, uncomment the <code>#include</code> directive that includes <code>StackException.h</code>.</p>
@@ -362,11 +362,11 @@ It compiles!
 <h3 class="anchored" data-anchor-id="throwing-exceptions">Throwing Exceptions</h3>
 <p>Now that we have created a <code>StackException</code> class by which we can precisely describe unusual circumstances, we can use that class in our Stack methods. As mentioned previously, a method that detects a problematic circumstance can <strong>throw</strong> an exception. For example, if the stack is empty, there is no top item for the <code>peekTop()</code> method to return, in which case we might make it throw a <code>StackException</code>, as follows:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Item Stack<span class="op">::</span>peekTop<span class="op">()</span> <span class="at">const</span> <span class="op">{</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>isEmpty<span class="op">())</span> <span class="op">{</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">throw</span> StackException<span class="op">(</span><span class="st">"peekTop()"</span><span class="op">,</span> <span class="st">"stack is empty"</span><span class="op">);</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span> </span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> myArray<span class="op">[</span>mySize <span class="op">-</span> <span class="dv">1</span><span class="op">];</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="op">(</span>isEmpty<span class="op">())</span> <span class="op">{</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>      <span class="cf">throw</span> StackException<span class="op">(</span><span class="st">"peekTop()"</span><span class="op">,</span> <span class="st">"stack is empty"</span><span class="op">);</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> myArray<span class="op">[</span>mySize <span class="op">-</span> <span class="dv">1</span><span class="op">];</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Make the changes seen above. Recompile and rerun your project. With these changes, what you have written should pass all the tests. Continue when it does so.</p>
 </section>
 <section id="the-explicit-value-constructor" class="level3">
@@ -410,7 +410,7 @@ Caution
 <div class="callout-body-container callout-body">
 <p><strong>To compile the Queue .h and .cpp files, you have to edit the makefile:</strong></p>
 <p>Change one line – line 4 – by adding <strong>Queue.cpp</strong> to the end so that the line now reads:</p>
-<pre><code>SOURCES = Stack.cpp Queue.cpp</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>SOURCES = Stack.cpp Queue.cpp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <p>Now try compiling. You will see many warnings because the methods have not been implemented yet.</p>
