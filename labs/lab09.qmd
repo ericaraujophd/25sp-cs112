@@ -36,7 +36,7 @@ Today's exercise has two parts:
 
 ## Getting Started
 
-[Accept the invitation](){target="_blank"} to the lab and do git clone to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file and share your repo on github.com
+[Accept the invitation](){target="_blank"} to the lab and do git clone to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
 
 ## Part I: The Stack Class
 
@@ -91,7 +91,7 @@ The other operations only work correctly on a non-empty Stack, so before we can 
 
 In **tests.cpp**, uncomment the `TEST_CASE` that tests `testPushPeekTopAndIsFull()`. Take a moment to look over the tests it contains. The first test constructs a stack with capacity 1 and pushes an item onto it. We might visualize this stack as follows:
 
-![](/images/labs/lab09/lab09-diagram01.png){width=60%}
+![](/images/labs/lab09/lab09-diagram01.png){width=55%}
 
 The second test constructs a stack with capacity 3 and pushes an item onto it. We might visualize this stack as follows:
 
