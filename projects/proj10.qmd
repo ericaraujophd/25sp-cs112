@@ -11,7 +11,7 @@ format:
 
 <figure>
 
-<img src="/images/projects/proj10-snake.gif" alt="From Giphy by @hmd_global" width="400"/>
+<img src="/images/projects/proj10-header.gif" alt="From Giphy by @hmd_global" width="200"/>
 
 <figcaption>From Giphy by @hmd_global</figcaption>
 
