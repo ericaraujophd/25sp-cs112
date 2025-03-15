@@ -11,9 +11,9 @@ format:
 
 <figure>
 
-<img src="/images/projects/proj10-snake.png" alt="Created by AI Prompt: Here’s an illustration of a stylized depiction of the Snake game in a retro pixel-art aesthetic." width="400"/>
+<img src="/images/projects/proj10-snake.gif" alt="From Giphy by @hmd_global" width="400"/>
 
-<figcaption>Created by AI Prompt: Here’s an illustration of a stylized depiction of the Snake game in a retro pixel-art aesthetic.</figcaption>
+<figcaption>From Giphy by @hmd_global</figcaption>
 
 </figure>
 
