@@ -5,6 +5,18 @@ format:
     css: /labs/lab-styles.css
 ---
 
+<center>
+
+<figure>
+
+<img src="/images/labs/lab11/lab11-header.jpg" alt="Source: https://www.youtube.com/watch?v=WLvU5EQVZqY" width="600"/>
+
+<figcaption>Source: https://www.youtube.com/watch?v=WLvU5EQVZqY</figcaption>
+
+</figure>
+
+</center>
+
 ## Objectives
 
 In this exercise, you will:
@@ -16,18 +28,6 @@ In this exercise, you will:
 ## Introduction
 
 Today's exercise is to complete a class template named BST from which binary search tree classes and objects can be created. The exercise provides you with a test-class and a partially-built BST class template; your task is to complete the BST class template.
-
-<center>
-
-<figure>
-
-<img src="/images/labs/lab11/lab11-header.jpg" alt="Source: https://www.youtube.com/watch?v=WLvU5EQVZqY" width="500"/>
-
-<figcaption>Source: https://www.youtube.com/watch?v=WLvU5EQVZqY</figcaption>
-
-</figure>
-
-</center>
 
 ## Getting Started
 
@@ -97,13 +97,13 @@ In **tests.cpp**, uncomment the `TEST_CASE` for "insert()". Save/compile, and ve
 
 Add a prototype of `insert()` to our BST class; then recompile and verify that only a linking error remains.
 
-In **BST.h**, below the class declaration, create a stub for `BST::insert()` (a "stub" is code that does nothing -- it just returns). Recompile, and when all errors have been eliminated, run the test. Then define `BST::insert()` so that it passes the test. Here is a [hint](/labs/lab11-hint.qmd){target="_blank"}, in case you get stuck, but do your best to build this method without looking at the hint. Run the project, and verify that everything works correctly at the outset.
+In **BST.h**, below the class declaration, create a stub for `BST::insert()` (a "stub" is code that does nothing -- it just returns). Recompile, and when all errors have been eliminated, run the test. Then define `BST::insert()` so that it passes the test. Here is a [hint](/labs/lab11-hint.qmd), in case you get stuck, but do your best to build this method without looking at the hint. Run the project, and verify that everything works correctly at the outset.
 
 ## The contains() Method
 
 In **tests.cpp**, uncomment the `TEST_CASE` for `contains()`. Take a few minutes to look over the tests it contains, specifically how `contains()` is used. As can be seen, the `contains(it)` method returns *true* if it is in its BST; otherwise it returns false. Save/compile your project. You should see an error indicating that there is no method matching the calls in our test-method.
 
-Modify **BST.h** as necessary to fix any compilation/linking errors, using an approach similar to the approach used in `insert()`. Recompile and run the tests. If you get stuck, here is a [hint](/labs/lab11-hint2.qmd){target="_blank"}, but don't use it unless you have to.
+Modify **BST.h** as necessary to fix any compilation/linking errors, using an approach similar to the approach used in `insert()`. Recompile and run the tests. If you get stuck, here is a [hint](/labs/lab11-hint2.qmd), but don't use it unless you have to.
 
 Continue when your method passes the test.
 

@@ -27,7 +27,7 @@ format:
 
 ## Introduction
 
-[Accept the assignment](){target="_blank"} and use `git clone` to create your copy of the code. Remember to join the same Team as your peer.
+[Accept the assignment](){target="_blank"} and use `git clone` to create your copy of the code.
 
 This project is:
 
@@ -54,11 +54,11 @@ Implement `getHeight()` now. Its implementation is similar to `insert()` or a tr
 
 ### The Experiment
 
-The height of a BST determines the speed of operations like `insert()` and `contains()`. If we build a "large" BST of N items (e.g., $~2^20$), and that tree is balanced, then its height should be the minimal $O(lg(N))$ (e.g., 20).
+The height of a BST determines the speed of operations like `insert()` and `contains()`. If we build a "large" BST of N items (e.g., $\~2^{20}$), and that tree is balanced, then its height should be the minimal $O(lg(N))$ (e.g., 20).
 
 This week's problem is to conduct a simple experiment to see how "tall" BSTs get, given random values. Our objective is to see how close we come to lg(N) height if we build large trees of N randomly ordered values.
 
-Your repo contains two directories that each contain ten data files (**randomInts01.txt**, **randomInts02.txt**, ..., **randomInts10.txt**), each containing $2^20-1 = 1,048,575$ randomly generated integer values. If these values were ordered in exactly the right way, we could build trees of height 20. (On the other hand, if they were ordered in exactly the wrong way, we could build trees of height 1,048,575!)
+Your repo contains two directories that each contain ten data files (**randomInts01.txt**, **randomInts02.txt**, ..., **randomInts10.txt**), each containing $2^{20}-1 = 1,048,575$ randomly generated integer values. If these values were ordered in exactly the right way, we could build trees of height 20. (On the other hand, if they were ordered in exactly the wrong way, we could build trees of height 1,048,575!)
 
 Your task is to write a simple program that prompts the user for the name of an input file, reads each value from that file, and inserts it into a BST. Your program should then display the height of the resulting BST.
 
