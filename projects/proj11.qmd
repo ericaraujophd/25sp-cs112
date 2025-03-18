@@ -54,7 +54,7 @@ Implement `getHeight()` now. Its implementation is similar to `insert()` or a tr
 
 ### The Experiment
 
-The height of a BST determines the speed of operations like `insert()` and `contains()`. If we build a "large" BST of N items (e.g., $\sim 2^{20}$), and that tree is balanced, then its height should be the minimal $O(lg(N))$ (e.g., 20).
+The height of a BST determines the speed of operations like `insert()` and `contains()`. If we build a "large" BST of N items (e.g., \~$2^{20}$), and that tree is balanced, then its height should be the minimal $O(lg(N))$ (e.g., 20).
 
 This week's problem is to conduct a simple experiment to see how "tall" BSTs get, given random values. Our objective is to see how close we come to lg(N) height if we build large trees of N randomly ordered values.
 

@@ -136,8 +136,8 @@ IF YOU WORKED WITH A PARTNER, ONLY ONE OF YOU HAS TO SUBMIT, but UPDATE THE READ
 Ways students lost points in the past:
 
 -   -2: Hash function does not appear to be evenly distributed but fills lower-numbered buckets way more (\~2000 vs \~50)
--   -4: Main function does not load words from file or call dumpInfo
--   -1: Missing call to dumpInfo in main
+-   -4: Main function does not load words from file or call `dumpInfo`
+-   -1: Missing call to `dumpInfo` in main
 -   -3: Buckets are not evenly distributed (with many below 50 or above 2000) and some are empty. The smallest buckets are odd-numbered, which indicates a quirk in the algorithm which disfavors that half of the buckets
 -   -4: Most of the buckets are empty; a hashing algorithm should seek to evenly distribute words into buckets
 -   -1: Please output all bucket counts per instructions so the distribution can be seen.
