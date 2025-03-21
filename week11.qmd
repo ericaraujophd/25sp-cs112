@@ -34,7 +34,7 @@ No readings for Week 11.
 
 <!-- ## Lab -->
 
-::::: lab
+:::::: lab
 **Lab 11: Binary Seach Trees**
 
 ::: instructions
@@ -48,8 +48,7 @@ No readings for Week 11.
 ::: slides
 [Slides]()
 :::
-
-:::::
+::::::
 
 <!-- ## Homework assignments -->
 

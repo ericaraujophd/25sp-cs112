@@ -42,7 +42,7 @@ No readings for Week 09.
 :::
 
 ::: starter
-[Source](){target="_blank"}
+[Source](https://classroom.github.com/a/bnzHmKs1){target="_blank"}
 :::
 
 ::: slides
@@ -53,15 +53,13 @@ No readings for Week 09.
 <!-- ## Homework assignments -->
 
 ::::: homework
-**Project 09:**
-
-Navigate a Maze Using a Stack
+**Project 09: Navigate a Maze Using a Stack**
 
 ::: instructions
 [Instructions](/projects/proj09.qmd)
 :::
 
 ::: starter
-[Starter](){target="_blank"}
+[Starter](https://classroom.github.com/a/sg17cglC){target="_blank"}
 :::
 :::::

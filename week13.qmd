@@ -33,7 +33,7 @@ No readings for Week 13.
 
 <!-- ## Lab -->
 
-::::: lab
+:::::: lab
 **Lab 13: The STL set and map Containers**
 
 ::: instructions
@@ -47,7 +47,7 @@ No readings for Week 13.
 ::: slides
 [Slides]()
 :::
-:::::
+::::::
 
 <!-- ## Homework assignments -->
 

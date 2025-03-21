@@ -36,7 +36,7 @@ Today's exercise has two parts:
 
 ## Getting Started
 
-[Accept the invitation](){target="_blank"} to the lab and do git clone to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
+[Accept the invitation](https://classroom.github.com/a/bnzHmKs1){target="_blank"} to the lab and do git clone to get the files, as usual. Make sure your partner is part of the same Team and edit the **README.md** file.
 
 ## Part I: The Stack Class
 

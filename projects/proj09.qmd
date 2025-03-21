@@ -21,7 +21,7 @@ format:
 
 ## Prepare
 
-[Accept the assignment](){target="_blank"} and use git clone to create your copy of the code.
+[Accept the assignment](https://classroom.github.com/a/sg17cglC){target="_blank"} and use git clone to create your copy of the code.
 
 ## Introduction
 
