@@ -46,7 +46,7 @@ No readings for Week 10.
 :::
 
 ::: starter
-[Source](){target="_blank"}
+[Source](https://classroom.github.com/a/s3B_ba8j){target="_blank"}
 :::
 
 ::: slides
@@ -64,7 +64,7 @@ No readings for Week 10.
 :::
 
 ::: starter
-[Starter](){target="_blank"}
+[Starter](https://classroom.github.com/a/-y_QtDdl){target="_blank"}
 :::
 :::::
 

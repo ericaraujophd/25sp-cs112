@@ -206,12 +206,10 @@ window.Quarto = {
    
   <ul>
   <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#set-up" id="toc-set-up" class="nav-link" data-scroll-target="#set-up">Set Up</a></li>
-  <li><a href="#step-1.-try-it-out" id="toc-step-1.-try-it-out" class="nav-link" data-scroll-target="#step-1.-try-it-out">Step 1. Try it out</a>
-  <ul class="collapse">
+  <li><a href="#step-0-set-up" id="toc-step-0-set-up" class="nav-link" data-scroll-target="#step-0-set-up">Step 0: Set Up</a></li>
+  <li><a href="#step-1.-try-it-out" id="toc-step-1.-try-it-out" class="nav-link" data-scroll-target="#step-1.-try-it-out">Step 1. Try it out</a></li>
   <li><a href="#step-2.-your-task" id="toc-step-2.-your-task" class="nav-link" data-scroll-target="#step-2.-your-task">Step 2. Your task</a></li>
-  </ul></li>
-  <li><a href="#plan-of-attack" id="toc-plan-of-attack" class="nav-link" data-scroll-target="#plan-of-attack">Plan of Attack</a></li>
+  <li><a href="#step-3.-plan-of-attack" id="toc-step-3.-plan-of-attack" class="nav-link" data-scroll-target="#step-3.-plan-of-attack">Step 3. Plan of Attack</a></li>
   <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
   </ul>
@@ -254,9 +252,9 @@ From Giphy by <span class="citation" data-cites="hmd_global">@hmd_global</span>
 <li>Gain experience using more complex data structures.</li>
 </ol>
 </section>
-<section id="set-up" class="level2">
-<h2 class="anchored" data-anchor-id="set-up">Set Up</h2>
-<p><a href="" target="_blank">Accept the assignment</a> and use <code>git clone</code> to create your copy of the code. Make sure you and your partner are in the same Team.</p>
+<section id="step-0-set-up" class="level2">
+<h2 class="anchored" data-anchor-id="step-0-set-up">Step 0: Set Up</h2>
+<p><a href="https://classroom.github.com/a/-y_QtDdl" target="_blank">Accept the assignment</a> and use <code>git clone</code> to create your copy of the code. Make sure you and your partner are in the same Team.</p>
 </section>
 <section id="step-1.-try-it-out" class="level2">
 <h2 class="anchored" data-anchor-id="step-1.-try-it-out">Step 1. Try it out</h2>
@@ -285,8 +283,9 @@ Warning
 <p>For our implementation, we’ll use a queue to represent the body of the snake. As the snake moves a new block is added to the end of the queue – which is the front of the snake – and the last block of the body is removed from the tail – which is the head of the queue. Each item in the queue will be a Pair of integers, representing the <span class="math inline">\((x, y)\)</span> location of the block (<span class="math inline">\(x\)</span> is vertical and <span class="math inline">\(y\)</span> is horizontal). So, the snake’s queue will be defined as</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Queue<span class="op">&lt;</span>Pair<span class="op">&lt;</span><span class="dt">int</span><span class="op">&gt;&gt;</span> snake<span class="op">;</span> <span class="co">// (see line 58 of Snake.h)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The only other kinda tricky part of the code is how we grow the snake. The screen is redrawn each frame. A variable, <code>skipDeletingTailNodesCount</code>, exists which keeps track of how many subsequent frames should <em>not</em> delete the tail of the snake. So, if the variable has the value 2, the snake will grow by two new segments, because for the next 2 frames the snake’s tail will not be deleted.</p>
-<section id="step-2.-your-task" class="level3">
-<h3 class="anchored" data-anchor-id="step-2.-your-task">Step 2. Your task</h3>
+</section>
+<section id="step-2.-your-task" class="level2">
+<h2 class="anchored" data-anchor-id="step-2.-your-task">Step 2. Your task</h2>
 <p>There are TODOs littered throughout <strong>Snake.cpp</strong>. Your task is to replace the TODOs with code. Each TODO contains a description of what your code should do.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -309,9 +308,8 @@ A Note about Iterators
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">./snake</span> VictorNorman 1313148564</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Recall that you can get your username and id from the bridges website: <a href="http://bridges-cs.herokuapp.com/" class="uri">http://bridges-cs.herokuapp.com/</a></p>
 </section>
-</section>
-<section id="plan-of-attack" class="level2">
-<h2 class="anchored" data-anchor-id="plan-of-attack">Plan of Attack</h2>
+<section id="step-3.-plan-of-attack" class="level2">
+<h2 class="anchored" data-anchor-id="step-3.-plan-of-attack">Step 3. Plan of Attack</h2>
 <p>I recommend you replace the TODOs in this order:</p>
 <ol type="1">
 <li>do <code>drawSnake()</code></li>

@@ -24,9 +24,9 @@ format:
 1.  Use a Queue to implement the snake game.
 2.  Gain experience using more complex data structures.
 
-## Set Up
+## Step 0: Set Up
 
-[Accept the assignment](){target="_blank"} and use `git clone` to create your copy of the code. Make sure you and your partner are in the same Team.
+[Accept the assignment](https://classroom.github.com/a/-y_QtDdl){target="_blank"} and use `git clone` to create your copy of the code. Make sure you and your partner are in the same Team.
 
 ## Step 1. Try it out
 
@@ -50,7 +50,7 @@ Queue<Pair<int>> snake; // (see line 58 of Snake.h)
 
 The only other kinda tricky part of the code is how we grow the snake. The screen is redrawn each frame. A variable, `skipDeletingTailNodesCount`, exists which keeps track of how many subsequent frames should *not* delete the tail of the snake. So, if the variable has the value 2, the snake will grow by two new segments, because for the next 2 frames the snake's tail will not be deleted.
 
-### Step 2. Your task
+## Step 2. Your task
 
 There are TODOs littered throughout **Snake.cpp**. Your task is to replace the TODOs with code. Each TODO contains a description of what your code should do.
 
@@ -76,7 +76,7 @@ To run your program you have to provide two *command-line arguments*: your Bridg
 
 Recall that you can get your username and id from the bridges website: <http://bridges-cs.herokuapp.com/>
 
-## Plan of Attack
+## Step 3. Plan of Attack
 
 I recommend you replace the TODOs in this order:
 

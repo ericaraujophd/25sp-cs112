@@ -9,7 +9,7 @@ format:
 
 <figure>
 
-<img src="/images/labs/lab10/lab10-this-is-going-to-take-forever.png" alt="This is going to take forever..." width="400"/>
+<img src="/images/labs/lab10/lab10-this-is-going-to-take-forever.png" alt="This is going to take forever..." width="500"/>
 
 <figcaption>This is going to take forever...</figcaption>
 
@@ -32,7 +32,7 @@ To log in to ChatGPT (as if you didn't already know :-), go to [https://chatgpt.
 
 After the AI generates C++ code, copy and paste it into a file, and compile and run it. You will be submitting multiple files each containing a `main()` in it.
 
-[Accept the assignment](){target="_blank"}.
+[Accept the assignment](https://classroom.github.com/a/s3B_ba8j){target="_blank"}.
 
 ## Part 1: Reverse an array, recursively
 
