@@ -27,7 +27,7 @@ format:
 
 ## Introduction
 
-[Accept the assignment](){target="_blank"} and use `git clone` to create your copy of the code.
+[Accept the assignment](https://classroom.github.com/a/RcbwBOey){target="_blank"} and use `git clone` to create your copy of the code.
 
 This project is:
 

@@ -42,12 +42,12 @@ No readings for Week 11.
 :::
 
 ::: starter
-[Source](){target="_blank"}
+[Source](https://classroom.github.com/a/sgi0Fp_V){target="_blank"}
 :::
 
-::: slides
+<!-- ::: slides
 [Slides]()
-:::
+::: -->
 ::::::
 
 <!-- ## Homework assignments -->
@@ -60,6 +60,6 @@ No readings for Week 11.
 :::
 
 ::: starter
-[Starter](){target="_blank"}
+[Starter](https://classroom.github.com/a/RcbwBOey){target="_blank"}
 :::
 :::::

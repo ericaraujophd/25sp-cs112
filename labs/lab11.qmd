@@ -31,7 +31,7 @@ Today's exercise is to complete a class template named BST from which binary sea
 
 ## Getting Started
 
-Accept the [invitation from github classroom](){target="_blank"} and use git clone, as usual.
+Accept the [invitation from github classroom](https://classroom.github.com/a/sgi0Fp_V){target="_blank"} and use git clone, as usual.
 
 Edit the **README.md** file to add both your names and your partner's, and make sure you are in the same Team.
 
