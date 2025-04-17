@@ -34,7 +34,7 @@ This lab/project has you creating a simple database of movies and the actors in 
 -   Show all movies an actor was in.
 -   The main data structure you'll create is an STL map that maps:
 
-```default
+``` default
 movie name → set of actors in the movie.
 ```
 
@@ -42,7 +42,7 @@ This is a complex data structure: each entry in the map contains a set (Thus, we
 
 We'll use the Bridges database of movie information. When you get the information from the [Bridges API](https://bridgesuncc.github.io/doc/cxx-api/current/html/classbridges_1_1dataset_1_1_movie_actor_wikidata.html), you get a vector of objects of type `MovieActorWikidata`. Each object contains a movie and an actor in the movie (among other things). If you printed out those two things from `MovieActorWikidata` objects, you might see these values.
 
-```default
+``` default
 Movie: Young at Heart         Actor: Alan Hale, Jr.
 Movie: Wichita                Actor: Carl Benton Reid
 Movie: We're No Angels        Actor: Aldo Ray
@@ -67,7 +67,7 @@ The exercise will provide you with a "skeleton" application, which you will then
 
 ## Getting Started
 
-Accept the [invitation from github classroom](){target="_blank"} and use git clone, as usual. Make sure you and your partner are in the same Team.
+Accept the [invitation from github classroom](https://classroom.github.com/a/BdlYoOZf){target="_blank"} and use git clone, as usual. Make sure you and your partner are in the same Team.
 
 Edit the **README.md** file to add both your names and your partner's.
 
@@ -79,7 +79,7 @@ One way to detect such a problem is to build a **Menu class** that, besides "rem
 
 As you can see, our Menu class contains two instance variables: a string storing the menu, and a set to store those menu choices that are valid:
 
-```cpp
+``` cpp
 string myValue;             // the menu that is displayed
 set<char> myValidChoices;   // the valid menu choices
 ```
@@ -90,7 +90,7 @@ Save/compile your project, and verify that everything compiles without errors.
 
 The Menu constructor currently initializes our `myValue` member; it must also initialize `myValidChoices` so that it stores the valid menu choices. To do so, we can use the `insert()` method:
 
-```cpp
+``` cpp
 setVariable.insert(value);
 ```
 
@@ -108,7 +108,7 @@ Save/compile your project, and when it is free of compilation errors, run the pr
 
 When you run your program, you will need to provide your Bridges UserName and Id on the command line: e.g.,
 
-```bash
+``` bash
 ./movies CS112StudentUsingBridges 123555666
 ```
 
@@ -116,19 +116,19 @@ When you run your program, you will need to provide your Bridges UserName and Id
 
 The file **App.h** contains the declaration of class App. This class uses an STL map to store (movieName, set of actors) pairs:
 
-```cpp
+``` cpp
 map<string, set<string>> movies_by_name;   // key is movie name; value is set of actors' names.
 ```
 
 Note that the code actually reads like this:
 
-```cpp
+``` cpp
 db_type movies_by_name;
 ```
 
 In order to not have to type `map<string, set<string>>` too often, I created two **typedefs** at the top of **App.h**:
 
-```cpp
+``` cpp
 typedef map<string, set<string>> db_type;
 typedef map<string, set<string>>::iterator db_iter;
 ```
@@ -153,7 +153,7 @@ You might find it very useful to make the inner loop a separate function. I call
 
 When you think your code is correct (for this and the previous step), try loading all movies from 1955 and printing them all out. The first movie should be:
 
-```default
+``` default
 Movie:  5 Against the House
         Alvy Moore
         Brian Keith
@@ -173,7 +173,7 @@ Movie:  5 Against the House
 
 The last movie you should see should look like this:
 
-```default
+``` default
 Movie:  Young at Heart
         Alan Hale, Jr.
         Doris Day
@@ -197,7 +197,7 @@ Finally, implement this option. Create a set of strings (I called my variable `m
 
 Here is a sample output:
 
-```default
+``` default
 Enter an actor name to show all movies for that actor: Alfred Hitchcock
 Rear Window
 The Trouble with Harry

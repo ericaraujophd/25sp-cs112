@@ -41,12 +41,12 @@ No readings for Week 13.
 :::
 
 ::: starter
-[Source](){target="_blank"}
+[Source](https://classroom.github.com/a/BdlYoOZf){target="_blank"}
 :::
 
-::: slides
+<!-- ::: slides
 [Slides]()
-:::
+::: -->
 ::::::
 
 <!-- ## Homework assignments -->
