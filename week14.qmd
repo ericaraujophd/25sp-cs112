@@ -38,7 +38,7 @@ No readings for Week 14.
 
 <!-- ## Lab -->
 
-::::: lab
+:::::: lab
 **Lab 14: Hash Tables**
 
 ::: instructions
@@ -46,14 +46,13 @@ No readings for Week 14.
 :::
 
 ::: starter
-[Source](){target="_blank"}
+[Source](https://classroom.github.com/a/M5SNefi9){target="_blank"}
 :::
 
-::: slides
+<!-- ::: slides
 [Slides]()
-:::
-
-:::::
+::: -->
+::::::
 
 <!-- ## Homework assignments -->
 
